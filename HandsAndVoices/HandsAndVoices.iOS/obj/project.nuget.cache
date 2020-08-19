@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "8TY4krsWxjbbDpl59ecHf7fD97TtesOVWvfen95/kZqx9LaQDEeXFQQsYcu8V8wgb8JKA+T9CnGWpb7EXAtSCw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\peace\\Desktop\\HandsAndVoicesAPP\\HandsAndVoices\\HandsAndVoices.iOS\\HandsAndVoices.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\peace\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
+  ],
+  "logs": []
+}
