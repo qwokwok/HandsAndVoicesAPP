@@ -51,14 +51,14 @@ Module.symvers
 Mkfile.old
 dkms.conf
 .vs
-HandsAndVoices/obj
-HandsAndVoices/bin
+HandsAndVoices/HandsAndVoices/obj
+HandsAndVoices/HandsAndVoices/bin
 
-HandsAndVoices.Android/obj
-HandsAndVoices.Android/bin
+HandsAndVoices/HandsAndVoices.Android/obj
+HandsAndVoices/HandsAndVoices.Android/bin
 
-HandsAndVoices.iOS/obj
-HandsAndVoices.iOS/bin
+HandsAndVoices/HandsAndVoices.iOS/obj
+HandsAndVoices/HandsAndVoices.iOS/bin
 
-HandsAndVoices.UWP/obj
-HandsAndVoices.UWP/bin
+HandsAndVoices/HandsAndVoices.UWP/obj
+HandsAndVoices/HandsAndVoices.UWP/bin
