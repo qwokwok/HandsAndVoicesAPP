@@ -53,3 +53,12 @@ dkms.conf
 .vs
 HandsAndVoices/obj
 HandsAndVoices/bin
+
+HandsAndVoices.Android/obj
+HandsAndVoices.Android/bin
+
+HandsAndVoices.iOS/obj
+HandsAndVoices.iOS/bin
+
+HandsAndVoices.UWP/obj
+HandsAndVoices.UWP/bin
