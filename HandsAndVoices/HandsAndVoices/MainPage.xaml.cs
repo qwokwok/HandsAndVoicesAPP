@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HandsAndVoices.Server;
 using Xamarin.Forms;
 
 namespace HandsAndVoices
