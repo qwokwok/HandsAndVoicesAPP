@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:views="clr-namespace:HandsAndVoices.Views"
+             xmlns:nav_items="clr-namespace:HandsAndVoices.Views.Nav"
+             xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
+             x:Class="HandsAndVoices.Views.Nav.MasterPage"
+             Title="Ok">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="NavLabelStyle" TargetType="Label">
+                <Setter Property="Margin" Value="15,0,0,0"/>
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="Text" Value="{Binding Title}"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="Padding" Value="10"/>
+                <Setter Property="FontFamily" Value="Ubuntu"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid BackgroundColor="#191F4B">
+        <!--<skia:SKCanvasView x:Name="SKCanvas"
+                           PaintSurface="SKCanvas_PaintSurface"/>-->
+
+        <!--<Image Source="background.png" VerticalOptions="CenterAndExpand" Aspect="Fill"/>-->
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Image Source="logo.png" VerticalOptions="Center" HeightRequest="140" Margin="0,45,0,0"/>
+            
+            <ListView x:Name="MasterPageNavListView"
+                  x:FieldModifier="public"
+                  Grid.Row="1"
+                  Grid.RowSpan="2"
+                  HasUnevenRows="True"
+                  SeparatorColor="Transparent">
+
+                <ListView.ItemsSource>
+                    <x:Array Type="{x:Type nav_items:MasterPageImgItem}">
+                        <nav_items:MasterPageImgItem Title="Main" TargetType="{x:Type views:HomePage}"/>
+                        <nav_items:MasterPageImgItem Title="Articles" TargetType="{x:Type views:SectionPage}"/>
+                        <nav_items:MasterPageImgItem Title="Quotes" TargetType="{x:Type views:SectionPage}"/>
+                        <nav_items:MasterPageImgItem Title="Resources" TargetType="{x:Type views:SectionPage}"/>
+                        <nav_items:MasterPageImgItem Title="About us" TargetType="{x:Type views:AboutPage}"/>
+                    </x:Array>
+                </ListView.ItemsSource>
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <!-- Cell for the menu items -->
+                        <ViewCell>
+                            <Label Style="{StaticResource NavLabelStyle}"/>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+    </Grid>
+</ContentPage>

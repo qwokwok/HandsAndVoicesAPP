@@ -3,6 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HandsAndVoices.App">
     <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="GradientBlue">#141B4B</Color>
+            <Color x:Key="GradientOran">#FF7F32</Color>
 
+            <!-- Background Image Style -->
+            <Style x:Key="BG" TargetType="Image">
+                <Setter Property="Source" Value="background"/>
+                <Setter Property="Aspect" Value="Fill"/>
+                <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
+                <Setter Property="Opacity" Value=".9"/>
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
