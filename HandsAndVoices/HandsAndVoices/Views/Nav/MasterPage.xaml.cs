@@ -1,4 +1,4 @@
-﻿using SkiaSharp;
+﻿using HandsAndVoices.Util;
 using SkiaSharp.Views.Forms;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -13,6 +13,6 @@ namespace HandsAndVoices.Views.Nav
             InitializeComponent();            
         }
 
-        private void SKCanvas_PaintSurface(object sender, SKPaintSurfaceEventArgs e) => Util.Painter.PaintGradientBG(e);
+        private void SKCanvas_PaintSurface(object sender, SKPaintSurfaceEventArgs e) => Painter.PaintGradientBG(e);
     }
 }

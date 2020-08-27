@@ -54,14 +54,22 @@
                             <CollectionView.ItemTemplate>
                                 <DataTemplate>
                                     <Grid Padding="10,0,10,0">
+                                        <Grid.GestureRecognizers>
+                                            <TapGestureRecognizer
+                                             Command="{Binding 
+                                            Source={RelativeSource 
+                                            AncestorType={x:Type viewModel:HomeViewModel}}, 
+                                            Path=ChangedCommand}"
+                                            CommandParameter="{Binding .}"/>
+                                        </Grid.GestureRecognizers>
                                         <pancake:PancakeView WidthRequest="176" CornerRadius="10" IsClippedToBounds="True">
                                             <Image Source="{Binding Image}" />
                                         </pancake:PancakeView>
                                         <pancake:PancakeView
-                                        BackgroundColor="#FF7F32"
-                                        CornerRadius="5"
-                                        HeightRequest="22"
-                                        TranslationX="15"
+                                               BackgroundColor="#FF7F32"
+                                               CornerRadius="5"
+                                               HeightRequest="22"
+                                               TranslationX="15"
                                                WidthRequest="40"
                                                HorizontalOptions="Start"
                                                VerticalOptions="Start">
@@ -76,10 +84,11 @@
                                                          CornerRadius="5"
                                                          TranslationY="-15">
                                         </pancake:PancakeView>
+                                        
                                         <Label Text="{Binding Topic}" FontSize="12" TextColor="White" 
-                                                               HorizontalTextAlignment="Start"
-                                                               VerticalTextAlignment="End"
-                                           TranslationY="-19"
+                                               HorizontalTextAlignment="Start"
+                                               VerticalTextAlignment="End"
+                                               TranslationY="-19"
                                                Margin="10,0,0,0"/>
                                     </Grid>
                                 </DataTemplate>
@@ -98,6 +107,14 @@
                             <CollectionView.ItemTemplate>
                                 <DataTemplate>
                                     <Grid Padding="10,0,10,0">
+                                        <Grid.GestureRecognizers>
+                                            <TapGestureRecognizer
+                                             Command="{Binding 
+                                            Source={RelativeSource 
+                                            AncestorType={x:Type viewModel:HomeViewModel}}, 
+                                            Path=ChangedCommand}"
+                                            CommandParameter="{Binding .}"/>
+                                        </Grid.GestureRecognizers>
                                         <pancake:PancakeView WidthRequest="176" CornerRadius="10" IsClippedToBounds="True">
                                             <Image Source="{Binding Image}" />
                                         </pancake:PancakeView>
@@ -142,6 +159,14 @@
                             <CollectionView.ItemTemplate>
                                 <DataTemplate>
                                     <Grid Padding="10,0,10,0">
+                                        <Grid.GestureRecognizers>
+                                            <TapGestureRecognizer
+                                             Command="{Binding 
+                                            Source={RelativeSource 
+                                            AncestorType={x:Type viewModel:HomeViewModel}}, 
+                                            Path=ChangedCommand}"
+                                            CommandParameter="{Binding .}"/>
+                                        </Grid.GestureRecognizers>
                                         <pancake:PancakeView WidthRequest="176" CornerRadius="10" IsClippedToBounds="True">
                                             <Image Source="{Binding Image}" />
                                         </pancake:PancakeView>
@@ -186,6 +211,14 @@
                             <CollectionView.ItemTemplate>
                                 <DataTemplate>
                                     <Grid Padding="10,0,10,0">
+                                        <Grid.GestureRecognizers>
+                                            <TapGestureRecognizer
+                                             Command="{Binding 
+                                            Source={RelativeSource 
+                                            AncestorType={x:Type viewModel:HomeViewModel}}, 
+                                            Path=ChangedCommand}"
+                                            CommandParameter="{Binding .}"/>
+                                        </Grid.GestureRecognizers>
                                         <pancake:PancakeView WidthRequest="176" CornerRadius="10" IsClippedToBounds="True">
                                             <Image Source="{Binding Image}" />
                                         </pancake:PancakeView>

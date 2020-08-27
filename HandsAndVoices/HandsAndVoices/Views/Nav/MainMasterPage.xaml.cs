@@ -9,6 +9,7 @@ namespace HandsAndVoices.Views.Nav
     public partial class MainMasterPage : MasterDetailPage
     {
         public int CurrentIndex;
+        public static string Title { get; set;}
         public MainMasterPage()
         {
             InitializeComponent();
@@ -28,13 +29,12 @@ namespace HandsAndVoices.Views.Nav
 
                 else 
                 {
-                    ////it will use TransparentNavigationPage if HomePage is selected 
-                    //if (e.ItemIndex == 0)
-                    //    Detail = new TransparentNavigationPage((Page)Activator.CreateInstance(item.TargetType));
+                    switch(e.ItemIndex)
+                    {
+                        case 1: Title = "Articles"; break;
+                        case 3: Title = "Resources"; break;
+                    }
 
-                    ////otherwise, it uses NavigationPage
-                    //else
-                    //    Detail = new NavigationPage((Page)Activator.CreateInstance(item.TargetType));
                     Detail = new TransparentNavigationPage((Page)Activator.CreateInstance(item.TargetType));
 
                     // lagspike less when sliding left/right

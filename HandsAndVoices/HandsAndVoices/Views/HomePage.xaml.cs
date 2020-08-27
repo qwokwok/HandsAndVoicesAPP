@@ -19,6 +19,8 @@ namespace HandsAndVoices.Views
         public HomePage()
         {
             InitializeComponent();
+
+            VM.Navigation = Navigation;
         }
         private void SKCanvas_PaintSurface(object sender, SKPaintSurfaceEventArgs e) => Painter.PaintGradientBG(e);
     }

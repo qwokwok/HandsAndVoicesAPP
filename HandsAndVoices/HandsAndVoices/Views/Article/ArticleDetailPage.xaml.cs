@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HandsAndVoices.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +13,7 @@ namespace HandsAndVoices.Views.Article
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ArticleDetailPage : ContentPage
     {
-        public ArticleDetailPage()
+        public ArticleDetailPage(Example item)
         {
             InitializeComponent();
         }
