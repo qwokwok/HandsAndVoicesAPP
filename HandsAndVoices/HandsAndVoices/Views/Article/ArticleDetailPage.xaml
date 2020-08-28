@@ -13,7 +13,7 @@
 
     <Grid>
         <skia:SKCanvasView x:Name="SKCanvas" PaintSurface="SKCanvas_PaintSurface"/>
-        <Image Style="{StaticResource BG}"/>
+        <!--<Image Style="{StaticResource BG}"/>-->
 
         <Grid>
             <Grid.RowDefinitions>

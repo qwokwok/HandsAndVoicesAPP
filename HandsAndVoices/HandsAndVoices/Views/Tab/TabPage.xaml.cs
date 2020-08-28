@@ -29,11 +29,6 @@ namespace HandsAndVoices.Views.Tab
         {
             var index = this.Children.IndexOf(this.CurrentPage);
             Title = index == 0 ? "Parent Quotes" : "Deaf and Hard of Hearing Quotes";
-            switch(index)
-            {
-                case 0: App.Section = "Parent"; break;
-                case 1: App.Section = "Parent"; break;
-            }
         }
     }
 }

@@ -8,7 +8,7 @@
     
     <NavigationPage.BarBackgroundColor>
         <OnPlatform x:TypeArguments="Color">
-            <On Platform="Android, iOS" Value="Transparent" />
+            <On Platform="Android, iOS" Value="#2E2E2E" />
         </OnPlatform>
     </NavigationPage.BarBackgroundColor>
     

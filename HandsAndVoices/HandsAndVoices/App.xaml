@@ -4,9 +4,11 @@
              x:Class="HandsAndVoices.App">
     <Application.Resources>
         <ResourceDictionary>
-            <Color x:Key="GradientBlue">#141B4B</Color>
-            <Color x:Key="GradientOran">#FF7F32</Color>
+            <Color x:Key="GradientBlue">#121212</Color>
+            <Color x:Key="GradientOran">#121212</Color>
 
+            <!--<Color x:Key="GradientBlue">#141B4B</Color>
+            <Color x:Key="GradientOran">#FF7F32</Color>-->
             <!-- Background Image Style -->
             <Style x:Key="BG" TargetType="Image">
                 <Setter Property="Source" Value="background"/>
