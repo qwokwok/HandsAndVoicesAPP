@@ -4,6 +4,7 @@
              xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
              xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
              xmlns:viewModel="clr-namespace:HandsAndVoices.ViewModels"
+             xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              x:Class="HandsAndVoices.Views.SectionPage"
              Title="{Binding Title}">
 
@@ -30,13 +31,13 @@
                             <Grid.GestureRecognizers>
                                 <TapGestureRecognizer
                                              Command="{Binding 
-                                            Source={RelativeSource 
-                                            AncestorType={x:Type viewModel:SectionViewModel}}, 
-                                            Path=PushCommand}"
-                                            CommandParameter="{Binding .}"/>
+                                                Source={RelativeSource 
+                                                AncestorType={x:Type viewModel:SectionViewModel}}, 
+                                                Path=PushCommand}"
+                                             CommandParameter="{Binding .}"/>
                             </Grid.GestureRecognizers>
                             <pancake:PancakeView WidthRequest="180" CornerRadius="10" IsClippedToBounds="True">
-                                <Image Source="{Binding Image}" />
+                                <ff:CachedImage Source="{Binding Image}" />
                             </pancake:PancakeView>
                             <pancake:PancakeView
                                         BackgroundColor="#1C1C6E"

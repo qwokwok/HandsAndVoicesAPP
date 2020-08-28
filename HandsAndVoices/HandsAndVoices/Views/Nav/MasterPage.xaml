@@ -4,6 +4,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:views="clr-namespace:HandsAndVoices.Views"
+             xmlns:article="clr-namespace:HandsAndVoices.Views.Article"
+             xmlns:resource="clr-namespace:HandsAndVoices.Views.Resource"
              xmlns:tab="clr-namespace:HandsAndVoices.Views.Tab"
              xmlns:nav_items="clr-namespace:HandsAndVoices.Views.Nav"
              xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
@@ -49,9 +51,9 @@
                 <ListView.ItemsSource>
                     <x:Array Type="{x:Type nav_items:MasterPageImgItem}">
                         <nav_items:MasterPageImgItem Title="Home" TargetType="{x:Type views:HomePage}"/>
-                        <nav_items:MasterPageImgItem Title="Articles" TargetType="{x:Type views:SectionPage}"/>
+                        <nav_items:MasterPageImgItem Title="Articles" TargetType="{x:Type article:ArticleListPage}"/>
                         <nav_items:MasterPageImgItem Title="Quotes" TargetType="{x:Type tab:TabPage}"/>
-                        <nav_items:MasterPageImgItem Title="Resources" TargetType="{x:Type views:SectionPage}"/>
+                        <nav_items:MasterPageImgItem Title="Resources" TargetType="{x:Type resource:ResourceListPage}"/>
                         <nav_items:MasterPageImgItem Title="About us" TargetType="{x:Type views:AboutPage}"/>
                     </x:Array>
                 </ListView.ItemsSource>

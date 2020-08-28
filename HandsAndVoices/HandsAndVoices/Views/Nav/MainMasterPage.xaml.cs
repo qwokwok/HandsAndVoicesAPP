@@ -9,7 +9,6 @@ namespace HandsAndVoices.Views.Nav
     public partial class MainMasterPage : MasterDetailPage
     {
         public int CurrentIndex;
-        public static string Title { get; set;}
         public MainMasterPage()
         {
             InitializeComponent();
@@ -23,22 +22,23 @@ namespace HandsAndVoices.Views.Nav
             var item = e.Item as MasterPageImgItem;
             if (item != null)
             {
+                switch (e.ItemIndex)
+                {
+                    case 1: App.Section = "Article"; break;
+                    case 2: App.Section = "Quote"; break;
+                    case 3: App.Section = "Resource"; break;
+                }
+
                 //prevent to reload a page that is already loaded while selecting the same page for performance purpose
-                if(CurrentIndex == e.ItemIndex)
+                if (CurrentIndex == e.ItemIndex)
                     IsPresented = false;
 
                 else 
                 {
-                    switch(e.ItemIndex)
-                    {
-                        case 1: Title = "Articles"; break;
-                        case 3: Title = "Resources"; break;
-                    }
-
                     Detail = new TransparentNavigationPage((Page)Activator.CreateInstance(item.TargetType));
 
                     // lagspike less when sliding left/right
-                    await Task.Delay(75);
+                    await Task.Delay(25);
                     CurrentIndex = e.ItemIndex;
                     masterPage.MasterPageNavListView.SelectedItem = null;
                     IsPresented = false;

@@ -1,14 +1,34 @@
 ﻿using HandsAndVoices.Views.Nav;
 using System;
 using Xamarin.Forms;
-using Xamarin.Essentials;
+using HandsAndVoices.Server;
+using HandsAndVoices.Models;
+using System.Collections.Generic;
 
 [assembly: ExportFont("Ubuntu-Medium.ttf", Alias = "Ubuntu")]
 namespace HandsAndVoices
 {
     public partial class App : Application
     {
-        public DateTime FirstTime { get; set; }
+        //static ArticleRepository database;
+        //public static ArticleRepository Database
+        //{
+        //    get
+        //    {
+        //        if (database == null)
+        //        {
+        //            database = new ArticleRepository(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "article.db3"));
+        //        }
+        //        return database;
+        //    }
+        //}
+
+        public static DateTime FirstTime { get; set; }
+        public static int DayCount { get; set; }
+        public static List<Advice> Advices { get; set; } = Website.Advices;
+        public static string Section { get; set; }
+        public static Advice Selected { get; set; }
+
         public App()
         {
             InitializeComponent();
@@ -19,20 +39,6 @@ namespace HandsAndVoices
 
         protected override void OnStart()
         {
-            // if a value is null, it will return true
-            var isFirstTime = Preferences.Get("isFirst_key", true);
-            if(isFirstTime)
-            {
-                // stores date of first time using the app
-                Preferences.Set("isFirst_key", false);
-                var date = DateTime.Today;
-                Preferences.Set("date_key", date);
-                FirstTime = date;
-            }
-            else
-            {
-                FirstTime = Preferences.Get("date_key", DateTime.Parse("1/1/2000"));
-            }
         }
 
         protected override void OnSleep()
@@ -50,8 +56,6 @@ namespace HandsAndVoices
         {
             public const string GRADIENT_BLUE = "GradientBlue";
             public const string GRADIENT_ORAN = "GradientOran";
-        }
-
-        
+        }   
     }
 }

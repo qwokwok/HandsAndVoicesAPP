@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using HandsAndVoices.Models;
+using HandsAndVoices.Util;
+using SkiaSharp.Views.Forms;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -12,9 +9,11 @@ namespace HandsAndVoices.Views.Resource
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ResourceDetailPage : ContentPage
     {
-        public ResourceDetailPage()
+        public ResourceDetailPage(Advice _advice)
         {
             InitializeComponent();
         }
+
+        private void SKCanvas_PaintSurface(object sender, SKPaintSurfaceEventArgs e) => Painter.PaintGradientBG(e);
     }
 }

@@ -1,37 +1,22 @@
 ﻿using HandsAndVoices.Models;
 using HandsAndVoices.Views.Article;
-using HandsAndVoices.Views.Nav;
-using System;
+using HandsAndVoices.Views.Quote;
+using HandsAndVoices.Views.Resource;
 using System.Collections.Generic;
-using System.Text;
 using Xamarin.Forms;
 
 namespace HandsAndVoices.ViewModels
 {
     public class SectionViewModel : BasicViewModel
     {
-        #region Fields
-        private List<Example> articleList;
-        #endregion
-
         #region Properties
         public INavigation Navigation { get; set; }
-        public List<Example> ArticleList
+        public List<Advice> ArticleList
         {
-            get => articleList;
+            get => App.Advices;
             set
             {
-                articleList = value;
-                NotifyPropertyChanged();
-            }
-        }
-
-        public string Title
-        {
-            get => MainMasterPage.Title;
-            set
-            {
-                MainMasterPage.Title = value;
+                App.Advices = value;
                 NotifyPropertyChanged();
             }
         }
@@ -43,19 +28,19 @@ namespace HandsAndVoices.ViewModels
 
         public SectionViewModel()
         {
-            PushCommand = new Command<Example>(PushAsync);
-
-            // sample list
-            articleList = new List<Example>();
-            articleList.Add(new Example() { Image = "tree.png", IsNew = true, Topic = "Welcome to the Journey", Url = "https://youtu.be/23sns-_NZYg" });
-            articleList.Add(new Example() { Image = "tree.png", IsNew = true, Topic = "Welcome to the Journey", Url = "https://youtu.be/23sns-_NZYg" });
-            articleList.Add(new Example() { Image = "tree.png", IsNew = true, Topic = "Welcome to the Journey", Url = "https://youtu.be/23sns-_NZYg" });
+            PushCommand = new Command<Advice>(PushAsync);
         }
 
-        void PushAsync(Example item)
+        void PushAsync(Advice item)
         {
-            PushCommand = new Command<Example>(PushAsync);
-            Navigation.PushAsync(new ArticleDetailPage(item));
+            App.Selected = item;
+
+            if (item.Day != 0)
+            {
+                if(App.Section == "Article") Navigation.PushAsync(new ArticleDetailPage(item));
+                if (App.Section == "Quote") Navigation.PushAsync(new QuoteDetailPage(item));
+                if (App.Section == "Resource") Navigation.PushAsync(new ResourceDetailPage(item));
+            }
         }
     }
 }

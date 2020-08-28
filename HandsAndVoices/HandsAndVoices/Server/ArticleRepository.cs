@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
-using System.Text;
 using System.Threading.Tasks;
 using HandsAndVoices.Models;
 
@@ -32,7 +31,7 @@ namespace HandsAndVoices.Server
 
         private void ImportData()
         {
-            var assembly = typeof(MainPage).GetTypeInfo().Assembly;
+            var assembly = typeof(App).GetTypeInfo().Assembly;
 
             using Stream dataFile = assembly.GetManifestResourceStream("HandsAndVoices.Data.90DatasInfo.tsv");
 

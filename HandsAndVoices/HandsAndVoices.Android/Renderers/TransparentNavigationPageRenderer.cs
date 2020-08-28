@@ -1,4 +1,5 @@
 ﻿using Android.Content;
+using FFImageLoading.Forms.Platform;
 using HandsAndVoices.Droid.Renderers;
 using HandsAndVoices.Views.Nav;
 using Xamarin.Forms;
@@ -15,7 +16,10 @@ namespace HandsAndVoices.Droid.Renderers
 
     public class TransparentNavigationPageRenderer : NavigationPageRenderer
     {
-        public TransparentNavigationPageRenderer(Context context) : base(context) { }
+        public TransparentNavigationPageRenderer(Context context) : base(context)
+        {
+            CachedImageRenderer.Init(true);
+        }
 
         IPageController PageController => Element as IPageController;
         TransparentNavigationPage TransparentNavigationPage => Element as TransparentNavigationPage;
