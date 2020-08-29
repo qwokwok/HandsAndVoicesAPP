@@ -37,9 +37,9 @@ namespace HandsAndVoices.ViewModels
 
             if (item.Day != 0)
             {
-                if (App.Section == "Article") Navigation.PushAsync(new ArticleDetailPage(item));
-                if (App.Section == "Quote") Navigation.PushAsync(new QuoteDetailPage(item));
-                if (App.Section == "Resource") Navigation.PushAsync(new ResourceDetailPage(item));
+                if (App.Section == "Article") Navigation.PushAsync(new ArticleDetailPage());
+                if (App.Section == "Quote") Navigation.PushAsync(new QuoteDetailPage());
+                if (App.Section == "Resource") Navigation.PushAsync(new ResourceDetailPage());
             }
         }
     }

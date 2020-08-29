@@ -40,7 +40,7 @@ namespace HandsAndVoices.Server
 
                 // --- ---
                 App.DayCount = Convert.ToInt32((DateTime.Now - App.FirstTime).TotalDays) + 1;
-                //App.DayCount = 21; // If you want to test with any number of days have been past, enter 1-90 or comment out this line if you wish to test with actual day.
+                App.DayCount = 30; // If you want to test with any number of days have been past, enter 1-90 or comment out this line if you wish to test with actual day.
                 // --- ---
 
                 list = list.Where(x => x.Day <= App.DayCount).ToList();

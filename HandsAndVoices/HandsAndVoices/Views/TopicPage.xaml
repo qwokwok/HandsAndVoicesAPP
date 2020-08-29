@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
+             xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:viewModel="clr-namespace:HandsAndVoices.ViewModels"
+             x:Class="HandsAndVoices.Views.TopicPage"
+             Title="Topics">
+
+    <ContentPage.BindingContext>
+        <viewModel:TopicViewModel/>
+    </ContentPage.BindingContext>
+
+    <Grid>
+        <skia:SKCanvasView x:Name="SKCanvas" PaintSurface="SKCanvas_PaintSurface"/>
+        <!--<Image Style="{StaticResource BG}"/>-->
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <CollectionView ItemsSource="{Binding ArticleList}" Margin="0,40,0,0" Grid.Row="1">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="10">
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer
+                                             Command="{Binding 
+                                            Source={RelativeSource 
+                                            AncestorType={x:Type viewModel:TopicViewModel}}, 
+                                            Path=ReviewCommand}"
+                                            CommandParameter="{Binding .}"/>
+                            </Grid.GestureRecognizers>
+                            <pancake:PancakeView BackgroundColor="#585858"
+                                                 HeightRequest="50"
+                                                 CornerRadius="10">
+                                <Label Text="{Binding TitleTopic}" FontSize="15" TextColor="White" 
+                                               Margin="50,0,0,0"
+                                       VerticalOptions="Center"/>
+                                
+                            </pancake:PancakeView>
+
+                            <pancake:PancakeView
+                                IsVisible="{Binding IsVisible}"
+                                               BackgroundColor="#262625"
+                                               CornerRadius="100"
+                                               HeightRequest="40"
+                                               WidthRequest="40"
+                                               TranslationX="5"
+                                               HorizontalOptions="Start"
+                                               VerticalOptions="Center">
+                                <Label Text="{Binding Day}" TextColor="White" FontSize="15" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            </pancake:PancakeView>
+                            
+                            <pancake:PancakeView
+                                IsVisible="{Binding IsNew}"
+                                               BackgroundColor="#FF7F32"
+                                               CornerRadius="15"
+                                               HeightRequest="30"
+                                               TranslationX="0"
+                                               TranslationY="-10"
+                                               WidthRequest="30"
+                                               HorizontalOptions="Start"
+                                               VerticalOptions="Start">
+                                <Label Text="NEW!" IsVisible="{Binding IsNew}" TextColor="White" FontSize="10" Margin="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            </pancake:PancakeView>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+    </Grid>
+</ContentPage>

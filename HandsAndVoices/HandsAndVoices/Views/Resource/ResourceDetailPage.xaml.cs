@@ -9,7 +9,7 @@ namespace HandsAndVoices.Views.Resource
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ResourceDetailPage : ContentPage
     {
-        public ResourceDetailPage(Advice _advice)
+        public ResourceDetailPage()
         {
             InitializeComponent();
         }

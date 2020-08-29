@@ -1,19 +1,20 @@
-﻿using HandsAndVoices.Models;
-using HandsAndVoices.Util;
+﻿using HandsAndVoices.Util;
 using HandsAndVoices.ViewModels;
 using SkiaSharp.Views.Forms;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace HandsAndVoices.Views.Article
+namespace HandsAndVoices.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ArticleDetailPage : ContentPage
+    public partial class TopicPage : ContentPage
     {
-        public DetailViewModel VM => (DetailViewModel)BindingContext;
-        public ArticleDetailPage()
+        public TopicViewModel VM => (TopicViewModel)BindingContext;
+        public TopicPage()
         {
             InitializeComponent();
+
+            VM.Navigation = Navigation;
         }
 
         private void SKCanvas_PaintSurface(object sender, SKPaintSurfaceEventArgs e) => Painter.PaintGradientBG(e);

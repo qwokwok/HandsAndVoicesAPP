@@ -6,7 +6,7 @@
              xmlns:viewModel="clr-namespace:HandsAndVoices.ViewModels"
              xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
-             Title="HANDS and VOICES">
+             Title="Hands and Voices">
 
     <ContentPage.BindingContext>
         <viewModel:HomeViewModel/>
@@ -42,6 +42,7 @@
                         <RowDefinition Height="200"/>
                         <RowDefinition Height="200"/>
                         <RowDefinition Height="200"/>
+                        <RowDefinition Height="60"/>
                     </Grid.RowDefinitions>
 
                     <Grid Grid.Row="1">
@@ -79,7 +80,7 @@
                                             <Label Text="NEW!" IsVisible="{Binding IsNew}" TextColor="White" FontSize="10" Margin="0" VerticalOptions="Center" HorizontalOptions="Center"/>
                                         </pancake:PancakeView>
 
-                                            <pancake:PancakeView
+                                        <pancake:PancakeView
                                                         VerticalOptions="End"
                                                          BackgroundColor="Black"
                                                          WidthRequest="170"
@@ -87,15 +88,15 @@
                                                          Opacity=".6"
                                                          CornerRadius="5"
                                                          TranslationY="-15">
-                                            </pancake:PancakeView>
+                                        </pancake:PancakeView>
 
-                                            <Label Text="{Binding Topic}" FontSize="12" TextColor="White" 
+                                        <Label Text="{Binding Topic}" FontSize="12" TextColor="White" 
                                                HorizontalTextAlignment="Start"
                                                VerticalTextAlignment="End"
                                                TranslationY="-19"
                                                Margin="10,0,0,0"/>
 
-                                        </Grid>
+                                    </Grid>
                                 </DataTemplate>
                             </CollectionView.ItemTemplate>
                         </CollectionView>
@@ -117,7 +118,7 @@
                                              Command="{Binding 
                                             Source={RelativeSource 
                                             AncestorType={x:Type viewModel:HomeViewModel}}, 
-                                            Path=QuoteCommand}"
+                                            Path=ParentQuoteCommand}"
                                             CommandParameter="{Binding .}"/>
                                         </Grid.GestureRecognizers>
                                         <pancake:PancakeView WidthRequest="176" CornerRadius="10">
@@ -170,7 +171,7 @@
                                              Command="{Binding 
                                             Source={RelativeSource 
                                             AncestorType={x:Type viewModel:HomeViewModel}}, 
-                                            Path=QuoteCommand}"
+                                            Path=DHHQuoteCommand}"
                                             CommandParameter="{Binding .}"/>
                                         </Grid.GestureRecognizers>
                                         <pancake:PancakeView WidthRequest="176" CornerRadius="10" IsClippedToBounds="True">
@@ -262,7 +263,17 @@
                 </Grid>
             </ScrollView>
         </Grid>
-        <pancake:PancakeView AbsoluteLayout.LayoutBounds="0.015,.04,.12,.064" AbsoluteLayout.LayoutFlags="All" CornerRadius="100" HeightRequest="50" WidthRequest="50"
-                                 BackgroundColor="#191F4B"/>
-        </AbsoluteLayout>
+        <pancake:PancakeView AbsoluteLayout.LayoutBounds="0.5,.98,.9,.075" AbsoluteLayout.LayoutFlags="All" CornerRadius="5" HeightRequest="50" WidthRequest="50"
+                                 BackgroundColor="#262625">
+            <pancake:PancakeView.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding TopicCommand}"/>
+            </pancake:PancakeView.GestureRecognizers>
+
+            <Label Text="Topics" TextColor="White" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center"
+                   FontAttributes="Bold"
+                   />
+        </pancake:PancakeView>
+    </AbsoluteLayout>
 </ContentPage>

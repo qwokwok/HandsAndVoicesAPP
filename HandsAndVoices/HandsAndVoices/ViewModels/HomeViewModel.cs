@@ -1,4 +1,5 @@
 ﻿using HandsAndVoices.Models;
+using HandsAndVoices.Views;
 using HandsAndVoices.Views.Article;
 using HandsAndVoices.Views.Quote;
 using HandsAndVoices.Views.Resource;
@@ -25,31 +26,42 @@ namespace HandsAndVoices.ViewModels
 
         #region Commands
         public Command ArticleCommand { get; set; }
-        public Command QuoteCommand { get; set; }
+        public Command ParentQuoteCommand { get; set; }
+        public Command DHHQuoteCommand { get; set; }
         public Command ResourceCommand { get; set; }
+        public ICommand TopicCommand => new Command(() =>
+        {
+            Navigation.PushAsync(new TopicPage());
+        });
         #endregion
 
         #region Constructors
         public HomeViewModel()
         {
-            ArticleCommand = new Command<Advice>(PushArticleAsync);
-            QuoteCommand = new Command<Advice>(PushQuoteAsync);
-            ResourceCommand = new Command<Advice>(PushResourceAsync);
+            ArticleCommand = new Command<Advice>(PushArticle);
+            ParentQuoteCommand = new Command<Advice>(PushParentQuote);
+            DHHQuoteCommand = new Command<Advice>(PushDHHQuote);
+            ResourceCommand = new Command<Advice>(PushResource);
         }
         #endregion
 
         #region Methods
-        void PushArticleAsync(Advice item)
+        void PushArticle(Advice item)
         {
             PushToDetail(item, "Article");
         }
 
-        void PushQuoteAsync(Advice item)
+        void PushParentQuote(Advice item)
         {
-            PushToDetail(item, "Quote");
+            PushToDetail(item, "Parent");
         }
 
-        void PushResourceAsync(Advice item)
+        void PushDHHQuote(Advice item)
+        {
+            PushToDetail(item, "DHH");
+        }
+
+        void PushResource(Advice item)
         {
             PushToDetail(item, "Resource");
         }
@@ -63,9 +75,10 @@ namespace HandsAndVoices.ViewModels
 
                 switch(section)
                 {
-                    case "Article": Navigation.PushAsync(new ArticleDetailPage(item)); break;
-                    case "Quote": Navigation.PushAsync(new QuoteDetailPage(item)); break;
-                    case "Resource": Navigation.PushAsync(new ResourceDetailPage(item)); break;
+                    case "Article": Navigation.PushAsync(new ArticleDetailPage()); break;
+                    case "Parent": Navigation.PushAsync(new QuoteDetailPage()); break;
+                    case "DHH": Navigation.PushAsync(new DHHDetailPage()); break;
+                    case "Resource": Navigation.PushAsync(new ResourceDetailPage()); break;
                 }
             }
         }

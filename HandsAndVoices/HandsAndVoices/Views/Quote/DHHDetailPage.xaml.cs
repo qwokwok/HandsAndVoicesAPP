@@ -1,17 +1,14 @@
-﻿using HandsAndVoices.Models;
-using HandsAndVoices.Util;
-using HandsAndVoices.ViewModels;
+﻿using HandsAndVoices.Util;
 using SkiaSharp.Views.Forms;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace HandsAndVoices.Views.Article
+namespace HandsAndVoices.Views.Quote
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ArticleDetailPage : ContentPage
+    public partial class DHHDetailPage : ContentPage
     {
-        public DetailViewModel VM => (DetailViewModel)BindingContext;
-        public ArticleDetailPage()
+        public DHHDetailPage()
         {
             InitializeComponent();
         }
