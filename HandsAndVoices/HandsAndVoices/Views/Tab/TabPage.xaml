@@ -2,7 +2,7 @@
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HandsAndVoices.Views.Tab.TabPage"
-            BarBackgroundColor="#2E2E2E"
+            BarBackgroundColor="{DynamicResource BottomBar}"
             BarTextColor="White"
             SelectedTabColor="White">
   <!--Pages can be added as references or inline-->

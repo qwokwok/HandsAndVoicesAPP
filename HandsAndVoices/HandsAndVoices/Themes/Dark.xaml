@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    x:Class="HandsAndVoices.Themes.Dark">
+
+    <Color x:Key="TopBar">#262625</Color>
+    <Color x:Key="BottomBar">#262625</Color>
+    <Color x:Key="Top">#1A1A1A</Color>
+    <Color x:Key="Bottom">#1A1A1A</Color>
+    <Color x:Key="Item">#585858</Color>
+    <Color x:Key="TopicBar">#262625</Color>
+    <x:Boolean x:Key="IsVisible">false</x:Boolean>
+
+</ResourceDictionary>

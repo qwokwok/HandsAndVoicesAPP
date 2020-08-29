@@ -16,7 +16,10 @@
 
     <Grid>
         <skia:SKCanvasView x:Name="SKCanvas" PaintSurface="SKCanvas_PaintSurface"/>
-        <!--<Image Style="{StaticResource BG}"/>-->
+        <Image Source="background"
+               Aspect="Fill"
+               VerticalOptions="CenterAndExpand"
+               Opacity=".9"/>
 
         <Grid>
             <Grid.RowDefinitions>
@@ -39,7 +42,7 @@
                                           Command="{Binding LinkCommand}"/>
                 </Grid.GestureRecognizers>
                 <ScrollView>
-                    <pancake:PancakeView BackgroundColor="#262625">
+                    <pancake:PancakeView BackgroundColor="{DynamicResource Top}">
                         <Label Text="{Binding Advice.ParentQuote}" 
                        TextColor="White"
                        FontSize="20"

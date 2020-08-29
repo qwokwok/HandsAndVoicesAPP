@@ -39,7 +39,7 @@
                                           Command="{Binding LinkCommand}"/>
                 </Grid.GestureRecognizers>
                 <ScrollView>
-                    <pancake:PancakeView BackgroundColor="#262625">
+                    <pancake:PancakeView BackgroundColor="{DynamicResource Top}">
                         <Label Text="{Binding Advice.ContentArticleVideo}" 
                        TextColor="White"
                        FontSize="20"

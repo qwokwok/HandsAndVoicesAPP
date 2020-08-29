@@ -15,6 +15,8 @@ namespace HandsAndVoices.Views
             InitializeComponent();
 
             VM.Navigation = Navigation;
+
+            VM.UpdateSkiaColor += delegate { SKCanvas.InvalidateSurface(); };
         }
         private void SKCanvas_PaintSurface(object sender, SKPaintSurfaceEventArgs e) => Painter.PaintGradientBG(e);
     }

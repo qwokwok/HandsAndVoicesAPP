@@ -12,10 +12,19 @@
         <viewModel:HomeViewModel/>
     </ContentPage.BindingContext>
 
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="lightIcon" Command="{Binding LightCommand}"/>
+        <ToolbarItem IconImageSource="darkIcon" Command="{Binding DarkCommand}"/>
+    </ContentPage.ToolbarItems>
+
     <AbsoluteLayout>
         <Grid AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
             <skia:SKCanvasView x:Name="SKCanvas" PaintSurface="SKCanvas_PaintSurface"/>
-            <!--<Image Style="{StaticResource BG}"/>-->
+            <Image Source="background"
+                   IsVisible="{DynamicResource IsVisible}"
+               Aspect="Fill"
+               VerticalOptions="CenterAndExpand"
+               Opacity=".9"/>
             <ScrollView>
                 <Grid>
                     <Grid.Resources>
@@ -221,11 +230,11 @@
                                     <Grid Padding="10,0,10,0">
                                         <Grid.GestureRecognizers>
                                             <TapGestureRecognizer
-                                             Command="{Binding 
-                                            Source={RelativeSource 
-                                            AncestorType={x:Type viewModel:HomeViewModel}}, 
-                                            Path=ResourceCommand}"
-                                            CommandParameter="{Binding .}"/>
+                                                Command="{Binding 
+                                                Source={RelativeSource 
+                                                AncestorType={x:Type viewModel:HomeViewModel}}, 
+                                                Path=ResourceCommand}"
+                                                CommandParameter="{Binding .}"/>
                                         </Grid.GestureRecognizers>
                                         <pancake:PancakeView WidthRequest="176" CornerRadius="10" IsClippedToBounds="True">
                                             <ff:CachedImage Source="{Binding ResourceImage}" />
@@ -251,10 +260,10 @@
                                                          TranslationY="-15">
                                         </pancake:PancakeView>
                                         <Label Text="{Binding ResourceTopic}" FontSize="12" TextColor="White" 
-                                                               HorizontalTextAlignment="Start"
-                                                               VerticalTextAlignment="End"
-                                           TranslationY="-19"
-                                               Margin="10,0,0,0"/>
+                                                                HorizontalTextAlignment="Start"
+                                                                VerticalTextAlignment="End"
+                                                                TranslationY="-19"
+                                                                Margin="10,0,0,0"/>
                                     </Grid>
                                 </DataTemplate>
                             </CollectionView.ItemTemplate>
@@ -264,7 +273,7 @@
             </ScrollView>
         </Grid>
         <pancake:PancakeView AbsoluteLayout.LayoutBounds="0.5,.98,.9,.075" AbsoluteLayout.LayoutFlags="All" CornerRadius="5" HeightRequest="50" WidthRequest="50"
-                                 BackgroundColor="#262625">
+                             BackgroundColor="{DynamicResource TopicBar}">
             <pancake:PancakeView.GestureRecognizers>
                 <TapGestureRecognizer Command="{Binding TopicCommand}"/>
             </pancake:PancakeView.GestureRecognizers>

@@ -1,10 +1,13 @@
 ﻿using HandsAndVoices.Models;
+using HandsAndVoices.Themes;
 using HandsAndVoices.Views;
 using HandsAndVoices.Views.Article;
 using HandsAndVoices.Views.Quote;
 using HandsAndVoices.Views.Resource;
+using System;
 using System.Collections.Generic;
 using System.Windows.Input;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace HandsAndVoices.ViewModels
@@ -24,6 +27,10 @@ namespace HandsAndVoices.ViewModels
         }
         #endregion
 
+        #region Events
+        public event Action UpdateSkiaColor;
+        #endregion
+
         #region Commands
         public Command ArticleCommand { get; set; }
         public Command ParentQuoteCommand { get; set; }
@@ -32,6 +39,20 @@ namespace HandsAndVoices.ViewModels
         public ICommand TopicCommand => new Command(() =>
         {
             Navigation.PushAsync(new TopicPage());
+        });
+
+        public ICommand LightCommand => new Command(() =>
+        {
+            Preferences.Set("theme_key", false);
+            Application.Current.Resources.MergedDictionaries.Add(new Light());
+            UpdateSkiaColor?.Invoke();
+        });
+
+        public ICommand DarkCommand => new Command(() =>
+        {
+            Preferences.Set("theme_key", true);
+            Application.Current.Resources.MergedDictionaries.Add(new Dark());
+            UpdateSkiaColor?.Invoke();
         });
         #endregion
 

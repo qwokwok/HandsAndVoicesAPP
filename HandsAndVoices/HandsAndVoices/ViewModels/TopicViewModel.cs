@@ -32,7 +32,9 @@ namespace HandsAndVoices.ViewModels
         void PushReview(Advice advice)
         {
             App.Selected = advice;
-            Navigation.PushAsync(new TopicTab());
+
+            if(advice.Day != 0)
+                Navigation.PushAsync(new TopicTab());
         }
     }
 }

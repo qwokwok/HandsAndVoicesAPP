@@ -4,12 +4,13 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="HandsAndVoices.Views.Nav.TransparentNavigationPage">
+             x:Class="HandsAndVoices.Views.Nav.TransparentNavigationPage"
+                BarBackgroundColor="{DynamicResource TopBar}">
     
     <NavigationPage.BarBackgroundColor>
-        <OnPlatform x:TypeArguments="Color">
-            <On Platform="Android, iOS" Value="#2E2E2E" />
-        </OnPlatform>
+        <!--<OnPlatform x:TypeArguments="Color">
+            <On Platform="Android, iOS" Value="{DynamicResource TopBar}" />
+        </OnPlatform>-->
     </NavigationPage.BarBackgroundColor>
     
 </NavigationPage>

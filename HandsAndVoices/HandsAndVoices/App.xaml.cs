@@ -4,6 +4,8 @@ using Xamarin.Forms;
 using HandsAndVoices.Server;
 using HandsAndVoices.Models;
 using System.Collections.Generic;
+using Xamarin.Essentials;
+using HandsAndVoices.Themes;
 
 [assembly: ExportFont("Ubuntu-Medium.ttf", Alias = "Ubuntu")]
 namespace HandsAndVoices
@@ -39,6 +41,12 @@ namespace HandsAndVoices
 
         protected override void OnStart()
         {
+            var isDark = Preferences.Get("theme_key", false);
+
+            if(isDark)
+                Application.Current.Resources.MergedDictionaries.Add(new Dark());
+            else
+                Application.Current.Resources.MergedDictionaries.Add(new Light());
         }
 
         protected override void OnSleep()

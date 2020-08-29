@@ -16,7 +16,7 @@
 
     <Grid>
         <skia:SKCanvasView x:Name="SKCanvas" PaintSurface="SKCanvas_PaintSurface"/>
-        <Image Style="{StaticResource BG}"/>
+        <!--<Image Style="{StaticResource BG}"/>-->
 
         <Grid>
             <Grid.RowDefinitions>
@@ -39,7 +39,7 @@
                                           Command="{Binding LinkCommand}"/>
                 </Grid.GestureRecognizers>
                 <ScrollView>
-                    <pancake:PancakeView BackgroundColor="#262625">
+                    <pancake:PancakeView BackgroundColor="{DynamicResource Top}">
                         <Label Text="{Binding Advice.DhhQuote}" 
                        TextColor="White"
                        FontSize="20"
