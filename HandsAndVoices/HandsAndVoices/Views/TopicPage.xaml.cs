@@ -18,5 +18,7 @@ namespace HandsAndVoices.Views
         }
 
         private void SKCanvas_PaintSurface(object sender, SKPaintSurfaceEventArgs e) => Painter.PaintGradientBG(e);
+
+        protected override bool OnBackButtonPressed() => false;
     }
 }

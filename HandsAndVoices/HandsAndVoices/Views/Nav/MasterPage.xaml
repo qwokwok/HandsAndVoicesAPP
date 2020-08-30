@@ -8,7 +8,6 @@
              xmlns:resource="clr-namespace:HandsAndVoices.Views.Resource"
              xmlns:tab="clr-namespace:HandsAndVoices.Views.Tab"
              xmlns:nav_items="clr-namespace:HandsAndVoices.Views.Nav"
-             xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
              x:Class="HandsAndVoices.Views.Nav.MasterPage"
              Title="Ok">
 

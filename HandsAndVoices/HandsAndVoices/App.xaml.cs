@@ -28,7 +28,7 @@ namespace HandsAndVoices
 
         protected override void OnStart()
         {
-            string theme = Preferences.Get("o_key", "blue");
+            string theme = Preferences.Get("o_key", "dark");
 
             switch(theme)
             {

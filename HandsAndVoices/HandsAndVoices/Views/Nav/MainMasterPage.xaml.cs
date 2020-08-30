@@ -46,7 +46,7 @@ namespace HandsAndVoices.Views.Nav
             }
         }
 
-        // Disable hardware back button while on this master detail page top prevent close an app easily on accident
+        //Disable hardware back button while on this master detail page top prevent close an app easily on accident
         //protected override bool OnBackButtonPressed()
         //{
         //    return true;

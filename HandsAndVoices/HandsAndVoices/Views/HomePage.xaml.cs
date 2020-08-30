@@ -19,5 +19,7 @@ namespace HandsAndVoices.Views
             VM.UpdateSkiaColor += delegate { SKCanvas.InvalidateSurface(); };
         }
         private void SKCanvas_PaintSurface(object sender, SKPaintSurfaceEventArgs e) => Painter.PaintGradientBG(e);
+
+        protected override bool OnBackButtonPressed() => true;
     }
 }
