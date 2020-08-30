@@ -12,10 +12,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Data\90DatasInfo.json" />
     <None Remove="Util\Ubuntu-Medium.ttf" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Data\90DatasInfo.json" />
     <EmbeddedResource Include="Util\Ubuntu-Medium.ttf" />
   </ItemGroup>
 
@@ -32,6 +34,9 @@
 
   <ItemGroup>
     <EmbeddedResource Update="MainPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Themes\Blue.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Themes\Dark.xaml">

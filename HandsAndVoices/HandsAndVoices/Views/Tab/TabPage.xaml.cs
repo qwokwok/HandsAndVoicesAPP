@@ -18,7 +18,7 @@ namespace HandsAndVoices.Views.Tab
             InitializeComponent();
 
             Title = "Parent Quotes";
-
+            App.Section = "Parent";
             this.Children.Add(new ParentListPage() { Title = "Parent Quotes", IconImageSource="parentIcon" });
             this.Children.Add(new DHHListPage() { Title = "DHH quotes", IconImageSource = "dhhIcon" });
 
@@ -29,6 +29,7 @@ namespace HandsAndVoices.Views.Tab
         {
             var index = this.Children.IndexOf(this.CurrentPage);
             Title = index == 0 ? "Parent Quotes" : "Deaf and Hard of Hearing Quotes";
+            App.Section = index == 0 ? "Parent" : "DHH";
         }
     }
 }

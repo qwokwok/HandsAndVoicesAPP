@@ -54,7 +54,7 @@
                         <nav_items:MasterPageImgItem Title="Articles" TargetType="{x:Type article:ArticleListPage}"/>
                         <nav_items:MasterPageImgItem Title="Quotes" TargetType="{x:Type tab:TabPage}"/>
                         <nav_items:MasterPageImgItem Title="Resources" TargetType="{x:Type resource:ResourceListPage}"/>
-                        <nav_items:MasterPageImgItem Title="About us" TargetType="{x:Type views:AboutPage}"/>
+                        <nav_items:MasterPageImgItem Title="About Us" TargetType="{x:Type views:AboutPage}"/>
                     </x:Array>
                 </ListView.ItemsSource>
 

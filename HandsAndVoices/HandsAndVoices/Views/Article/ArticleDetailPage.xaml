@@ -33,15 +33,15 @@
                            HorizontalOptions="FillAndExpand"/>
             </Grid>
             <Grid Grid.Row="2" Padding="0,-20,0,0">
-                <Grid.GestureRecognizers>
-                    <TapGestureRecognizer NumberOfTapsRequired="1"
-                                          Command="{Binding LinkCommand}"/>
-                </Grid.GestureRecognizers>
                 <ScrollView>
-                    <pancake:PancakeView BackgroundColor="{DynamicResource Top}">
-                        <Label Text="{Binding Advice.ContentArticleVideo}" 
+                    <pancake:PancakeView BackgroundColor="{DynamicResource Body}">
+                        <pancake:PancakeView.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="1"
+                                          Command="{Binding LinkCommand}"/>
+                        </pancake:PancakeView.GestureRecognizers>
+                        <Label Text="{Binding Advice.ArticleContent}" 
                        TextColor="White"
-                       FontSize="20"
+                       FontSize="Large"
                        Margin="15,10,15,0"/>
                     </pancake:PancakeView>
                 </ScrollView>

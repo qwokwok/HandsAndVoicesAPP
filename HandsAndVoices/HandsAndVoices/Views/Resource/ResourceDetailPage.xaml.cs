@@ -1,5 +1,4 @@
-﻿using HandsAndVoices.Models;
-using HandsAndVoices.Util;
+﻿using HandsAndVoices.Util;
 using SkiaSharp.Views.Forms;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;

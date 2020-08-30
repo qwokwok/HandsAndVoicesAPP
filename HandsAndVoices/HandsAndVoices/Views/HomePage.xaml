@@ -13,6 +13,7 @@
     </ContentPage.BindingContext>
 
     <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="blueIcon" Command="{Binding BlueCommand}"/>
         <ToolbarItem IconImageSource="lightIcon" Command="{Binding LightCommand}"/>
         <ToolbarItem IconImageSource="darkIcon" Command="{Binding DarkCommand}"/>
     </ContentPage.ToolbarItems>

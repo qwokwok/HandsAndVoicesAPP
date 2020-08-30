@@ -13,6 +13,7 @@ namespace HandsAndVoices.Views.Tab
         public TopicTab()
         {
             Title = App.Selected.DayString;
+            App.Section = "Article";
             On<Xamarin.Forms.PlatformConfiguration.Android>().SetToolbarPlacement(ToolbarPlacement.Bottom)
                 .DisableSwipePaging()
                 .SetElevation(1f);
@@ -30,7 +31,14 @@ namespace HandsAndVoices.Views.Tab
         private void CurrentPageHasChanged(object sender, EventArgs e)
         {
             var index = this.Children.IndexOf(this.CurrentPage);
-            App.Section = index == 0 ? "Article" : "Resource";
+
+            switch(index)
+            {
+                case 0: App.Section = "Article"; break;
+                case 1: App.Section = "Quote"; break;
+                case 2: App.Section = "Quote"; break;
+                case 3: App.Section = "Resource"; break;
+            }
         }
     }
 }

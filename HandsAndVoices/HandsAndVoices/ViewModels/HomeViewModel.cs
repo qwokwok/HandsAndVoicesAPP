@@ -1,4 +1,5 @@
 ﻿using HandsAndVoices.Models;
+using HandsAndVoices.Services;
 using HandsAndVoices.Themes;
 using HandsAndVoices.Views;
 using HandsAndVoices.Views.Article;
@@ -41,18 +42,19 @@ namespace HandsAndVoices.ViewModels
             Navigation.PushAsync(new TopicPage());
         });
 
+        public ICommand BlueCommand => new Command(() =>
+        {
+            ChangeTheme("blue", new Blue());
+        });
+
         public ICommand LightCommand => new Command(() =>
         {
-            Preferences.Set("theme_key", false);
-            Application.Current.Resources.MergedDictionaries.Add(new Light());
-            UpdateSkiaColor?.Invoke();
+            ChangeTheme("light", new Light());
         });
 
         public ICommand DarkCommand => new Command(() =>
         {
-            Preferences.Set("theme_key", true);
-            Application.Current.Resources.MergedDictionaries.Add(new Dark());
-            UpdateSkiaColor?.Invoke();
+            ChangeTheme("dark", new Dark());
         });
         #endregion
 
@@ -102,6 +104,13 @@ namespace HandsAndVoices.ViewModels
                     case "Resource": Navigation.PushAsync(new ResourceDetailPage()); break;
                 }
             }
+        }
+
+        void ChangeTheme(string _value, ResourceDictionary _theme)
+        {
+            Preferences.Set("o_key", _value);
+            Application.Current.Resources.MergedDictionaries.Add(_theme);
+            UpdateSkiaColor?.Invoke();
         }
         #endregion
     }

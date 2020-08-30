@@ -1,33 +1,20 @@
 ﻿using HandsAndVoices.Views.Nav;
 using System;
 using Xamarin.Forms;
-using HandsAndVoices.Server;
 using HandsAndVoices.Models;
 using System.Collections.Generic;
 using Xamarin.Essentials;
 using HandsAndVoices.Themes;
+using HandsAndVoices.Services;
 
 [assembly: ExportFont("Ubuntu-Medium.ttf", Alias = "Ubuntu")]
 namespace HandsAndVoices
 {
     public partial class App : Application
     {
-        //static ArticleRepository database;
-        //public static ArticleRepository Database
-        //{
-        //    get
-        //    {
-        //        if (database == null)
-        //        {
-        //            database = new ArticleRepository(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "article.db3"));
-        //        }
-        //        return database;
-        //    }
-        //}
-
         public static DateTime FirstTime { get; set; }
         public static int DayCount { get; set; }
-        public static List<Advice> Advices { get; set; } = Website.Advices;
+        public static List<Advice> Advices { get; set; } = ReadJson.Advices;
         public static string Section { get; set; }
         public static Advice Selected { get; set; }
 
@@ -41,12 +28,14 @@ namespace HandsAndVoices
 
         protected override void OnStart()
         {
-            var isDark = Preferences.Get("theme_key", false);
+            string theme = Preferences.Get("o_key", "blue");
 
-            if(isDark)
-                Application.Current.Resources.MergedDictionaries.Add(new Dark());
-            else
-                Application.Current.Resources.MergedDictionaries.Add(new Light());
+            switch(theme)
+            {
+                case "blue": Application.Current.Resources.MergedDictionaries.Add(new Blue()); break;
+                case "dark": Application.Current.Resources.MergedDictionaries.Add(new Dark()); break;
+                case "light": Application.Current.Resources.MergedDictionaries.Add(new Light()); break;
+            }
         }
 
         protected override void OnSleep()
@@ -56,14 +45,5 @@ namespace HandsAndVoices
         protected override void OnResume()
         {
         }
-
-        /// <summary>
-        ///     Contains keys for App.xaml resourceDictionary.
-        /// </summary>
-        public readonly struct ResourceKeys
-        {
-            public const string GRADIENT_BLUE = "GradientBlue";
-            public const string GRADIENT_ORAN = "GradientOran";
-        }   
     }
 }
