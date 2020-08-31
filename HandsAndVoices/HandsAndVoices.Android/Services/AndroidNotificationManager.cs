@@ -8,8 +8,8 @@ using HandsAndVoices.Services;
 using Xamarin.Forms;
 using AndroidApp = Android.App.Application;
 
-[assembly: Dependency(typeof(HandsAndVoices.Droid.AndroidNotificationManager))]
-namespace HandsAndVoices.Droid
+[assembly: Dependency(typeof(HandsAndVoices.Droid.Services.AndroidNotificationManager))]
+namespace HandsAndVoices.Droid.Services
 {
     public class AndroidNotificationManager : INotificationManager
     {

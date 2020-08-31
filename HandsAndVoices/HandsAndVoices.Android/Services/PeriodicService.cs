@@ -4,7 +4,7 @@ using Android.Content;
 using Android.OS;
 using HandsAndVoices.Services;
 
-namespace HandsAndVoices.Droid
+namespace HandsAndVoices.Droid.Services
 {
     [Service]
     public class PeriodicService : Service
