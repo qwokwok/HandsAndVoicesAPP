@@ -17,7 +17,7 @@
 <p>Free three themes are available to use by user's choice. The themes are blue, blue/orange, and black (dark mode)</p>
 <p>Notification system on device outside of the app will notify a user when a new topic has been added in next one consecutive day as long as the app is running in either background or foreground state.</p>
 <p>Four categories (Articles, Parent Quotes, DHH Quotes, and Resources) seperated in each page in the app to allow user to go to a specific category quickly.</p>
-<p>The app are availble to download in both Google Play and Apple Store<p>
+<p>The app are available to download in both Google Play and Apple Store<p>
   
 <br></br>
 <p><b>Contributors</b></p>
