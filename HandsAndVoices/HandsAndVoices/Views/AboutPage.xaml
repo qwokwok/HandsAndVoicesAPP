@@ -107,14 +107,14 @@
                 </Grid>
                 <Grid Grid.Row="7">
                     <StackLayout>
-                        <Image Source="avatar"/>
+                        <Image Source="xy"/>
                         <Label Style="{StaticResource user}"
-                            Text="..."/>
+                            Text="My name is Xiangyu Shi, a 3-year NTID international student and studying Mobile Application Development. I am planning to take a bachelor's degree in Web Mobile Computer."/>
                     </StackLayout>
                 </Grid>
                 <Grid Grid.Row="8">
                     <StackLayout>
-                        <Image Source="avatar"/>
+                        <Image Source="harsh"/>
                         <Label Style="{StaticResource user}"
                             Text="..."/>
                     </StackLayout>

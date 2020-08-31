@@ -21,7 +21,7 @@ namespace HandsAndVoices.Services
                 App.Advices = ReadJson.GetList();
                 var lastIndex = App.Advices.Count - 1;
                 notificationManager.ScheduleNotification(
-                    "Hands and Voices", "New article - " + App.Advices[lastIndex].TitleTopic);
+                    "Hands and Voices", "New topic - " + App.Advices[lastIndex].TitleTopic);
             }
         }
     }
