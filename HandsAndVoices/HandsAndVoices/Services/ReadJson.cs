@@ -32,7 +32,7 @@ namespace HandsAndVoices.Services
                 {
                     // stores date of first time using the app
                     Preferences.Set("isFirst_key", false);
-                    var date = DateTime.Today;
+                    var date = DateTime.Now;
                     Preferences.Set("date_key", date);
                     App.FirstTime = date;
                 }
@@ -42,7 +42,7 @@ namespace HandsAndVoices.Services
                 }
 
                 // --- ---
-                App.DayCount = Convert.ToInt32((DateTime.Now - App.FirstTime).TotalDays) + 1;
+                App.DayCount = (int)(Math.Floor((DateTime.Now - App.FirstTime).TotalDays) + 1);
                 //App.DayCount = 90; // If you want to test with any number of days have been past, enter 1-90 or comment out this line if you wish to test with actual day.
                 // --- ---
 

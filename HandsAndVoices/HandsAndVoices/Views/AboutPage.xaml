@@ -27,9 +27,9 @@
                     <RowDefinition Height="120"/>
                     <RowDefinition Height="120"/>
                     <RowDefinition Height="120"/>
-                    <!--<RowDefinition Height="120"/>
                     <RowDefinition Height="120"/>
-                    <RowDefinition Height="120"/>-->
+                    <RowDefinition Height="120"/>
+                    <RowDefinition Height="120"/>
                 </Grid.RowDefinitions>
 
                 <Grid.Resources>
@@ -72,7 +72,7 @@
                 </StackLayout>
                 <Grid Grid.Row="2">
                     <StackLayout>
-                        <Image Source="kat"/>
+                        <Image Source="karen"/>
                         <Label Style="{StaticResource user}"
                             Text="Karen Putz is the Co-Director of Deaf and Hard of Hearing Infusion at Hands &amp; Voices. She is a mom of three deaf and hard of hearing kids who are now young adults. Karen is the co-founder and past president of Illinois Hands &amp; Voices."/>
                     </StackLayout>
@@ -98,7 +98,7 @@
                             Text="Brian Trager is the Associate Professor of the Department of Information and Computing Studies at National Technical Institute for the Deaf at Rochester Institute of Technology."/>
                     </StackLayout>
                 </Grid>
-                <!--<Grid Grid.Row="6">
+                <Grid Grid.Row="6">
                     <StackLayout>
                         <Image Source="quoc"/>
                         <Label Style="{StaticResource user}"
@@ -118,7 +118,7 @@
                         <Label Style="{StaticResource user}"
                             Text="..."/>
                     </StackLayout>
-                </Grid>-->
+                </Grid>
             </Grid>
         </ScrollView>
     </Grid>

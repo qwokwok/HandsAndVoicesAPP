@@ -11020,10 +11020,10 @@ namespace HandsAndVoices.Droid
 			public const int journal = 2131165325;
 			
 			// aapt resource value: 0x7F07008E
-			public const int KarenPutz = 2131165326;
+			public const int karen = 2131165326;
 			
 			// aapt resource value: 0x7F07008F
-			public const int kat = 2131165327;
+			public const int KarenPutz = 2131165327;
 			
 			// aapt resource value: 0x7F070090
 			public const int KristalMolina = 2131165328;
@@ -11218,13 +11218,16 @@ namespace HandsAndVoices.Droid
 			public const int WendyAdams = 2131165391;
 			
 			// aapt resource value: 0x7F0700D0
-			public const int youtube2 = 2131165392;
+			public const int xy = 2131165392;
 			
 			// aapt resource value: 0x7F0700D1
-			public const int youtube3 = 2131165393;
+			public const int youtube2 = 2131165393;
 			
 			// aapt resource value: 0x7F0700D2
-			public const int youtube4 = 2131165394;
+			public const int youtube3 = 2131165394;
+			
+			// aapt resource value: 0x7F0700D3
+			public const int youtube4 = 2131165395;
 			
 			static Drawable()
 			{
