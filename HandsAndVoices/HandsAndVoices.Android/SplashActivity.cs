@@ -17,7 +17,7 @@ namespace HandsAndVoices.Droid
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             // Set our view from the "main" layout resource
             //SetContentView(Resource.Layout.Splash);
-            Thread.Sleep(4000);
+            Thread.Sleep(1000);
 
             StartActivity(typeof(MainActivity));
 

@@ -28,14 +28,22 @@ namespace HandsAndVoices
 
         protected override void OnStart()
         {
-            string theme = Preferences.Get("o_key", "dark");
+            //string theme = Preferences.Get("o_key", "dark");
 
-            switch(theme)
-            {
-                case "blue": Application.Current.Resources.MergedDictionaries.Add(new Blue()); break;
-                case "dark": Application.Current.Resources.MergedDictionaries.Add(new Dark()); break;
-                case "light": Application.Current.Resources.MergedDictionaries.Add(new Light()); break;
-            }
+            //switch(theme)
+            //{
+            //    case "blue": Application.Current.Resources.MergedDictionaries.Add(new Blue()); break;
+            //    case "dark": Application.Current.Resources.MergedDictionaries.Add(new Dark()); break;
+            //    case "light": Application.Current.Resources.MergedDictionaries.Add(new Light()); break;
+            //}
+
+            var appinfo = App.Current.RequestedTheme;
+            if(OSAppTheme.Light == appinfo)
+                Application.Current.Resources.MergedDictionaries.Add(new Light());
+
+            else
+                Application.Current.Resources.MergedDictionaries.Add(new Blue());
+
         }
 
         protected override void OnSleep()
