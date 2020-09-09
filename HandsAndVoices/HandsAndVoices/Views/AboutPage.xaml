@@ -44,11 +44,13 @@
                     <Style x:Key="user" TargetType="Label" >
                         <Setter Property="Margin" Value="5,0,5,0"/>
                         <Setter Property="VerticalOptions" Value="Center"/>
+                        <Setter Property="TextColor" Value="White"/>
                     </Style>
 
                     <Style x:Key="content" TargetType="Label" >
                         <Setter Property="FontAttributes" Value="Bold"/>
                         <Setter Property="FontSize" Value="Body"/>
+                        <Setter Property="TextColor" Value="White"/>
                     </Style>
 
                     <Style TargetType="StackLayout" >
@@ -116,7 +118,7 @@
                     <StackLayout>
                         <Image Source="harsh"/>
                         <Label Style="{StaticResource user}"
-                            Text="..."/>
+                            Text="Harsh Mathur is the Student studying Mobile Application Development for Associate in Applied Science Degree at National Technical Institute for the Deaf, Web and Mobile Computing for Bachelor of Science degree at Rochester Institute of Technology. Passionate and Aspiring Software Engineer because Harsh loves to code."/>
                     </StackLayout>
                 </Grid>
             </Grid>

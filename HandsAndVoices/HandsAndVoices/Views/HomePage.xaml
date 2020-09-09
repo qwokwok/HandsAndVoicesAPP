@@ -43,6 +43,7 @@
                                 <Setter Property="FontAttributes" Value="Bold"/>
                                 <Setter Property="FontSize" Value="18"/>
                                 <Setter Property="Margin" Value="25,18,0,0"/>
+                                <Setter Property="TextColor" Value="White"/>
                             </Style>
                         </ResourceDictionary>
                     </Grid.Resources>
