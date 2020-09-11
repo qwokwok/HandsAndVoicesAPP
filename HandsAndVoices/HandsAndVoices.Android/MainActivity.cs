@@ -4,6 +4,9 @@ using Android.Runtime;
 using Android.OS;
 using Android.Content;
 using HandsAndVoices.Droid.Services;
+using Android.Gms.Common;
+using Android.Util;
+using System;
 
 namespace HandsAndVoices.Droid
 {
@@ -29,22 +32,8 @@ namespace HandsAndVoices.Droid
 
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init(true);
 
-            var intent = new Intent(this, typeof(PeriodicService));
-            StartService(intent);
-
-            //var alarmIntent = new Intent(this, typeof(AlarmReceiver));
-            //alarmIntent.PutExtra("title", "Hello");
-            //alarmIntent.PutExtra("message", "World!");
-
-            //var pending = PendingIntent.GetBroadcast(this, 0, alarmIntent, PendingIntentFlags.UpdateCurrent);
-
-            //var alarmManager = GetSystemService(AlarmService).JavaCast<AlarmManager>();
-
-            //alarmManager.SetRepeating(
-            //    AlarmType.ElapsedRealtime,
-            //    SystemClock.ElapsedRealtime() + 60 * 1000,
-            //    SystemClock.ElapsedRealtime() + 5 * 1000, 
-            //    pending);
+            //var intent = new Intent(this, typeof(PeriodicService));
+            //StartService(intent);
 
             LoadApplication(new App());
         }

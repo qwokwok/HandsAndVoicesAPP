@@ -2,6 +2,7 @@
 //using Android.App;
 //using Android.Content;
 //using Android.Graphics;
+//using Android.OS;
 //using Android.Support.V4.App;
 //using HandsAndVoices.Services;
 
@@ -12,9 +13,11 @@
 //    {
 //        public const string CHANNEL = "com.companyname.handsandvoices";
 //        public const int NOTIFY_ID = 1100;
+
 //        public override void OnReceive(Android.Content.Context context, Intent intent)
 //        {
-//            var message = BackgroundService.Check();
+//            //var message = BackgroundService.Check();
+//            //var message = FirebaseService.SendLocalNotification();
 //            var title = "Hands and Voices";
 
 //            var importance = NotificationImportance.High;
@@ -30,7 +33,7 @@
 //                .SetSmallIcon(Resource.Drawable.small)
 //                .SetContentTitle(title)
 //                .SetLargeIcon(BitmapFactory.DecodeResource(context.Resources, Resource.Drawable.icon))
-//                .SetContentText(message)
+//                //.SetContentText(message)
 //                .SetContentIntent(pendingIntent)
 //                .SetAutoCancel(true)
 //                .SetChannelId(CHANNEL);

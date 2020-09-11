@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "484583264243",
+    "firebase_url": "https://handsandvoices-6605d.firebaseio.com",
+    "project_id": "handsandvoices-6605d",
+    "storage_bucket": "handsandvoices-6605d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:484583264243:android:25f4522d6661beb7c7cc86",
+        "android_client_info": {
+          "package_name": "com.companyname.handsandvoices"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "484583264243-1ipe10hbf1a0oj76bd25buihcog1mdrd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqHawy6E32wzAdbZ9_uT5jtjni03uhhqE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "484583264243-1ipe10hbf1a0oj76bd25buihcog1mdrd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

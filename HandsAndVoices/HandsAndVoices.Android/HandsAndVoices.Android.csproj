@@ -54,13 +54,20 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1269" />
+    <PackageReference Include="Xamarin.Firebase.Messaging">
+      <Version>71.1740.4</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1364" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+    <PackageReference Include="Xamarin.GooglePlayServices.Base">
+      <Version>71.1610.4</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Services\AlarmReceiver.cs" />
     <Compile Include="Services\AndroidNotificationManager.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="Services\FirebaseService.cs" />
     <Compile Include="Services\PeriodicService.cs" />
     <Compile Include="Renderers\TransparentNavigationPageRenderer.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
@@ -68,6 +75,7 @@
     <Compile Include="SplashActivity.cs" />
   </ItemGroup>
   <ItemGroup>
+    <GoogleServicesJson Include="google-services.json" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
