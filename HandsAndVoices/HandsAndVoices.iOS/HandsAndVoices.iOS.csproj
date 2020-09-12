@@ -142,4 +142,568 @@
       <Name>HandsAndVoices</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\welcome%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\WendyAdams.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\WendyAdams%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\WendyAdams%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\xy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\xy%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\xy%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\youtube2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\youtube2%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\youtube2%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\youtube3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\youtube3%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\youtube3%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\youtube4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\youtube4%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\youtube4%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AbbeyBurkholder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AbbeyBurkholder%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AbbeyBurkholder%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AbbyMcClellan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AbbyMcClellan%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AbbyMcClellan%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\amanda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\amanda%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\amanda%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AndreaStambaugh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AndreaStambaugh%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AndreaStambaugh%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\articlePic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\articlePic%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\articlePic%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ash%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ash%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AshleyCerasuolo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AshleyCerasuolo%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AshleyCerasuolo%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\avatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\blueIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\blueIcon%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\blueIcon%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ceasd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ceasd%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ceasd%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\CelestaBowers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\CelestaBowers%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\CelestaBowers%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\christine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\christine%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\christine%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ChristineGriffin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ChristineGriffin%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ChristineGriffin%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ClaraBurkholder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ClaraBurkholder%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ClaraBurkholder%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\darkIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\darkIcon%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\darkIcon%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\DeneenBrant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\DeneenBrant%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\DeneenBrant%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\DjeeneMorris.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\DjeeneMorris%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\DjeeneMorris%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ElizabethGreeno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ElizabethGreeno%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ElizabethGreeno%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\fb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\fb%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\fb%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\fv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\fv%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\fv%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\gallaudet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\gallaudet%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\gallaudet%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Group 628.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Group 628%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Group 628%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Group 629.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Group 629%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Group 629%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HannahMann.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HannahMann%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HannahMann%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HV group love.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HV group love%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HV group love%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\karen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\KristalMolina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\KristalMolina%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\KristalMolina%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\KristenStratton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\KristenStratton%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\KristenStratton%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LauraJohnson.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LauraJohnson%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LauraJohnson%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LeeanneSeaver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LeeanneSeaver%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LeeanneSeaver%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\lightIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\lightIcon%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\lightIcon%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MaddieBurkholder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MaddieBurkholder%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MaddieBurkholder%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MagnoFamily.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MagnoFamily%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MagnoFamily%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MahryaProper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MahryaProper%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MahryaProper%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MarleeMatlin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MarleeMatlin%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MarleeMatlin%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MeganGarrity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MeganGarrity%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MeganGarrity%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MiaBraud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MiaBraud%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MiaBraud%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mighty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mighty%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mighty%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\NanAsher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\NanAsher%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\NanAsher%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\nih.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\nih%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\nih%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ntid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ntid%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ntid%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\pir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\pir%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\pir%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\RebeccaWanha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\RebeccaWanha%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\RebeccaWanha%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\resourcePic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\resourcePic%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\resourcePic%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\RosabelAgbayani.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\RosabelAgbayani%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\RosabelAgbayani%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SarahRoof.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SarahRoof%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SarahRoof%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ShannonMueller.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ShannonMueller%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ShannonMueller%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ShelliJanning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ShelliJanning%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ShelliJanning%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SheriYouensUn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SheriYouensUn%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SheriYouensUn%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\skihi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\skihi%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\skihi%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\StephanieOlson.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\StephanieOlson%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\StephanieOlson%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\StephenHopson.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\StephenHopson%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\StephenHopson%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SuzetteGaray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SuzetteGaray%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SuzetteGaray%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ted%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ted%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TiffneyCook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TiffneyCook%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TiffneyCook%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TristenDodd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TristenDodd%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TristenDodd%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TuriHoaglin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TuriHoaglin%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TuriHoaglin%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\WarrenSnipe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\WarrenSnipe%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\WarrenSnipe%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\welcome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\welcome%402x.png" />
+  </ItemGroup>
 </Project>
