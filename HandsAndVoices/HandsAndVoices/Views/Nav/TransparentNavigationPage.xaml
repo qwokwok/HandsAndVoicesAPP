@@ -6,11 +6,5 @@
                 mc:Ignorable="d"
                 x:Class="HandsAndVoices.Views.Nav.TransparentNavigationPage"
                 BarBackgroundColor="{DynamicResource TopBar}">
-    
-    <!--<NavigationPage.BarBackgroundColor>
-        --><!--<OnPlatform x:TypeArguments="Color">
-            <On Platform="Android, iOS" Value="{DynamicResource TopBar}" />
-        </OnPlatform>--><!--
-    </NavigationPage.BarBackgroundColor>-->
-    
+
 </NavigationPage>

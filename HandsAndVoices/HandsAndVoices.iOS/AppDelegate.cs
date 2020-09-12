@@ -2,6 +2,7 @@
 using Foundation;
 using HandsAndVoices.Services;
 using UIKit;
+using UserNotifications;
 
 namespace HandsAndVoices.iOS
 {
@@ -20,9 +21,30 @@ namespace HandsAndVoices.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            global::Xamarin.Forms.Forms.Init();
-            LoadApplication(new App());
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init();
+            global::Xamarin.Forms.Forms.Init();
+            Firebase.Core.App.Configure();
+            LoadApplication(new App());
+
+            // Register your app for remote notifications.
+            if (UIDevice.CurrentDevice.CheckSystemVersion(10, 0))
+            {
+                // iOS 10 or later
+                var authOptions = UNAuthorizationOptions.Alert | UNAuthorizationOptions.Badge | UNAuthorizationOptions.Sound;
+                UNUserNotificationCenter.Current.RequestAuthorization(authOptions, (granted, error) => {
+                    Console.WriteLine(granted);
+                });
+            }
+            else
+            {
+                // iOS 9 or before
+                var allNotificationTypes = UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound;
+                var settings = UIUserNotificationSettings.GetSettingsForTypes(allNotificationTypes, null);
+                UIApplication.SharedApplication.RegisterUserNotificationSettings(settings);
+            }
+
+            UIApplication.SharedApplication.RegisterForRemoteNotifications();
+
             UIApplication.SharedApplication.SetMinimumBackgroundFetchInterval(UIApplication.BackgroundFetchIntervalMinimum);
 
             return base.FinishedLaunching(app, options);

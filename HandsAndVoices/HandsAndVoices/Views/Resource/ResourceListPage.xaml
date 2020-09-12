@@ -21,7 +21,14 @@
                Opacity=".9"/>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="75"/>
+                <RowDefinition>
+                    <RowDefinition.Height>
+                        <OnPlatform x:TypeArguments="GridLength">
+                            <On Platform="iOS">0</On>
+                            <On Platform="Android">75</On>
+                        </OnPlatform>
+                    </RowDefinition.Height>
+                </RowDefinition>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
