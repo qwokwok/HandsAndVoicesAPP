@@ -35,7 +35,7 @@ namespace HandsAndVoices.Views.Nav
 
                 else 
                 {
-                    Detail = new TransparentNavigationPage((Page)Activator.CreateInstance(item.TargetType));
+                    Detail = new TransparentNavigationPage((Page)Activator.CreateInstance(item.TargetType)) { BarTextColor = Color.White };
 
                     // lagspike less when sliding left/right
                     await Task.Delay(25);
