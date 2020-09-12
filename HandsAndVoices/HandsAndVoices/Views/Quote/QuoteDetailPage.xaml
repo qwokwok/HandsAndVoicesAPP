@@ -36,13 +36,14 @@
                 <ScrollView>
                     <pancake:PancakeView BackgroundColor="{DynamicResource Body}">
                         <pancake:PancakeView.GestureRecognizers>
-                            <TapGestureRecognizer NumberOfTapsRequired="1"
-                                          Command="{Binding LinkCommand}"/>
+                            <TapGestureRecognizer 
+                                NumberOfTapsRequired="1"
+                                Command="{Binding LinkCommand}"/>
                         </pancake:PancakeView.GestureRecognizers>
-                        <Label Text="{Binding Advice.ParentContent}" 
-                       TextColor="White"
-                       FontSize="Large"
-                       Margin="15,10,15,0"/>
+                        <Label  Text="{Binding Advice.ParentContent}" 
+                                TextColor="White"
+                                FontSize="Large"
+                                Margin="15,10,15,0"/>
                     </pancake:PancakeView>
                 </ScrollView>
             </Grid>

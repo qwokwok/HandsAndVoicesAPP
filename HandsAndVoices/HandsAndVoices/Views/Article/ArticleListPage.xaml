@@ -44,7 +44,7 @@
                                 <ff:CachedImage Source="{Binding ArticleImage}" />
                             </pancake:PancakeView>
                             <pancake:PancakeView
-                                IsVisible="{Binding IsVisible}"
+                                        IsVisible="{Binding IsVisible}"
                                         BackgroundColor="#1C1C6E"
                                         CornerRadius="6"
                                         HeightRequest="22"
@@ -61,19 +61,21 @@
 
                             <pancake:PancakeView VerticalOptions="End"
                                                  HorizontalOptions="Center"
-                                                         BackgroundColor="Black"
-                                                         WidthRequest="160"
-                                                         HeightRequest="25"
-                                                         Opacity=".6"
-                                                         CornerRadius="5"
-                                                         TranslationY="-4">
+                                                 BackgroundColor="Black"
+                                                 WidthRequest="160"
+                                                 HeightRequest="25"
+                                                 Opacity=".6"
+                                                 CornerRadius="5"
+                                                 TranslationY="-4">
                             </pancake:PancakeView>
-                            <Label Text="{Binding Topic}" FontSize="12" TextColor="White" 
-                                                               HorizontalTextAlignment="Start"
-                                                               VerticalTextAlignment="End"
+                            <Label Text="{Binding Topic}" 
+                                   FontSize="12"
+                                   TextColor="White" 
+                                   HorizontalTextAlignment="Start"
+                                   VerticalTextAlignment="End"
                                    FontAttributes="Bold"
-                                           TranslationY="-8"
-                                               Margin="10,0,0,0"/>
+                                   TranslationY="-8"
+                                   Margin="10,0,0,0"/>
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>

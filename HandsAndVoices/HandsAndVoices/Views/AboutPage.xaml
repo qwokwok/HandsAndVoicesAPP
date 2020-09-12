@@ -29,7 +29,7 @@
                     <RowDefinition Height="120"/>
                     <RowDefinition Height="120"/>
                     <RowDefinition Height="120"/>
-                    <RowDefinition Height="120"/>
+                    <RowDefinition Height="150"/>
                 </Grid.RowDefinitions>
 
                 <Grid.Resources>

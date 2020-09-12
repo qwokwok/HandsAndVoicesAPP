@@ -43,7 +43,7 @@
                                 <ff:CachedImage Source="{Binding DhhPhoto}" />
                             </pancake:PancakeView>
                             <pancake:PancakeView
-                                IsVisible="{Binding IsVisible}"
+                                        IsVisible="{Binding IsVisible}"
                                         BackgroundColor="#1C1C6E"
                                         CornerRadius="6"
                                         HeightRequest="22"

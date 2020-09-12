@@ -26,8 +26,9 @@
             </Grid.RowDefinitions>
             <Grid Grid.Row="1" Padding="-30,-31,-30,0">
                 <Grid.GestureRecognizers>
-                    <TapGestureRecognizer NumberOfTapsRequired="1"
-                                          Command="{Binding LinkCommand}"/>
+                    <TapGestureRecognizer 
+                        NumberOfTapsRequired="1"
+                        Command="{Binding LinkCommand}"/>
                 </Grid.GestureRecognizers>
                 <Image Source="{Binding Advice.ResourceImage}"  
                            VerticalOptions="FillAndExpand"
@@ -41,9 +42,9 @@
                                           Command="{Binding LinkCommand}"/>
                         </pancake:PancakeView.GestureRecognizers>
                         <Label Text="{Binding Advice.ResourceContent}" 
-                       TextColor="White"
-                       FontSize="Large"
-                       Margin="15,10,15,0"/>
+                            TextColor="White"
+                            FontSize="Large"
+                            Margin="15,10,15,0"/>
                     </pancake:PancakeView>
                 </ScrollView>
             </Grid>

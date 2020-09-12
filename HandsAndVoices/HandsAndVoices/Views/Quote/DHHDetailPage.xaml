@@ -39,10 +39,10 @@
                             <TapGestureRecognizer NumberOfTapsRequired="1"
                                           Command="{Binding LinkCommand}"/>
                         </pancake:PancakeView.GestureRecognizers>
-                        <Label Text="{Binding Advice.DhhContent}" 
-                       TextColor="White"
-                       FontSize="Large"
-                       Margin="15,10,15,0"/>
+                        <Label  Text="{Binding Advice.DhhContent}" 
+                                TextColor="White"
+                                FontSize="Large"
+                                Margin="15,10,15,0"/>
                     </pancake:PancakeView>
                 </ScrollView>
             </Grid>
