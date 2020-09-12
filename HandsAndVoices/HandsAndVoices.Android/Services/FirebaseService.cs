@@ -1,9 +1,8 @@
 ﻿using Android.App;
 using Android.Content;
+using Android.OS;
 using Firebase.Messaging;
 using HandsAndVoices.Services;
-using System.Linq;
-using Xamarin.Forms;
 
 namespace HandsAndVoices.Droid.Services
 {
@@ -11,42 +10,47 @@ namespace HandsAndVoices.Droid.Services
     [IntentFilter(new[] { "com.google.firebase.MESSAGING_EVENT" })]
     public class FirebaseService : FirebaseMessagingService
     {
-        public static INotificationManager notificationManager = DependencyService.Get<INotificationManager>();
         public override void OnMessageReceived(RemoteMessage message)
         {
             base.OnMessageReceived(message);
-            string messageBody = string.Empty;
 
-            if (message.GetNotification() != null)
-            {
-                messageBody = message.GetNotification().Body;
-            }
-
-            // NOTE: test messages sent via the Azure portal will be received here
-            else
-            {
-                messageBody = message.Data.Values.First();
-            }
-
-            // convert the incoming message to a local notification
-            SendLocalNotification(messageBody);
+            SendLocalNotification();
         }
+
 
         public override void OnNewToken(string token)
         {
             // TODO: save token instance locally, or log if desired
-
-            SendRegistrationToServer(token);
         }
 
-        void SendLocalNotification(string body)
+        void SendLocalNotification()
         {
-            notificationManager.ScheduleNotification("new", body);
-        }
+            var message = BackgroundService.Check();
 
-        void SendRegistrationToServer(string token)
-        {
+            var importance = NotificationImportance.Low;
+            NotificationChannel chan = new NotificationChannel("com.companyname.handsandvoices", "HV", importance);
+            chan.EnableVibration(true);
 
+            var intent = new Intent(this, typeof(MainActivity));
+            intent.AddFlags(ActivityFlags.ClearTop);
+            intent.PutExtra("message", "");
+            var pendingIntent = PendingIntent.GetActivity(this, 0, intent, PendingIntentFlags.OneShot);
+
+            var notificationBuilder = new Notification.Builder(this, "com.companyname.handsandvoices")
+                .SetContentTitle("Hands and Voices")
+                .SetSmallIcon(Resource.Drawable.small)
+                .SetContentText(message)
+                .SetAutoCancel(true)
+                .SetContentIntent(pendingIntent);
+
+            if (Build.VERSION.SdkInt >= BuildVersionCodes.O)
+            {
+                notificationBuilder.SetChannelId("com.companyname.handsandvoices");
+            }
+
+            var notificationManager = NotificationManager.FromContext(this);
+            notificationManager.CreateNotificationChannel(chan);
+            notificationManager.Notify(0, notificationBuilder.Build());
         }
     }
 }
