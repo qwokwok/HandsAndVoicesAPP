@@ -287,7 +287,13 @@
             <pancake:PancakeView.GestureRecognizers>
                 <TapGestureRecognizer Command="{Binding TopicCommand}"/>
             </pancake:PancakeView.GestureRecognizers>
-
+            <pancake:PancakeView.TranslationY>
+                <OnPlatform x:TypeArguments="x:Double">
+                    <On Platform="iOS">-10</On>
+                    <On Platform="Android">0</On>
+                </OnPlatform>
+            </pancake:PancakeView.TranslationY>
+            
             <Label Text="Topics" TextColor="White" 
                    HorizontalOptions="Center" 
                    VerticalOptions="Center"
