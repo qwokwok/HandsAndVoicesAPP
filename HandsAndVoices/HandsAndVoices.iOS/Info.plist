@@ -35,8 +35,6 @@
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
 	<key>UIBackgroundModes</key>
-  <key>UIViewControllerBasedStatusBarAppearance</key>
-  <bool>false</bool>
 	<array>
 		<string>remote-notification</string>
 	</array>
