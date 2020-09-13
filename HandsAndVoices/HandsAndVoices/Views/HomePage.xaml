@@ -64,7 +64,7 @@
                     </Grid.RowDefinitions>
 
                     <Grid Grid.Row="1">
-                        <pancake:PancakeView>
+                        <pancake:PancakeView Margin="10,10,10,0">
                             <Image Source="articlePic" Aspect="Fill"/>
                         </pancake:PancakeView>
                         <Label Text="Articles"/>
@@ -119,7 +119,7 @@
                         </CollectionView>
                     </Grid>
                     <Grid Grid.Row="2">
-                        <pancake:PancakeView>
+                        <pancake:PancakeView Margin="10,10,10,0">
                             <ff:CachedImage Source="parentPic.png" Aspect="Fill"/>
                         </pancake:PancakeView>
                         <Label Text="Parent Quotes"/>
@@ -174,7 +174,7 @@
                         </CollectionView>
                     </Grid>
                     <Grid Grid.Row="3">
-                        <pancake:PancakeView>
+                        <pancake:PancakeView Margin="10,10,10,0">
                             <ff:CachedImage Source="dhhPic.png" Aspect="Fill"/>
                         </pancake:PancakeView>
                         <Label Text="Deaf and Hard of Hearing Quotes"/>
@@ -227,7 +227,7 @@
                         </CollectionView>
                     </Grid>
                     <Grid Grid.Row="4">
-                        <pancake:PancakeView>
+                        <pancake:PancakeView Margin="10,10,10,0">
                             <Image Source="resourcePic.png" Aspect="Fill"/>
                         </pancake:PancakeView>
                         <Label Text="Resources"/>

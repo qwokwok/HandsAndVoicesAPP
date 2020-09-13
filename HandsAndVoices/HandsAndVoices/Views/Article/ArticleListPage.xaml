@@ -47,9 +47,27 @@
                                                 Path=PushCommand}"
                                              CommandParameter="{Binding .}"/>
                             </Grid.GestureRecognizers>
-                            <pancake:PancakeView WidthRequest="180" CornerRadius="10" IsClippedToBounds="True">
-                                <ff:CachedImage Source="{Binding ArticleImage}" />
-                            </pancake:PancakeView>
+                            <Grid WidthRequest="200" HeightRequest="140" HorizontalOptions="Center" VerticalOptions="Center">
+                                <pancake:PancakeView
+                                                 BackgroundColor="Black"
+                                                 HeightRequest="25"
+                                                 Opacity=".6"
+                                                 CornerRadius="5"
+                                                 >
+                                </pancake:PancakeView>
+                                <Label Text="{Binding Topic}" 
+                                   FontSize="12"
+                                   TextColor="White" 
+                                   HorizontalTextAlignment="Start"
+                                   VerticalTextAlignment="End"
+                                   FontAttributes="Bold"
+                                   Margin="5,0,0,0"
+                                   TranslationY="-5"/>
+                                <pancake:PancakeView CornerRadius="10" IsClippedToBounds="True"
+                                                     VerticalOptions="Start">
+                                    <ff:CachedImage Source="{Binding ArticleImage}"/>
+                                </pancake:PancakeView>
+                            </Grid>
                             <pancake:PancakeView
                                         IsVisible="{Binding IsVisible}"
                                         BackgroundColor="#1C1C6E"
@@ -65,24 +83,6 @@
                                        HorizontalOptions="Center"
                                        FontAttributes="Bold"/>
                             </pancake:PancakeView>
-
-                            <pancake:PancakeView VerticalOptions="End"
-                                                 HorizontalOptions="Center"
-                                                 BackgroundColor="Black"
-                                                 WidthRequest="160"
-                                                 HeightRequest="25"
-                                                 Opacity=".6"
-                                                 CornerRadius="5"
-                                                 TranslationY="-4">
-                            </pancake:PancakeView>
-                            <Label Text="{Binding Topic}" 
-                                   FontSize="12"
-                                   TextColor="White" 
-                                   HorizontalTextAlignment="Start"
-                                   VerticalTextAlignment="End"
-                                   FontAttributes="Bold"
-                                   TranslationY="-8"
-                                   Margin="10,0,0,0"/>
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
