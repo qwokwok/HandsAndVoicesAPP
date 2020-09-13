@@ -52,7 +52,7 @@
                             </Grid.GestureRecognizers>
                             <ff:CachedImage Source="{Binding ResourceImage}" />
                             <pancake:PancakeView
-                                IsVisible="{Binding IsVisible}"
+                                        IsVisible="{Binding IsVisible}"
                                         BackgroundColor="#1C1C6E"
                                         CornerRadius="6"
                                         HeightRequest="22"
@@ -61,20 +61,25 @@
                                         TranslationY="-9"
                                         HorizontalOptions="Start"
                                         VerticalOptions="Start">
-                                <Label Text="{Binding DayString}" IsVisible="{Binding IsVisible}" TextColor="White" FontSize="11"
+                                
+                                <Label Text="{Binding DayString}"
+                                       IsVisible="{Binding IsVisible}" 
+                                       TextColor="White" 
+                                       FontSize="11"
                                        VerticalOptions="Center" 
                                        HorizontalOptions="Center"
                                        FontAttributes="Bold"/>
+                                
                             </pancake:PancakeView>
 
-                            <pancake:PancakeView VerticalOptions="End"
+                            <!--<pancake:PancakeView VerticalOptions="End"
                                                  HorizontalOptions="Center"
                                                  BackgroundColor="#1C1C6E"
                                                  WidthRequest="1000"
                                                  HeightRequest="25"
                                                  CornerRadius="5"
                                                  TranslationY="-4">
-                            </pancake:PancakeView>
+                            </pancake:PancakeView>-->
                             <Label Text="{Binding ResourceTopic}"
                                    FontSize="12"
                                    TextColor="White" 
