@@ -4,11 +4,12 @@
              x:Class="HandsAndVoices.Views.Resource.ResourceDetailPage"
              xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
              xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
-             xmlns:viewModel="clr-namespace:HandsAndVoices.ViewModels">
+             xmlns:viewModel="clr-namespace:HandsAndVoices.ViewModels"
+             Title="Resource">
 
-    <NavigationPage.TitleView>
+    <!--<NavigationPage.TitleView>
         <Label Text="{Binding Advice.TitleTopic}" FontSize="15" TextColor="White" FontAttributes="Bold"/>
-    </NavigationPage.TitleView>
+    </NavigationPage.TitleView>-->
     
     <ContentPage.BindingContext>
         <viewModel:DetailViewModel/>
@@ -31,7 +32,7 @@
                 <RowDefinition Height="290"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Grid Grid.Row="1" Padding="-30,-31,-30,0">
+            <Grid Grid.Row="1">
                 <Grid.GestureRecognizers>
                     <TapGestureRecognizer 
                         NumberOfTapsRequired="1"
@@ -39,7 +40,22 @@
                 </Grid.GestureRecognizers>
                 <Image Source="{Binding Advice.ResourceImage}"  
                            VerticalOptions="FillAndExpand"
-                           HorizontalOptions="FillAndExpand"/>
+                           HorizontalOptions="FillAndExpand"
+                       Margin="-30,-31,-30,0"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="2"
+                           TextColor="White"
+                           FontAttributes="Bold"
+                           FontSize="Body"
+                           Text="{Binding Advice.TitleTopic}"
+                           VerticalOptions="CenterAndExpand"
+                           Margin="10,0,0,0"/>
+                </Grid>
             </Grid>
             <Grid Grid.Row="2" Padding="0,-20,0,0">
                 <ScrollView>
