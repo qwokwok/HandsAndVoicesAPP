@@ -32,9 +32,13 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <CollectionView Grid.Row="1" ItemsSource="{Binding ArticleList}" Margin="10,0,10,0">
+            <CollectionView Grid.Row="1"
+                            ItemsSource="{Binding ArticleList}"
+                            Margin="10,0,10,0"
+                            VerticalScrollBarVisibility="Never">
                 <CollectionView.ItemsLayout>
-                    <GridItemsLayout Orientation="Vertical" Span="2"/>
+                    <GridItemsLayout Orientation="Vertical" Span="2" 
+                                     SnapPointsAlignment="Center"/>
                 </CollectionView.ItemsLayout>
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
@@ -47,7 +51,7 @@
                                                 Path=PushCommand}"
                                              CommandParameter="{Binding .}"/>
                             </Grid.GestureRecognizers>
-                            <ff:CachedImage Source="{Binding ArticleImage}" />
+                            <ff:CachedImage Source="{Binding ArticleImage}" Aspect="AspectFit"/>
                             <pancake:PancakeView
                                         IsVisible="{Binding IsVisible}"
                                         BackgroundColor="#1C1C6E"
@@ -66,10 +70,9 @@
 
                             <pancake:PancakeView VerticalOptions="End"
                                                  HorizontalOptions="CenterAndExpand"
-                                                 BackgroundColor="Black"
-                                                 WidthRequest="160"
+                                                 BackgroundColor="#1C1C6E"
+                                                 WidthRequest="1060"
                                                  HeightRequest="25"
-                                                 Opacity=".6"
                                                  CornerRadius="5"
                                                  TranslationY="-4">
                             </pancake:PancakeView>
