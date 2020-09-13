@@ -26,7 +26,8 @@
                Aspect="Fill"
                VerticalOptions="CenterAndExpand"
                Opacity=".9"/>
-            <ScrollView>
+            <ScrollView HorizontalScrollBarVisibility="Never"
+                        VerticalScrollBarVisibility="Never">
                 <Grid>
                     <Grid.Resources>
                         <ResourceDictionary>
@@ -44,6 +45,12 @@
                                 <Setter Property="FontSize" Value="18"/>
                                 <Setter Property="Margin" Value="25,18,0,0"/>
                                 <Setter Property="TextColor" Value="White"/>
+                            </Style>
+
+                            <Style TargetType="CollectionView">
+                                <Setter Property="Margin" Value="0,40,0,0"/>
+                                <Setter Property="VerticalScrollBarVisibility" Value="Never"/>
+                                <Setter Property="HorizontalScrollBarVisibility" Value="Never"/>
                             </Style>
                         </ResourceDictionary>
                     </Grid.Resources>
@@ -64,11 +71,11 @@
                     </Grid.RowDefinitions>
 
                     <Grid Grid.Row="1">
-                        <pancake:PancakeView Margin="10,10,10,0">
-                            <Image Source="articlePic" Aspect="Fill"/>
-                        </pancake:PancakeView>
+                        <ff:CachedImage 
+                                Margin="10,10,10,0"
+                                Source="articlePic" Aspect="Fill"/>
                         <Label Text="Articles"/>
-                        <CollectionView ItemsSource="{Binding ArticleList}" Margin="0,40,0,0">
+                        <CollectionView ItemsSource="{Binding ArticleList}">
                             <CollectionView.ItemsLayout>
                                 <GridItemsLayout Orientation="Horizontal"/>
                             </CollectionView.ItemsLayout>
@@ -84,7 +91,7 @@
                                             CommandParameter="{Binding .}"/>
                                         </Grid.GestureRecognizers>
                                         <pancake:PancakeView WidthRequest="176" CornerRadius="10" IsClippedToBounds="True">
-                                            <Image Source="{Binding ArticleImage}" />
+                                            <ff:CachedImage Source="{Binding ArticleImage}" />
                                         </pancake:PancakeView>
                                         <pancake:PancakeView
                                                 IsVisible="{Binding IsNew}"
@@ -119,11 +126,11 @@
                         </CollectionView>
                     </Grid>
                     <Grid Grid.Row="2">
-                        <pancake:PancakeView Margin="10,10,10,0">
-                            <ff:CachedImage Source="parentPic.png" Aspect="Fill"/>
-                        </pancake:PancakeView>
+                        <ff:CachedImage 
+                                Margin="10,10,10,0"
+                                Source="parentPic.png" Aspect="Fill"/>
                         <Label Text="Parent Quotes"/>
-                        <CollectionView ItemsSource="{Binding ArticleList}" Margin="0,40,0,0">
+                        <CollectionView ItemsSource="{Binding ArticleList}">
                             <CollectionView.ItemsLayout>
                                 <GridItemsLayout Orientation="Horizontal"/>
                             </CollectionView.ItemsLayout>
@@ -139,7 +146,7 @@
                                                 CommandParameter="{Binding .}"/>
                                         </Grid.GestureRecognizers>
                                         <pancake:PancakeView WidthRequest="176" CornerRadius="10">
-                                            <Image Source="{Binding ParentPhoto}" WidthRequest="175" HeightRequest="128" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                            <ff:CachedImage Source="{Binding ParentPhoto}" WidthRequest="175" HeightRequest="128" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center"/>
                                         </pancake:PancakeView>
                                         <pancake:PancakeView
                                                 IsVisible="{Binding IsNew}"
@@ -174,11 +181,11 @@
                         </CollectionView>
                     </Grid>
                     <Grid Grid.Row="3">
-                        <pancake:PancakeView Margin="10,10,10,0">
-                            <ff:CachedImage Source="dhhPic.png" Aspect="Fill"/>
-                        </pancake:PancakeView>
+                        <ff:CachedImage 
+                                Margin="10,10,10,0"
+                                Source="dhhPic.png" Aspect="Fill"/>
                         <Label Text="Deaf and Hard of Hearing Quotes"/>
-                        <CollectionView ItemsSource="{Binding ArticleList}" Margin="0,40,0,0">
+                        <CollectionView ItemsSource="{Binding ArticleList}">
                             <CollectionView.ItemsLayout>
                                 <GridItemsLayout Orientation="Horizontal"/>
                             </CollectionView.ItemsLayout>
@@ -227,11 +234,12 @@
                         </CollectionView>
                     </Grid>
                     <Grid Grid.Row="4">
-                        <pancake:PancakeView Margin="10,10,10,0">
-                            <Image Source="resourcePic.png" Aspect="Fill"/>
-                        </pancake:PancakeView>
+                        <ff:CachedImage 
+                                Margin="10,10,10,0"
+                                Source="resourcePic.png" 
+                                Aspect="Fill"/>
                         <Label Text="Resources"/>
-                        <CollectionView ItemsSource="{Binding ArticleList}" Margin="0,40,0,0">
+                        <CollectionView ItemsSource="{Binding ArticleList}">
                             <CollectionView.ItemsLayout>
                                 <GridItemsLayout Orientation="Horizontal"/>
                             </CollectionView.ItemsLayout>
