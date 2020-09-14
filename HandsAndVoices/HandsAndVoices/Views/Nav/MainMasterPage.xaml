@@ -10,7 +10,7 @@
 
     <!-- The page inside our drawer navigation -->
     <MasterDetailPage.Master>
-        <nav:MasterPage x:Name="masterPage" IconImageSource="parentIcon"/>
+        <nav:MasterPage x:Name="masterPage"/>
     </MasterDetailPage.Master>
 
     <!-- Our Default Landing Page -->
