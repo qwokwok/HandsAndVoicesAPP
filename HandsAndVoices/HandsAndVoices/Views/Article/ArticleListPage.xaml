@@ -73,13 +73,15 @@
                                 
                             </pancake:PancakeView>
 
-                            <!--<pancake:PancakeView VerticalOptions="End"
+                            <pancake:PancakeView VerticalOptions="End"
                                                  HorizontalOptions="CenterAndExpand"
-                                                 BackgroundColor="#1C1C6E"
+                                                 BackgroundColor="Black"
                                                  WidthRequest="160"
+                                                 Opacity=".6"
+                                                 TranslationY="-4"
                                                  HeightRequest="25"
                                                  CornerRadius="5">
-                            </pancake:PancakeView>-->
+                            </pancake:PancakeView>
                             <Label Text="{Binding Topic}" 
                                    FontSize="12"
                                    TextColor="White" 

@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 using Xamarin.Forms.Xaml;
 
 namespace HandsAndVoices.Views.Nav
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MainMasterPage : MasterDetailPage
+    public partial class MainMasterPage : Xamarin.Forms.MasterDetailPage
     {
         public int CurrentIndex;
         public MainMasterPage()
@@ -35,7 +36,7 @@ namespace HandsAndVoices.Views.Nav
 
                 else 
                 {
-                    Detail = new TransparentNavigationPage((Page)Activator.CreateInstance(item.TargetType)) { BarTextColor = Color.White };
+                    Detail = new TransparentNavigationPage((Xamarin.Forms.Page)Activator.CreateInstance(item.TargetType)) { BarTextColor = Color.White };
 
                     // lagspike less when sliding left/right
                     await Task.Delay(25);

@@ -24,10 +24,6 @@
     </ContentPage.Resources>
 
     <Grid BackgroundColor="#191F4B">
-        <!--<skia:SKCanvasView x:Name="SKCanvas"
-                           PaintSurface="SKCanvas_PaintSurface"/>-->
-
-        <!--<Image Source="background.png" VerticalOptions="CenterAndExpand" Aspect="Fill"/>-->
 
         <Grid>
             <Grid.RowDefinitions>
@@ -40,7 +36,6 @@
             
             <ListView x:Name="MasterPageNavListView"
                   x:FieldModifier="public"
-                  BackgroundColor="#191F4B"
                   Grid.Row="1"
                   Grid.RowSpan="2"
                   HasUnevenRows="True"

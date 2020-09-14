@@ -36,20 +36,6 @@
                        VerticalOptions="FillAndExpand"
                        HorizontalOptions="FillAndExpand"
                        Margin="-30,-31,-30,0"/>
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
-                    <Label Grid.Row="2"
-                           TextColor="White"
-                           FontAttributes="Bold"
-                           FontSize="Body"
-                           Text="{Binding Advice.TitleTopic}"
-                           VerticalOptions="CenterAndExpand"
-                           Margin="10,0,0,0"/>
-                </Grid>
             </Grid>
             <Grid Grid.Row="2" Padding="0,-20,0,0">
                 <ScrollView>
