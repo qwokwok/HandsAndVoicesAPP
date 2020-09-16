@@ -2,11 +2,6 @@
 using Android.Content.PM;
 using Android.Runtime;
 using Android.OS;
-using Android.Content;
-using HandsAndVoices.Droid.Services;
-using Android.Gms.Common;
-using Android.Util;
-using System;
 
 namespace HandsAndVoices.Droid
 {

@@ -58,6 +58,7 @@ namespace HandsAndVoices.Services
 
                 list = list.Where(x => x.Day <= App.DayCount).ToList();
                 list = AddComingSoonItem(list);
+                list.Reverse();
             }
             return list;
         }

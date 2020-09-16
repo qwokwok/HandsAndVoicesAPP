@@ -18,7 +18,7 @@
         <ToolbarItem IconImageSource="darkIcon" Command="{Binding DarkCommand}"/>
     </ContentPage.ToolbarItems>
 
-    <AbsoluteLayout>
+    <!--<AbsoluteLayout>-->
         <Grid AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
             <skia:SKCanvasView x:Name="SKCanvas" PaintSurface="SKCanvas_PaintSurface"/>
             <Image Source="background"
@@ -71,9 +71,9 @@
                     </Grid.RowDefinitions>
 
                     <Grid Grid.Row="1">
-                        <ff:CachedImage 
+                        <!--<ff:CachedImage 
                                 Margin="10,10,10,0"
-                                Source="articlePic" Aspect="Fill"/>
+                                Source="articlePic" Aspect="Fill"/>-->
                         <Label Text="Articles"/>
                         <CollectionView ItemsSource="{Binding ArticleList}">
                             <CollectionView.ItemsLayout>
@@ -126,9 +126,9 @@
                         </CollectionView>
                     </Grid>
                     <Grid Grid.Row="2">
-                        <ff:CachedImage 
+                        <!--<ff:CachedImage 
                                 Margin="10,10,10,0"
-                                Source="parentPic.png" Aspect="Fill"/>
+                                Source="parentPic.png" Aspect="Fill"/>-->
                         <Label Text="Parent Quotes"/>
                         <CollectionView ItemsSource="{Binding ArticleList}">
                             <CollectionView.ItemsLayout>
@@ -181,9 +181,9 @@
                         </CollectionView>
                     </Grid>
                     <Grid Grid.Row="3">
-                        <ff:CachedImage 
+                        <!--<ff:CachedImage 
                                 Margin="10,10,10,0"
-                                Source="dhhPic.png" Aspect="Fill"/>
+                                Source="dhhPic.png" Aspect="Fill"/>-->
                         <Label Text="Deaf and Hard of Hearing Quotes"/>
                         <CollectionView ItemsSource="{Binding ArticleList}">
                             <CollectionView.ItemsLayout>
@@ -234,10 +234,10 @@
                         </CollectionView>
                     </Grid>
                     <Grid Grid.Row="4">
-                        <ff:CachedImage 
+                        <!--<ff:CachedImage 
                                 Margin="10,10,10,0"
                                 Source="resourcePic.png" 
-                                Aspect="Fill"/>
+                                Aspect="Fill"/>-->
                         <Label Text="Resources"/>
                         <CollectionView ItemsSource="{Binding ArticleList}">
                             <CollectionView.ItemsLayout>
@@ -292,7 +292,7 @@
                 </Grid>
             </ScrollView>
         </Grid>
-        <pancake:PancakeView AbsoluteLayout.LayoutBounds="0.5,.98,.9,.075" AbsoluteLayout.LayoutFlags="All" CornerRadius="5" HeightRequest="50" WidthRequest="50"
+        <!--<pancake:PancakeView AbsoluteLayout.LayoutBounds="0.5,.98,.9,.075" AbsoluteLayout.LayoutFlags="All" CornerRadius="5" HeightRequest="50" WidthRequest="50"
                              BackgroundColor="{DynamicResource TopicBar}">
             <pancake:PancakeView.GestureRecognizers>
                 <TapGestureRecognizer Command="{Binding TopicCommand}"/>
@@ -309,6 +309,6 @@
                    VerticalOptions="Center"
                    FontAttributes="Bold"
                    />
-        </pancake:PancakeView>
-    </AbsoluteLayout>
+        </pancake:PancakeView>-->
+    <!--</AbsoluteLayout>-->
 </ContentPage>

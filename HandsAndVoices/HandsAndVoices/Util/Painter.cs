@@ -23,7 +23,7 @@ namespace HandsAndVoices.Util
                                     new SKPoint(e.Info.Width / 2, 0),
                                     new SKPoint(e.Info.Width / 2, e.Info.Height),
                                     //new SKColor[] { ((Color)App.Current.Resources[App.ResourceKeys.GRADIENT_BLUE]).ToSKColor(), ((Color)App.Current.Resources[App.ResourceKeys.GRADIENT_ORAN]).ToSKColor() },
-                                    new SKColor[] { ((Color)App.Current.Resources["Top"]).ToSKColor(), ((Color)App.Current.Resources["Bottom"]).ToSKColor() },
+                                    new SKColor[] { ((Color)App.Current.Resources["Top"]).ToSKColor(), ((Color)App.Current.Resources["Bottom"]).ToSKColor(), ((Color)App.Current.Resources["Bottom"]).ToSKColor() },
                                     null,
                                     SKShaderTileMode.Repeat);
 

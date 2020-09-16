@@ -30,9 +30,11 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <Image Source="logo.png" VerticalOptions="Center" HeightRequest="140" Margin="0,45,0,0"/>
+            <Image Source="logo.png" VerticalOptions="End" HorizontalOptions="Start" HeightRequest="100" Margin="15,0,0,0"/>
             
             <ListView x:Name="MasterPageNavListView"
                   x:FieldModifier="public"
@@ -44,6 +46,7 @@
                 <ListView.ItemsSource>
                     <x:Array Type="{x:Type nav_items:MasterPageImgItem}">
                         <nav_items:MasterPageImgItem Title="Home" TargetType="{x:Type views:HomePage}"/>
+                        <nav_items:MasterPageImgItem Title="Topic" TargetType="{x:Type views:TopicPage}"/>
                         <nav_items:MasterPageImgItem Title="Articles" TargetType="{x:Type article:ArticleListPage}"/>
                         <nav_items:MasterPageImgItem Title="Quotes" TargetType="{x:Type tab:TabPage}"/>
                         <nav_items:MasterPageImgItem Title="Resources" TargetType="{x:Type resource:ResourceListPage}"/>
