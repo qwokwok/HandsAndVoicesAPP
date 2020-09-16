@@ -25,9 +25,9 @@ namespace HandsAndVoices.Views.Nav
             {
                 switch (e.ItemIndex)
                 {
-                    case 1: App.Section = "Article"; break;
-                    case 2: App.Section = "Quote"; break;
-                    case 3: App.Section = "Resource"; break;
+                    case 2: App.Section = "Article"; break;
+                    case 3: App.Section = "Quote"; break;
+                    case 4: App.Section = "Resource"; break;
                 }
 
                 //prevent to reload a page that is already loaded while selecting the same page for performance purpose
