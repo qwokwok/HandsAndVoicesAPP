@@ -19,10 +19,10 @@ namespace HandsAndVoices.ViewModels
         public INavigation Navigation { get; set; }
         public List<Advice> ArticleList
         {
-            get => App.Advices;
+            get => App.ReseveredAdvices;
             set
             {
-                App.Advices = value;
+                App.ReseveredAdvices = value;
                 NotifyPropertyChanged();
             }
         }

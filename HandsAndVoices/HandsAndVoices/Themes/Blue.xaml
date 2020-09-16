@@ -5,6 +5,7 @@
 
     <Color x:Key="TopBar">#191F4B</Color>
     <Color x:Key="BottomBar">#191F4B</Color>
+    <Color x:Key="Text">White</Color>
     <Color x:Key="Top">#191F4B</Color>
     <Color x:Key="Bottom">#191F4B</Color>
     <Color x:Key="Body">#3B4065</Color>

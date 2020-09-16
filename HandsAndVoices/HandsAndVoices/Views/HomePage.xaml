@@ -12,11 +12,11 @@
         <viewModel:HomeViewModel/>
     </ContentPage.BindingContext>
 
-    <ContentPage.ToolbarItems>
+    <!--<ContentPage.ToolbarItems>
         <ToolbarItem IconImageSource="blueIcon" Command="{Binding BlueCommand}"/>
         <ToolbarItem IconImageSource="lightIcon" Command="{Binding LightCommand}"/>
         <ToolbarItem IconImageSource="darkIcon" Command="{Binding DarkCommand}"/>
-    </ContentPage.ToolbarItems>
+    </ContentPage.ToolbarItems>-->
 
     <!--<AbsoluteLayout>-->
         <Grid AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">

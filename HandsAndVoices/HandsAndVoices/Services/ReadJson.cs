@@ -12,6 +12,7 @@ namespace HandsAndVoices.Services
     public class ReadJson
     {
         public static List<Advice> Advices { get; set; } = GetList();
+        public static List<Advice> ReservedAdvices { get; set; }
         public static List<Advice> GetList()
         {
             var list = new List<Advice>();
@@ -58,7 +59,9 @@ namespace HandsAndVoices.Services
 
                 list = list.Where(x => x.Day <= App.DayCount).ToList();
                 list = AddComingSoonItem(list);
-                list.Reverse();
+                var reserved = list.ToList();
+                reserved.Reverse();
+                ReservedAdvices = reserved;
             }
             return list;
         }

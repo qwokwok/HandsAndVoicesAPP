@@ -15,6 +15,7 @@ namespace HandsAndVoices
         public static DateTime FirstTime { get; set; }
         public static int DayCount { get; set; }
         public static List<Advice> Advices { get; set; } = ReadJson.Advices;
+        public static List<Advice> ReseveredAdvices { get; set; } = ReadJson.ReservedAdvices;
         public static string Section { get; set; }
         public static Advice Selected { get; set; }
 
