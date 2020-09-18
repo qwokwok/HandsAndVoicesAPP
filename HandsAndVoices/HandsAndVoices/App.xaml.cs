@@ -29,7 +29,7 @@ namespace HandsAndVoices
             }
             else if (Device.RuntimePlatform == Device.iOS)
             {
-                MainPage = new MainTabbedPage();
+                MainPage = new TransparentNavigationPage(new MainTabbedPage());
             }
         }
 
