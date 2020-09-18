@@ -57,7 +57,7 @@
                             </pancake:PancakeView>
 
                             <pancake:PancakeView
-                                IsVisible="{Binding IsVisible}"
+                                               IsVisible="{Binding IsVisible}"
                                                BackgroundColor="#262625"
                                                CornerRadius="100"
                                                HeightRequest="40"

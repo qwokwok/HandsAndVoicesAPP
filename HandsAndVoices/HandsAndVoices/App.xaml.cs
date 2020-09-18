@@ -25,7 +25,8 @@ namespace HandsAndVoices
             // Initializing our MasterDetailPage which contains our drawer and action bar.
             if (Device.RuntimePlatform == Device.Android)
             {
-                MainPage = new MainMasterPage();
+                //MainPage = new MainMasterPage();
+                MainPage = new TransparentNavigationPage(new MainTabbedPage());
             }
             else if (Device.RuntimePlatform == Device.iOS)
             {
