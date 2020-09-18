@@ -48,8 +48,10 @@
                             <pancake:PancakeView BackgroundColor="{DynamicResource Item}"
                                                  HeightRequest="50"
                                                  CornerRadius="10">
-                                <Label Text="{Binding TitleTopic}" FontSize="15" TextColor="White" 
-                                               Margin="50,0,0,0"
+                                <Label Text="{Binding TitleTopic}"
+                                       FontSize="15"
+                                       TextColor="White" 
+                                       Margin="50,0,0,0"
                                        VerticalOptions="Center"/>
                                 
                             </pancake:PancakeView>
@@ -63,11 +65,15 @@
                                                TranslationX="5"
                                                HorizontalOptions="Start"
                                                VerticalOptions="Center">
-                                <Label Text="{Binding Day}" TextColor="White" FontSize="15" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                <Label Text="{Binding Day}"
+                                       TextColor="White"
+                                       FontSize="15"
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="Center"/>
                             </pancake:PancakeView>
                             
                             <pancake:PancakeView
-                                IsVisible="{Binding IsNew}"
+                                               IsVisible="{Binding IsNew}"
                                                BackgroundColor="#FF7F32"
                                                CornerRadius="15"
                                                HeightRequest="30"

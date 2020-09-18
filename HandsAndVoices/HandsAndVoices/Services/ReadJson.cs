@@ -58,10 +58,12 @@ namespace HandsAndVoices.Services
                 // --- ---
 
                 list = list.Where(x => x.Day <= App.DayCount).ToList();
-                list = AddComingSoonItem(list);
+
                 var reserved = list.ToList();
                 reserved.Reverse();
                 ReservedAdvices = reserved;
+
+                list = AddComingSoonItem(list);
             }
             return list;
         }
