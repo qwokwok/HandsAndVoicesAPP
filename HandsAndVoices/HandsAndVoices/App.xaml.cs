@@ -29,7 +29,7 @@ namespace HandsAndVoices
             }
             else if (Device.RuntimePlatform == Device.iOS)
             {
-                MainPage = new TransparentNavigationPage(new MainTabbedPage());
+                MainPage = new TransparentNavigationPage(new MainTabbedPage()) { BarTextColor = Color.White };
             }
         }
 
