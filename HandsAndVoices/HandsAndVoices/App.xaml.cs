@@ -1,11 +1,10 @@
-﻿using HandsAndVoices.Views.Nav;
-using System;
+﻿using System;
 using Xamarin.Forms;
 using HandsAndVoices.Models;
 using System.Collections.Generic;
-using Xamarin.Essentials;
 using HandsAndVoices.Themes;
 using HandsAndVoices.Services;
+using HandsAndVoices.Views.Nav;
 
 [assembly: ExportFont("Ubuntu-Medium.ttf", Alias = "Ubuntu")]
 namespace HandsAndVoices
@@ -24,7 +23,14 @@ namespace HandsAndVoices
             InitializeComponent();
 
             // Initializing our MasterDetailPage which contains our drawer and action bar.
-            MainPage = new MainMasterPage();
+            if (Device.RuntimePlatform == Device.Android)
+            {
+                MainPage = new MainMasterPage();
+            }
+            else if (Device.RuntimePlatform == Device.iOS)
+            {
+                MainPage = new MainTabbedPage();
+            }
         }
 
         protected override void OnStart()

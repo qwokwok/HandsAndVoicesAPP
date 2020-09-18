@@ -5,6 +5,8 @@
             BarBackgroundColor="{DynamicResource BottomBar}"
             BarTextColor="White"
             SelectedTabColor="White"
-            UnselectedTabColor="#CCFFFFFF">
+            UnselectedTabColor="#CCFFFFFF"
+                         xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="True">
   <!--Pages can be added as references or inline-->
 </TabbedPage>

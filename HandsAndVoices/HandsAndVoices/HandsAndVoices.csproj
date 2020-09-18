@@ -57,6 +57,9 @@
     <EmbeddedResource Update="Views\Nav\MainMasterPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\Nav\MainTabbedPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\Nav\MasterPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>

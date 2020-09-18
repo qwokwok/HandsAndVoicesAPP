@@ -178,9 +178,6 @@
     <BundleResource Include="Resources\AndreaStambaugh.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\articlePic.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\ash.png" />
   </ItemGroup>
   <ItemGroup>
@@ -190,16 +187,10 @@
     <BundleResource Include="Resources\assiedeaf.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\avatar.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\babyHearing.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\background.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\blueIcon.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\brian.png" />
@@ -226,9 +217,6 @@
     <BundleResource Include="Resources\coming.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\darkIcon.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\dcmp.png" />
   </ItemGroup>
   <ItemGroup>
@@ -236,9 +224,6 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\dhhIcon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\dhhPic.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\DjeeneMorris.png" />
@@ -277,9 +262,6 @@
     <BundleResource Include="Resources\icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\janet.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\journal.png" />
   </ItemGroup>
   <ItemGroup>
@@ -299,9 +281,6 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\LeeanneSeaver.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\lightIcon.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\logo.png" />
@@ -346,9 +325,6 @@
     <BundleResource Include="Resources\parentIcon.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\parentPic.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\pir.png" />
   </ItemGroup>
   <ItemGroup>
@@ -359,9 +335,6 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\resourceIcon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\resourcePic.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\RosabelAgbayani.png" />
