@@ -12,12 +12,6 @@
         <viewModel:HomeViewModel/>
     </ContentPage.BindingContext>
 
-    <!--<ContentPage.ToolbarItems>
-        <ToolbarItem IconImageSource="blueIcon" Command="{Binding BlueCommand}"/>
-        <ToolbarItem IconImageSource="lightIcon" Command="{Binding LightCommand}"/>
-        <ToolbarItem IconImageSource="darkIcon" Command="{Binding DarkCommand}"/>
-    </ContentPage.ToolbarItems>-->
-
     <!--<AbsoluteLayout>-->
         <Grid AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
             <skia:SKCanvasView x:Name="SKCanvas" PaintSurface="SKCanvas_PaintSurface"/>

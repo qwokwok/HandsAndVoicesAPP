@@ -74,7 +74,7 @@
                                 </pancake:PancakeView>
 
                                 <Grid Margin="100,0,0,0">
-                                    <Label Text="{Binding ParentName}" 
+                                    <Label Text="{Binding ParentTopic}" 
                                    FontSize="Small" 
                                    TextColor="White" 
                                    HorizontalOptions="Center"
@@ -129,14 +129,14 @@
                                 </pancake:PancakeView>
 
                                 <Grid Margin="100,0,0,0">
-                                    <Label Text="{Binding DhhName}" 
-                                   FontSize="Small" 
-                                   TextColor="White" 
-                                   HorizontalOptions="Center"
-                                       HorizontalTextAlignment="Start"
-                                   VerticalOptions="Center"
-                                   FontAttributes="Bold"
-                                   Margin="10,0,0,0"/>
+                                    <Label Text="{Binding DhhTopic}" 
+                                        FontSize="Small" 
+                                        TextColor="White" 
+                                        HorizontalOptions="Center"
+                                        HorizontalTextAlignment="Start"
+                                        VerticalOptions="Center"
+                                        FontAttributes="Bold"
+                                        Margin="10,0,0,0"/>
                                 </Grid>
                             </Grid>
 

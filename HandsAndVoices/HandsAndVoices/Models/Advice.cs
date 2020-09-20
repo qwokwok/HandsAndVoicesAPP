@@ -52,10 +52,10 @@ namespace HandsAndVoices.Models
         #endregion
 
         #region Properties
-        public string ResourceTopic { get => TrimLength(ResourcesToExplore); }
-        public string DhhTopic { get => TrimLength(DhhName); }
-        public string ParentTopic { get => TrimLength(ParentName); }
-        public string Topic { get => TrimLength(TitleTopic); }
+        public string ResourceTopic { get => TrimLength(ResourcesToExplore, 17); }
+        public string DhhTopic { get => TrimLength(DhhName, 25); }
+        public string ParentTopic { get => TrimLength(ParentName, 25); }
+        public string Topic { get => TrimLength(TitleTopic, 17); }
         public string DayString { get => "Day " + Day.ToString(); }
         public bool IsNew { get => DetermineItemIsNew(Day); }
         public bool IsVisible { get => DaySignDisappear(Day); }
@@ -72,10 +72,10 @@ namespace HandsAndVoices.Models
         {
             return "By " + _name;
         }
-
-        string TrimLength(string _topic)
+        
+        string TrimLength(string _topic, int characters)
         {
-            var str = _topic.Length >= 17 ? _topic.Substring(0, 17) + "..." : _topic;
+            var str = _topic.Length >= characters ? _topic.Substring(0, characters) + "..." : _topic;
             return str;
         }
 
