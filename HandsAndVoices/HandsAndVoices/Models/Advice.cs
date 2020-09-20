@@ -26,6 +26,9 @@ namespace HandsAndVoices.Models
         [JsonProperty("Parent Name")]
         public string ParentName { get; set; }
 
+        [JsonProperty("Parent Photo")]
+        public string ParentPhoto { get; set; }
+
         [JsonProperty("Resources to Explore")]
         public string ResourcesToExplore { get; set; }
 
@@ -40,9 +43,6 @@ namespace HandsAndVoices.Models
 
         [JsonProperty("DHH Photo")]
         public string DhhPhoto { get; set; }
-
-        [JsonProperty("Parent Photo")]
-        public string ParentPhoto { get; set; }
 
         [JsonProperty("ResourceImage")]
         public string ResourceImage { get; set; }

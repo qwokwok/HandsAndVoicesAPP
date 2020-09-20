@@ -39,9 +39,6 @@
                             ItemsSource="{Binding ArticleList}"
                             Margin="10,0,10,0"
                             VerticalScrollBarVisibility="Never">
-                <CollectionView.ItemsLayout>
-                    <GridItemsLayout Orientation="Vertical" Span="2"/>
-                </CollectionView.ItemsLayout>
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Grid Padding="10,20,10,0">
@@ -53,8 +50,10 @@
                                                 Path=PushCommand}"
                                              CommandParameter="{Binding .}"/>
                             </Grid.GestureRecognizers>
-                            <ff:CachedImage Source="{Binding ParentPhoto}" />
-                            <pancake:PancakeView
+                            <Grid>
+                                <pancake:PancakeView BackgroundColor="#1C1C6E" Opacity=".3" CornerRadius="5"/>
+                                <ff:CachedImage Source="{Binding ParentPhoto}" HorizontalOptions="Start" WidthRequest="120"/>
+                                <pancake:PancakeView
                                         IsVisible="{Binding IsVisible}"
                                         BackgroundColor="#1C1C6E"
                                         CornerRadius="6"
@@ -65,32 +64,27 @@
                                         HorizontalOptions="Start"
                                         VerticalOptions="Start">
 
-                                <Label Text="{Binding DayString}"
+                                    <Label Text="{Binding DayString}"
                                        IsVisible="{Binding IsVisible}"
                                        TextColor="White" FontSize="11"
                                        VerticalOptions="Center" 
                                        HorizontalOptions="Center"
                                        FontAttributes="Bold"/>
 
-                            </pancake:PancakeView>
+                                </pancake:PancakeView>
 
-                            <pancake:PancakeView VerticalOptions="End"
-                                                 HorizontalOptions="CenterAndExpand"
-                                                 BackgroundColor="Black"
-                                                 WidthRequest="160"
-                                                 Opacity=".6"
-                                                 TranslationY="-4"
-                                                 HeightRequest="25"
-                                                 CornerRadius="5">
-                            </pancake:PancakeView>
-                            <Label Text="{Binding ParentTopic}" 
-                                   FontSize="12" 
+                                <Grid Margin="100,0,0,0">
+                                    <Label Text="{Binding ParentName}" 
+                                   FontSize="Small" 
                                    TextColor="White" 
-                                   HorizontalTextAlignment="Start"
-                                   VerticalTextAlignment="End"
+                                   HorizontalOptions="Center"
+                                       HorizontalTextAlignment="Start"
+                                   VerticalOptions="Center"
                                    FontAttributes="Bold"
-                                   TranslationY="-8"
                                    Margin="10,0,0,0"/>
+                                </Grid>
+                            </Grid>
+                            
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
@@ -98,12 +92,8 @@
             <CollectionView Grid.Row="2"
                             x:Name="collection2"
                             ItemsSource="{Binding ArticleList}"
-                            IsVisible="false"
                             Margin="10,0,10,0"
                             VerticalScrollBarVisibility="Never">
-                <CollectionView.ItemsLayout>
-                    <GridItemsLayout Orientation="Vertical" Span="2"/>
-                </CollectionView.ItemsLayout>
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Grid Padding="10,20,10,0">
@@ -115,8 +105,10 @@
                                                 Path=PushCommand}"
                                              CommandParameter="{Binding .}"/>
                             </Grid.GestureRecognizers>
-                            <ff:CachedImage Source="{Binding DhhPhoto}" />
-                            <pancake:PancakeView
+                            <Grid>
+                                <pancake:PancakeView BackgroundColor="#1C1C6E" Opacity=".3" CornerRadius="5"/>
+                                <ff:CachedImage Source="{Binding DhhPhoto}" HorizontalOptions="Start" WidthRequest="120"/>
+                                <pancake:PancakeView
                                         IsVisible="{Binding IsVisible}"
                                         BackgroundColor="#1C1C6E"
                                         CornerRadius="6"
@@ -127,32 +119,27 @@
                                         HorizontalOptions="Start"
                                         VerticalOptions="Start">
 
-                                <Label Text="{Binding DayString}"
+                                    <Label Text="{Binding DayString}"
                                        IsVisible="{Binding IsVisible}"
                                        TextColor="White" FontSize="11"
                                        VerticalOptions="Center" 
                                        HorizontalOptions="Center"
                                        FontAttributes="Bold"/>
 
-                            </pancake:PancakeView>
+                                </pancake:PancakeView>
 
-                            <pancake:PancakeView VerticalOptions="End"
-                                                 HorizontalOptions="CenterAndExpand"
-                                                 BackgroundColor="Black"
-                                                 WidthRequest="160"
-                                                 Opacity=".6"
-                                                 TranslationY="-4"
-                                                 HeightRequest="25"
-                                                 CornerRadius="5">
-                            </pancake:PancakeView>
-                            <Label Text="{Binding DhhTopic}" 
-                                   FontSize="12" 
+                                <Grid Margin="100,0,0,0">
+                                    <Label Text="{Binding DhhName}" 
+                                   FontSize="Small" 
                                    TextColor="White" 
-                                   HorizontalTextAlignment="Start"
-                                   VerticalTextAlignment="End"
+                                   HorizontalOptions="Center"
+                                       HorizontalTextAlignment="Start"
+                                   VerticalOptions="Center"
                                    FontAttributes="Bold"
-                                   TranslationY="-8"
                                    Margin="10,0,0,0"/>
+                                </Grid>
+                            </Grid>
+
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
