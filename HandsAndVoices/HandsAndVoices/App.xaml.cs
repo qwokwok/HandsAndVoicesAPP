@@ -25,8 +25,8 @@ namespace HandsAndVoices
             // Initializing our MasterDetailPage which contains our drawer and action bar.
             if (Device.RuntimePlatform == Device.Android)
             {
-                //MainPage = new MainMasterPage();
-                MainPage = new TransparentNavigationPage(new MainTabbedPage()) { BarTextColor = Color.White };
+                MainPage = new MainMasterPage();
+                //MainPage = new TransparentNavigationPage(new MainTabbedPage()) { BarTextColor = Color.White };
             }
             else if (Device.RuntimePlatform == Device.iOS)
             {

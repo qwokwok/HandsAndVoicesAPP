@@ -9,11 +9,10 @@
              x:Class="HandsAndVoices.Views.SegmentPage"
              Title="Quotes">
 
-
     <ContentPage.BindingContext>
-        <viewModel:SegmentViewModel/>
+        <viewModel:SectionViewModel/>
     </ContentPage.BindingContext>
-
+    
     <Grid>
         <skia:SKCanvasView x:Name="SKCanvas" PaintSurface="SKCanvas_PaintSurface"/>
         <Image Source="background"
@@ -99,7 +98,6 @@
             <CollectionView Grid.Row="2"
                             x:Name="collection2"
                             IsVisible="false"
-                            ItemsSource="{Binding ArticleList}"
                             Margin="10,0,10,0"
                             VerticalScrollBarVisibility="Never">
                 <CollectionView.ItemsLayout>
