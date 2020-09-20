@@ -1,7 +1,6 @@
 ﻿using HandsAndVoices.Util;
 using HandsAndVoices.ViewModels;
 using SkiaSharp.Views.Forms;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +9,7 @@ namespace HandsAndVoices.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SegmentPage : ContentPage
     {
-        public SectionViewModel VM => (SectionViewModel)BindingContext;
+        public SegmentViewModel VM => (SegmentViewModel)BindingContext;
         public SegmentPage()
         {
             InitializeComponent();

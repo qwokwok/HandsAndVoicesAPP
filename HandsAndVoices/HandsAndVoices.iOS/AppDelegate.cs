@@ -2,6 +2,7 @@
 using Foundation;
 using HandsAndVoices.Services;
 using UIKit;
+using Plugin.Segmented.Control.iOS;
 using UserNotifications;
 
 namespace HandsAndVoices.iOS
@@ -22,9 +23,9 @@ namespace HandsAndVoices.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init();
+            SegmentedControlRenderer.Initialize();
             global::Xamarin.Forms.Forms.Init();
             Firebase.Core.App.Configure();
-            Plugin.Segmented.Control.iOS.SegmentedControlRenderer.Initialize();
             LoadApplication(new App());
 
             // Register your app for remote notifications.
