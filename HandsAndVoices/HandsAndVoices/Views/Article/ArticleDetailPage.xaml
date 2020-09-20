@@ -13,14 +13,16 @@
 
     <Grid>
         <skia:SKCanvasView x:Name="SKCanvas" PaintSurface="SKCanvas_PaintSurface"/>
+        <Image Source="background" Aspect="Fill"/>
 
-        <Grid>
+        <ScrollView>
+            <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition>
                     <RowDefinition.Height>
                         <OnPlatform x:TypeArguments="GridLength">
                             <On Platform="iOS">0</On>
-                            <On Platform="Android">85</On>
+                            <On Platform="Android">75</On>
                         </OnPlatform>
                     </RowDefinition.Height>
                 </RowDefinition>
@@ -35,23 +37,23 @@
                 <Image Source="{Binding Advice.ArticleImage}"  
                        VerticalOptions="FillAndExpand"
                        HorizontalOptions="FillAndExpand"
-                       Margin="-30,-31,-30,0"/>
+                       HeightRequest="50"
+                       WidthRequest="50"/>
             </Grid>
             <Grid Grid.Row="2" Padding="0,-20,0,0">
-                <ScrollView>
-                    <pancake:PancakeView BackgroundColor="{DynamicResource Body}">
-                        <pancake:PancakeView.GestureRecognizers>
-                            <TapGestureRecognizer 
+                <pancake:PancakeView>
+                    <pancake:PancakeView.GestureRecognizers>
+                        <TapGestureRecognizer 
                                 NumberOfTapsRequired="1"
                                 Command="{Binding LinkCommand}"/>
-                        </pancake:PancakeView.GestureRecognizers>
-                        <Label  Text="{Binding Advice.ArticleContent}" 
-                                TextColor="White"
+                    </pancake:PancakeView.GestureRecognizers>
+                    <Label  Text="{Binding Advice.ArticleContent}" 
+                                TextColor="{DynamicResource Text}"
                                 FontSize="Large"
                                 Margin="15,10,15,0"/>
-                    </pancake:PancakeView>
-                </ScrollView>
+                </pancake:PancakeView>
             </Grid>
         </Grid>
+        </ScrollView>
     </Grid>
 </ContentPage>

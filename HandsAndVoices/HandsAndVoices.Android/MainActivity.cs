@@ -27,6 +27,8 @@ namespace HandsAndVoices.Droid
 
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init(true);
 
+            Plugin.Segmented.Control.Droid.SegmentedControlRenderer.Init();
+
             LoadApplication(new App());
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)

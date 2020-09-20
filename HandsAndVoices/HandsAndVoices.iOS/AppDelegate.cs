@@ -24,6 +24,7 @@ namespace HandsAndVoices.iOS
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init();
             global::Xamarin.Forms.Forms.Init();
             Firebase.Core.App.Configure();
+            Plugin.Segmented.Control.iOS.SegmentedControlRenderer.Initialize();
             LoadApplication(new App());
 
             // Register your app for remote notifications.

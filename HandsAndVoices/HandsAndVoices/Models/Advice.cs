@@ -61,8 +61,8 @@ namespace HandsAndVoices.Models
         public bool IsVisible { get => DaySignDisappear(Day); }
         public string AddByForParent { get => AddingByWord(ParentName); }
         public string AddByForDHH { get => AddingByWord(DhhName); }
-        public string ParentContent { get => AddLine(ParentQuote); }
-        public string DhhContent { get => AddLine(DhhQuote); }
+        public string ParentContent { get => AddSignature(ParentQuote, ParentName); }
+        public string DhhContent { get => AddSignature(DhhQuote, DhhName); }
         public string ArticleContent { get => AddLine(ContentArticleVideo); }
         public string ResourceContent { get => AddLine(ResourcesToExplore); }
         #endregion
@@ -96,10 +96,10 @@ namespace HandsAndVoices.Models
             return isItem;
         }
 
-        //string AddSignature(string _quote, string _name)
-        //{
-        //    return _quote += "\n\n\t\t~" + _name + "\n ";
-        //}
+        string AddSignature(string _quote, string _name)
+        {
+            return _quote += "\n\n\t\t~" + _name + "\n ";
+        }
 
         string AddLine(string _quote)
         {

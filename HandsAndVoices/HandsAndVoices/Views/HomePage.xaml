@@ -6,7 +6,7 @@
              xmlns:viewModel="clr-namespace:HandsAndVoices.ViewModels"
              xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
-             Title="Hands and Voices">
+             Title="Categories">
 
     <ContentPage.BindingContext>
         <viewModel:HomeViewModel/>
@@ -44,11 +44,11 @@
                                 <Setter Property="FontAttributes" Value="Bold"/>
                                 <Setter Property="FontSize" Value="18"/>
                                 <Setter Property="Margin" Value="25,18,0,0"/>
-                                <Setter Property="TextColor" Value="White"/>
+                                <Setter Property="TextColor" Value="{DynamicResource Text}"/>
                             </Style>
 
                             <Style TargetType="CollectionView">
-                            <Setter Property="Margin" Value="-15,40,0,0"/>
+                            <Setter Property="Margin" Value="0,40,0,0"/>
                             <Setter Property="VerticalScrollBarVisibility" Value="Never"/>
                                 <Setter Property="HorizontalScrollBarVisibility" Value="Never"/>
                             </Style>

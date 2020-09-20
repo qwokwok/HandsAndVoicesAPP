@@ -21,13 +21,13 @@ namespace HandsAndVoices.Views.Nav
 
             this.Children.Add(new ArticleListPage());
 
-            this.Children.Add(new TabPage());
+            this.Children.Add(new SegmentPage());
 
             this.Children.Add(new ResourceListPage());
 
             this.Children.Add(new AboutPage());
 
-            Title = "Home";
+            Title = "Categories";
             
             CurrentPageChanged += CurrentPageHasChanged;
         }
@@ -38,7 +38,7 @@ namespace HandsAndVoices.Views.Nav
 
             switch (index)
             {
-                case 0: Title = "Home"; break;
+                case 0: Title = "Categories"; break;
                 case 1: App.Section = "Article"; Title = "Articles"; break;
                 case 2: App.Section = "Parent"; Title = "Quotes"; break;
                 case 3: App.Section = "Resource"; Title = "Resources"; break;

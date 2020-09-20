@@ -17,45 +17,45 @@
 
     <Grid>
         <skia:SKCanvasView x:Name="SKCanvas" PaintSurface="SKCanvas_PaintSurface"/>
-
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition>
-                    <RowDefinition.Height>
-                        <OnPlatform x:TypeArguments="GridLength">
-                            <On Platform="iOS">0</On>
-                            <On Platform="Android">85</On>
-                        </OnPlatform>
-                    </RowDefinition.Height>
-                </RowDefinition>
-                <RowDefinition Height="290"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <Grid Grid.Row="1">
-                <Grid.GestureRecognizers>
-                    <TapGestureRecognizer NumberOfTapsRequired="1"
+        <Image Source="background" Aspect="Fill"/>
+        
+        <ScrollView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition>
+                        <RowDefinition.Height>
+                            <OnPlatform x:TypeArguments="GridLength">
+                                <On Platform="iOS">0</On>
+                                <On Platform="Android">75</On>
+                            </OnPlatform>
+                        </RowDefinition.Height>
+                    </RowDefinition>
+                    <RowDefinition Height="290"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="1">
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer NumberOfTapsRequired="1"
                                           Command="{Binding LinkCommand}"/>
-                </Grid.GestureRecognizers>
-                <Image Source="{Binding Advice.DhhPhoto}"  
+                    </Grid.GestureRecognizers>
+                    <Image Source="{Binding Advice.DhhPhoto}"  
                            VerticalOptions="FillAndExpand"
-                           HorizontalOptions="FillAndExpand"
-                       Margin="-30,-31,-30,0"/>
+                           HorizontalOptions="FillAndExpand"/>
 
-            </Grid>
-            <Grid Grid.Row="2" Padding="0,-20,0,0">
-                <ScrollView>
-                    <pancake:PancakeView BackgroundColor="{DynamicResource Body}">
+                </Grid>
+                <Grid Grid.Row="2" Padding="0,-20,0,0">
+                    <pancake:PancakeView>
                         <pancake:PancakeView.GestureRecognizers>
                             <TapGestureRecognizer NumberOfTapsRequired="1"
                                           Command="{Binding LinkCommand}"/>
                         </pancake:PancakeView.GestureRecognizers>
                         <Label  Text="{Binding Advice.DhhContent}" 
-                                TextColor="White"
+                                TextColor="{DynamicResource Text}"
                                 FontSize="Large"
                                 Margin="15,10,15,0"/>
                     </pancake:PancakeView>
-                </ScrollView>
+                </Grid>
             </Grid>
-        </Grid>
+        </ScrollView>
     </Grid>
 </ContentPage>

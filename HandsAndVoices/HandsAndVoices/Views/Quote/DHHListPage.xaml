@@ -60,14 +60,14 @@
                                         TranslationY="-9"
                                         HorizontalOptions="Start"
                                         VerticalOptions="Start">
-                                
+
                                 <Label Text="{Binding DayString}"
                                        IsVisible="{Binding IsVisible}"
                                        TextColor="White" FontSize="11"
                                        VerticalOptions="Center" 
                                        HorizontalOptions="Center"
                                        FontAttributes="Bold"/>
-                                
+
                             </pancake:PancakeView>
 
                             <pancake:PancakeView VerticalOptions="End"
