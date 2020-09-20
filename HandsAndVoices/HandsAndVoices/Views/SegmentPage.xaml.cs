@@ -28,14 +28,14 @@ namespace HandsAndVoices.Views
             if (val == 0)
             {
                 collection1.IsVisible = true;
-                collection2.IsVisible = false;
+                collection2.IsVisible = !collection1.IsVisible;
                 App.Section = "Parent";
             }
 
             else
             {
                 collection1.IsVisible = false;
-                collection2.IsVisible = true;
+                collection2.IsVisible = !collection1.IsVisible;
                 App.Section = "DHH";
             }
         }

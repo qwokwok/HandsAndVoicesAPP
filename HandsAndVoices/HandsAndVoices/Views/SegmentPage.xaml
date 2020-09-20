@@ -95,40 +95,10 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-            <segment:SegmentedControl Grid.Row="1"
-                                      Margin="15"
-                                      OnSegmentSelected="SegmentedControl_OnSegmentSelected"
-                                      SelectedItem="{Binding SegmentValue}"
-                                      TintColor="{DynamicResource TopBar}"
-                                      DisabledColor="Transparent"
-                                      TextColor="AliceBlue"
-                                      SegmentSelectedCommand="{Binding SegmentCommand}"
-                                      ItemsSource="{Binding QuoteArray}"
-                                      SegmentSelectedCommandParameter="{Binding SegmentValue}">
-                <segment:SegmentedControl.Children>
-                    <segment:SegmentedControlOption Text="Parent"/>
-                    <segment:SegmentedControlOption Text="Deaf &amp; HH"/>
-                </segment:SegmentedControl.Children>
-            </segment:SegmentedControl>
-        </Grid>
-
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition>
-                    <RowDefinition.Height>
-                        <OnPlatform x:TypeArguments="GridLength">
-                            <On Platform="iOS">0</On>
-                            <On Platform="Android">75</On>
-                        </OnPlatform>
-                    </RowDefinition.Height>
-                </RowDefinition>
-                <RowDefinition Height="65"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-
             <CollectionView Grid.Row="2"
                             x:Name="collection2"
                             ItemsSource="{Binding ArticleList}"
+                            IsVisible="false"
                             Margin="10,0,10,0"
                             VerticalScrollBarVisibility="Never">
                 <CollectionView.ItemsLayout>
@@ -145,7 +115,7 @@
                                                 Path=PushCommand}"
                                              CommandParameter="{Binding .}"/>
                             </Grid.GestureRecognizers>
-                            <ff:CachedImage Source="{Binding ParentPhoto}" />
+                            <ff:CachedImage Source="{Binding DhhPhoto}" />
                             <pancake:PancakeView
                                         IsVisible="{Binding IsVisible}"
                                         BackgroundColor="#1C1C6E"
@@ -175,7 +145,7 @@
                                                  HeightRequest="25"
                                                  CornerRadius="5">
                             </pancake:PancakeView>
-                            <Label Text="{Binding ParentTopic}" 
+                            <Label Text="{Binding DhhTopic}" 
                                    FontSize="12" 
                                    TextColor="White" 
                                    HorizontalTextAlignment="Start"
