@@ -39,6 +39,9 @@
                             ItemsSource="{Binding ArticleList}"
                             Margin="10,0,10,0"
                             VerticalScrollBarVisibility="Never">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Horizontal" Span="2"/>
+                </CollectionView.ItemsLayout>
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Grid Padding="10,20,10,0">
@@ -94,6 +97,9 @@
                             ItemsSource="{Binding ArticleList}"
                             Margin="10,0,10,0"
                             VerticalScrollBarVisibility="Never">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Horizontal" Span="2"/>
+                </CollectionView.ItemsLayout>
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Grid Padding="10,20,10,0">
