@@ -53,7 +53,10 @@ namespace HandsAndVoices.Services
                 // decreases by 4 hours to get time at eastern standard zone
                 var current = now - new TimeSpan(4, 0, 0);
 
-                App.DayCount = (int)(Math.Floor((current - App.FirstTime).TotalDays) + 2);
+                App.DayCount = (int)(Math.Floor((current - App.FirstTime).TotalDays) + 1);
+                if (App.DayCount == 0)
+                    App.DayCount = 1;
+
                 //App.DayCount = 90; // If you want to test with any number of days have been past, enter 1-90 or comment out this line if you wish to test with actual day.
                 // --- ---
 
