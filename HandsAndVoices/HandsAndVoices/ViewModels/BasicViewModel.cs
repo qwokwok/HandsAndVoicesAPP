@@ -14,5 +14,16 @@ namespace HandsAndVoices.ViewModels
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));
         }
+
+        protected void NotifyPropertiesChanged(params string[] props)
+        {
+            foreach (var prop in props)
+            {
+                if (!string.IsNullOrWhiteSpace(prop))
+                {
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));
+                }
+            }
+        }
     }
 }

@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HandsAndVoices.Views.ExplorePage"
+             xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:viewModel="clr-namespace:HandsAndVoices.ViewModels"
+             xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms">
+
+    <ContentPage.BindingContext>
+        <viewModel:ExploreViewModel/>
+    </ContentPage.BindingContext>
+    <AbsoluteLayout>
+        <Grid AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+        <skia:SKCanvasView x:Name="SKCanvas" PaintSurface="SKCanvas_PaintSurface"/>
+        <Image Source="background"
+               IsVisible="{DynamicResource IsVisible}"
+               Aspect="Fill"
+               VerticalOptions="CenterAndExpand"
+               Opacity=".9"/>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.Resources>
+                <ResourceDictionary>
+                    <Style TargetType="pancake:PancakeView">
+                        <Setter Property="BackgroundColor" Value="Black"/>
+                        <Setter Property="CornerRadius" Value="8"/>
+                        <Setter Property="Margin" Value="10,0,10,6"/>
+                        <Setter Property="Padding" Value="-8"/>
+                        <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+                        <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
+                        <Setter Property="HeightRequest" Value="500"/>
+                        <Setter Property="WidthRequest" Value="500"/>
+                    </Style>
+                </ResourceDictionary>
+            </Grid.Resources>
+            <Grid>
+                <Label Text="{Binding Article.TitleTopic}" 
+                       HorizontalOptions="Center"
+                       VerticalOptions="End"
+                       TextColor="{DynamicResource Text}"
+                       FontSize="Body"
+                       FontFamily="Ubuntu"
+                       Margin="0,0,0,5"/>
+            </Grid>
+            <Grid Grid.Row="1">
+                <pancake:PancakeView x:Name="asdasd">
+                    <pancake:PancakeView.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ArticleCommand}"/>
+                    </pancake:PancakeView.GestureRecognizers>
+                    <Image Source="{Binding Article.ArticleImage}" Aspect="AspectFill"/>
+                </pancake:PancakeView>
+                <Image x:Name="articleCheck" 
+                       Source="checkIcon"
+                       HeightRequest="50"
+                       WidthRequest="50"
+                       HorizontalOptions="End"
+                       VerticalOptions="Start"
+                       Margin="10,10,20,0"/>
+                <pancake:PancakeView BackgroundColor="Black"
+                                     HorizontalOptions="Start"
+                                     VerticalOptions="End"
+                                     HeightRequest="50"
+                                     WidthRequest="85"
+                                     Opacity=".66"
+                                     Margin="20,15,15,15">
+                    <Label Text="Article" 
+                           Margin="20,0,0,0"
+                           VerticalOptions="Center"
+                           FontFamily="Ubuntu"
+                           TextColor="White"/>
+                </pancake:PancakeView>
+            </Grid>
+            <Grid Grid.Row="2">
+                <pancake:PancakeView>
+                    <pancake:PancakeView.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ParentQuoteCommand}"/>
+                    </pancake:PancakeView.GestureRecognizers>
+                    <Image Source="{Binding Article.ParentPhoto}" Aspect="AspectFill"/>
+                </pancake:PancakeView>
+                    <Image x:Name="parentCheck" 
+                        Source="checkIcon"
+                       HeightRequest="50"
+                       WidthRequest="50"
+                       HorizontalOptions="End"
+                       VerticalOptions="Start"
+                       Margin="10,10,20,0"/>
+                <pancake:PancakeView BackgroundColor="Black"
+                                     HorizontalOptions="Start"
+                                     VerticalOptions="End"
+                                     HeightRequest="50"
+                                     WidthRequest="130"
+                                     Opacity=".66"
+                                     Margin="20,15,15,15">
+                    <Label Text="Parent Quote" 
+                           Margin="20,0,0,0"
+                           VerticalOptions="Center"
+                           FontFamily="Ubuntu"
+                           TextColor="White"/>
+                </pancake:PancakeView>
+            </Grid>
+            <Grid Grid.Row="3">
+                <pancake:PancakeView>
+                    <pancake:PancakeView.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding DHHQuoteCommand}"/>
+                    </pancake:PancakeView.GestureRecognizers>
+                    <Image Source="{Binding Article.DhhPhoto}" Aspect="AspectFill"/>
+                </pancake:PancakeView>
+                <Image x:Name="dhhCheck" 
+                       Source="checkIcon"
+                       HeightRequest="50"
+                       WidthRequest="50"
+                       HorizontalOptions="End"
+                       VerticalOptions="Start"
+                       Margin="10,10,20,0"/>
+                <pancake:PancakeView BackgroundColor="Black"
+                                     HorizontalOptions="Start"
+                                     VerticalOptions="End"
+                                     HeightRequest="50"
+                                     WidthRequest="155"
+                                     Opacity=".66"
+                                     Margin="20,15,15,15">
+                    <Label Text="Deaf / HH Quote" 
+                           Margin="20,0,0,0"
+                           VerticalOptions="Center"
+                           FontFamily="Ubuntu"
+                           TextColor="White"/>
+                </pancake:PancakeView>
+            </Grid>
+            <Grid Grid.Row="4">
+                <pancake:PancakeView>
+                    <pancake:PancakeView.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ResourceCommand}"/>
+                    </pancake:PancakeView.GestureRecognizers>
+                    <Image Source="{Binding Article.ResourceImage}" Aspect="AspectFill"/>
+                </pancake:PancakeView>
+                <Image x:Name="resourceCheck" 
+                    Source="checkIcon"
+                       HeightRequest="50"
+                       WidthRequest="50"
+                       HorizontalOptions="End"
+                       VerticalOptions="Start"
+                       Margin="10,10,20,0"/>
+                <pancake:PancakeView BackgroundColor="Black"
+                                     HorizontalOptions="Start"
+                                     VerticalOptions="End"
+                                     HeightRequest="50"
+                                     WidthRequest="100"
+                                     Opacity=".66"
+                                     HasShadow="True"
+                                     Elevation="1"
+                                     Margin="20,15,15,15">
+                    <Label Text="Resource" 
+                           Margin="20,0,0,0"
+                           VerticalOptions="Center"
+                           FontFamily="Ubuntu"
+                           TextColor="White"/>
+                </pancake:PancakeView>
+            </Grid>
+        </Grid>
+    </Grid>
+    <pancake:PancakeView x:Name="bottomBar"
+                         AbsoluteLayout.LayoutBounds="0.5,.98,.3,.06" 
+                         AbsoluteLayout.LayoutFlags="All" 
+                         CornerRadius="200" 
+                         HeightRequest="50" 
+                         WidthRequest="50"
+                         BackgroundColor="{DynamicResource TopicBar}">
+            <pancake:PancakeView.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding FinishCommand}"/>
+            </pancake:PancakeView.GestureRecognizers>
+            <pancake:PancakeView.TranslationY>
+                <OnPlatform x:TypeArguments="x:Double">
+                    <On Platform="iOS">-10</On>
+                    <On Platform="Android">0</On>
+                </OnPlatform>
+            </pancake:PancakeView.TranslationY>
+            
+            <Label Text="Finish" TextColor="White" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center"
+                   FontSize="23"
+                   FontAttributes="Bold"
+                   FontFamily="Ubuntu"/>
+        </pancake:PancakeView>
+    </AbsoluteLayout>
+</ContentPage>

@@ -39,6 +39,8 @@ namespace HandsAndVoices.Services
 
                     Preferences.Set("date_key", date);
                     App.FirstTime = date;
+
+                    Preferences.Set("day_key", 1);
                 }
                 else
                 {

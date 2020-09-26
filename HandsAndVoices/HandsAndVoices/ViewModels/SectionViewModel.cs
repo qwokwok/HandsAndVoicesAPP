@@ -3,7 +3,6 @@ using HandsAndVoices.Views.Article;
 using HandsAndVoices.Views.Quote;
 using HandsAndVoices.Views.Resource;
 using System.Collections.Generic;
-using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace HandsAndVoices.ViewModels
