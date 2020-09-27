@@ -21,14 +21,6 @@
         <ScrollView>
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition>
-                        <RowDefinition.Height>
-                            <OnPlatform x:TypeArguments="GridLength">
-                                <On Platform="iOS">0</On>
-                                <On Platform="Android">80</On>
-                            </OnPlatform>
-                        </RowDefinition.Height>
-                    </RowDefinition>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="120"/>
                     <RowDefinition Height="120"/>
@@ -64,7 +56,7 @@
                         <Setter Property="Orientation" Value="Horizontal"/>
                     </Style>
                 </Grid.Resources>
-                <StackLayout Margin="10" Grid.Row="1" Orientation="Vertical">
+                <StackLayout Margin="10" Orientation="Vertical">
                     <Label Text="{Binding WelcomeText}" Style="{StaticResource content}"/>
                     <Label Text="{Binding TitleText}" Style="{StaticResource content}"/>
                     <Label Text="{Binding SupportText}" Style="{StaticResource content}"/>
@@ -79,49 +71,49 @@
                     </Image>
                     <Label Text="{Binding MobileText}" Style="{StaticResource content}"/>
                 </StackLayout>
-                <Grid Grid.Row="2">
+                <Grid Grid.Row="1">
                     <StackLayout>
                         <Image Source="karen"/>
                         <Label Style="{StaticResource user}"
                             Text="Karen Putz is the Co-Director of Deaf and Hard of Hearing Infusion at Hands &amp; Voices. She is a mom of three deaf and hard of hearing kids who are now young adults. Karen is the co-founder and past president of Illinois Hands &amp; Voices."/>
                     </StackLayout>
                 </Grid>
-                <Grid Grid.Row="3">
+                <Grid Grid.Row="2">
                     <StackLayout>
                         <Image Source="amanda"/>
                         <Label Style="{StaticResource user}"
                             Text="Hello, my name is Amanda Bui, and I am currently a third year student studying Mobile Application Development/ Web Mobile Computing. I grew up in a mainstream life with bilateral cochlear implants. I hope you enjoyed the app created by my team!"/>
                     </StackLayout>
                 </Grid>
-                <Grid Grid.Row="4">
+                <Grid Grid.Row="3">
                     <StackLayout>
                         <Image Source="christine"/>
                         <Label Style="{StaticResource user}"
                             Text="Hello, my name is Christine Maldonado. I am a third year student majoring in Mobile Application Development at RIT. I was born deaf and my parents are deaf. We communicate by using ASL. I grew up in deaf school. I hope you will learn a lot from this app!"/>
                     </StackLayout>
                 </Grid>
-                <Grid Grid.Row="5">
+                <Grid Grid.Row="4">
                     <StackLayout>
                         <Image Source="brian"/>
                         <Label Style="{StaticResource user}"
                             Text="Brian Trager is the Associate Professor of the Department of Information and Computing Studies at National Technical Institute for the Deaf at Rochester Institute of Technology."/>
                     </StackLayout>
                 </Grid>
-                <Grid Grid.Row="6">
+                <Grid Grid.Row="5">
                     <StackLayout>
                         <Image Source="quoc"/>
                         <Label Style="{StaticResource user}"
                             Text="Quoc Nhan is a 3rd year student majoring in Mobile Application Development at NTID. Planning to continue his education through bachelor's degree in Web and Mobile Computing. He is deaf and loving ASL :D"/>
                     </StackLayout>
                 </Grid>
-                <Grid Grid.Row="7">
+                <Grid Grid.Row="6">
                     <StackLayout>
                         <Image Source="xy"/>
                         <Label Style="{StaticResource user}"
                             Text="My name is Xiangyu Shi, a 3-year NTID international student and studying Mobile Application Development. I am planning to take a bachelor's degree in Web Mobile Computer."/>
                     </StackLayout>
                 </Grid>
-                <Grid Grid.Row="8">
+                <Grid Grid.Row="7">
                     <StackLayout>
                         <Image Source="harsh"/>
                         <Label Style="{StaticResource user}"

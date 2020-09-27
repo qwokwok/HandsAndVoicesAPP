@@ -19,20 +19,7 @@
                VerticalOptions="CenterAndExpand"
                Opacity=".9"/>
         <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition>
-                    <RowDefinition.Height>
-                        <OnPlatform x:TypeArguments="GridLength">
-                            <On Platform="iOS">0</On>
-                            <On Platform="Android">75</On>
-                        </OnPlatform>
-                    </RowDefinition.Height>
-                </RowDefinition>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-
-            <CollectionView Grid.Row="1" 
-                            ItemsSource="{Binding ArticleList}"
+            <CollectionView ItemsSource="{Binding ArticleList}"
                             Margin="10,0,10,0"
                             VerticalScrollBarVisibility="Never">
                 <CollectionView.ItemsLayout>

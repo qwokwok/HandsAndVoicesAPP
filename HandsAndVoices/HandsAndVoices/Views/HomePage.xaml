@@ -48,23 +48,15 @@
                             </Style>
                         </ResourceDictionary>
                     </Grid.Resources>
-                    <Grid.RowDefinitions>
-                        <RowDefinition>
-                            <RowDefinition.Height>
-                                <OnPlatform x:TypeArguments="GridLength">
-                                    <On Platform="iOS">0</On>
-                                    <On Platform="Android">80</On>
-                                </OnPlatform>
-                            </RowDefinition.Height>
-                        </RowDefinition>
-                        <RowDefinition Height="200"/>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
                         <RowDefinition Height="200"/>
                         <RowDefinition Height="200"/>
                         <RowDefinition Height="200"/>
                         <RowDefinition Height="60"/>
                     </Grid.RowDefinitions>
 
-                    <Grid Grid.Row="1">
+                    <Grid>
                         <!--<ff:CachedImage 
                                 Margin="10,10,10,0"
                                 Source="articlePic" Aspect="Fill"/>-->
@@ -119,7 +111,7 @@
                             </CollectionView.ItemTemplate>
                         </CollectionView>
                     </Grid>
-                    <Grid Grid.Row="2">
+                    <Grid Grid.Row="1">
                         <!--<ff:CachedImage 
                                 Margin="10,10,10,0"
                                 Source="parentPic.png" Aspect="Fill"/>-->
@@ -174,7 +166,7 @@
                             </CollectionView.ItemTemplate>
                         </CollectionView>
                     </Grid>
-                    <Grid Grid.Row="3">
+                    <Grid Grid.Row="2">
                         <!--<ff:CachedImage 
                                 Margin="10,10,10,0"
                                 Source="dhhPic.png" Aspect="Fill"/>-->
@@ -229,7 +221,7 @@
                             </CollectionView.ItemTemplate>
                         </CollectionView>
                     </Grid>
-                    <Grid Grid.Row="4">
+                    <Grid Grid.Row="3">
                         <!--<ff:CachedImage 
                                 Margin="10,10,10,0"
                                 Source="resourcePic.png" 

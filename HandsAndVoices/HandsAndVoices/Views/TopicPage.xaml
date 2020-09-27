@@ -19,18 +19,7 @@
                Opacity=".9"/>
 
         <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition>
-                    <RowDefinition.Height>
-                        <OnPlatform x:TypeArguments="GridLength">
-                            <On Platform="iOS">0</On>
-                            <On Platform="Android">40</On>
-                        </OnPlatform>
-                    </RowDefinition.Height>
-                </RowDefinition>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <CollectionView ItemsSource="{Binding ArticleList}" Margin="0,40,0,0" Grid.Row="1">
+            <CollectionView ItemsSource="{Binding ArticleList}" Margin="0,20,0,0">
                 <CollectionView.ItemsLayout>
                     <GridItemsLayout Orientation="Vertical"/>
                 </CollectionView.ItemsLayout>

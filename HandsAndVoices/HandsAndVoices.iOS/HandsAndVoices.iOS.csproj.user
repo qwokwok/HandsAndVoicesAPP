@@ -3,5 +3,8 @@
   <PropertyGroup>
     <SelectedDevice>Simulator</SelectedDevice>
     <DefaultDevice>iPhone 11 iOS 13.6</DefaultDevice>
+    <DeveloperId />
+    <DevelopmentTeamId />
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
 </Project>

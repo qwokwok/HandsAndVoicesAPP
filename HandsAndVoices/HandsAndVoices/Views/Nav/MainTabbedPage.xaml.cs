@@ -17,15 +17,15 @@ namespace HandsAndVoices.Views.Nav
                 .DisableSwipePaging()
                 .SetElevation(1f);
 
-            this.Children.Add(new HomePage());
+            this.Children.Add(new HomePage() { IconImageSource = "categoryIcon" } );
 
-            this.Children.Add(new ArticleListPage());
+            this.Children.Add(new ArticleListPage() { IconImageSource = "articleIcon" } );
 
-            this.Children.Add(new SegmentPage());
+            this.Children.Add(new SegmentPage() { IconImageSource = "quoteIcon" } );
 
-            this.Children.Add(new ResourceListPage());
+            this.Children.Add(new ResourceListPage() { IconImageSource = "meetingIcon" } );
 
-            this.Children.Add(new AboutPage());
+            this.Children.Add(new AboutPage() { IconImageSource = "aboutIcon" } );
 
             Title = "Categories";
             

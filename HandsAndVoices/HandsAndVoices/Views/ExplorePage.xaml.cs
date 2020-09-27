@@ -37,7 +37,7 @@ namespace HandsAndVoices.Views
         private void ScaleUp(Image image, string key)
         {
             if (Preferences.Get(key, false))
-                image.ScaleTo(1, 100, null);
+                image.ScaleTo(1, 250, null);
         }
 
         protected override void OnAppearing()

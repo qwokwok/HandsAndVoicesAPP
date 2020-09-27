@@ -21,17 +21,19 @@
 
         <Grid>
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="0"/>
                     <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
+                    <RowDefinition Height="15"/>
             </Grid.RowDefinitions>
                 <Grid.Resources>
                     <ResourceDictionary>
                         <Style TargetType="pancake:PancakeView">
                             <Setter Property="BackgroundColor" Value="Black"/>
                             <Setter Property="CornerRadius" Value="8"/>
-                            <Setter Property="Margin" Value="10,10,10,10"/>
+                            <Setter Property="Margin" Value="10,5,10,5"/>
                             <Setter Property="Padding" Value="-8"/>
                             <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
                             <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
@@ -40,7 +42,7 @@
                         </Style>
                     </ResourceDictionary>
                 </Grid.Resources>
-                <Grid>
+                <Grid Grid.Row="1">
                 <pancake:PancakeView>
                     <pancake:PancakeView.GestureRecognizers>
                         <TapGestureRecognizer Command="{Binding ArticleCommand}"/>
@@ -73,7 +75,7 @@
                            TextColor="White"/>
                 </pancake:PancakeView>
             </Grid>
-            <Grid Grid.Row="1">
+            <Grid Grid.Row="2">
                 <pancake:PancakeView>
                     <pancake:PancakeView.GestureRecognizers>
                         <TapGestureRecognizer Command="{Binding ParentQuoteCommand}"/>
@@ -106,7 +108,7 @@
                            TextColor="White"/>
                 </pancake:PancakeView>
             </Grid>
-            <Grid Grid.Row="2">
+            <Grid Grid.Row="3">
                 <pancake:PancakeView>
                     <pancake:PancakeView.GestureRecognizers>
                         <TapGestureRecognizer Command="{Binding DHHQuoteCommand}"/>
@@ -139,7 +141,7 @@
                            TextColor="White"/>
                 </pancake:PancakeView>
             </Grid>
-            <Grid Grid.Row="3">
+            <Grid Grid.Row="4">
                 <pancake:PancakeView>
                     <pancake:PancakeView.GestureRecognizers>
                         <TapGestureRecognizer Command="{Binding ResourceCommand}"/>

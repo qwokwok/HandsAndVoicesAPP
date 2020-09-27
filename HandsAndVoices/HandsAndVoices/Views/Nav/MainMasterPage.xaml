@@ -15,12 +15,12 @@
 
     <!-- Our Default Landing Page -->
     <MasterDetailPage.Detail>
-        <nav:TransparentNavigationPage>
+        <nav:CustomNavigationPage>
             <x:Arguments>
                 <!-- home page is our default home page -->
                 <pages:HomePage/>
             </x:Arguments>
-        </nav:TransparentNavigationPage>
+        </nav:CustomNavigationPage>
     </MasterDetailPage.Detail>
 
 </MasterDetailPage>
