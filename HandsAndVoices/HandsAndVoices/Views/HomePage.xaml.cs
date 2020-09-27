@@ -22,7 +22,7 @@ namespace HandsAndVoices.Views
                 || !Preferences.Get("parent_key", false)
                 || !Preferences.Get("dhh_key", false)
                 || !Preferences.Get("resource_key", false))
-                Navigation.PushModalAsync(new TransparentNavigationPage(new ExplorePage()));
+                Navigation.PushModalAsync(new TransparentNavigationPage(new ExplorePage()) { BarTextColor = Color.White });
 
             VM.UpdateSkiaColor += delegate { SKCanvas.InvalidateSurface(); };
         }

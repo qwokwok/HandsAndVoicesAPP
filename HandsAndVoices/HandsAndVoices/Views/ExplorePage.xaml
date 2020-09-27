@@ -58,10 +58,15 @@
                                      HorizontalOptions="Start"
                                      VerticalOptions="End"
                                      HeightRequest="50"
-                                     WidthRequest="85"
                                      Opacity=".66"
                                      Margin="20,15,15,15">
-                    <Label Text="Article" 
+                        <pancake:PancakeView.WidthRequest>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="iOS">100</On>
+                                <On Platform="Android">85</On>
+                            </OnPlatform>
+                        </pancake:PancakeView.WidthRequest>
+                        <Label Text="Article" 
                            Margin="20,0,0,0"
                            VerticalOptions="Center"
                            FontFamily="Ubuntu"
@@ -82,13 +87,18 @@
                        HorizontalOptions="End"
                        VerticalOptions="Start"
                        Margin="10,10,20,0"/>
-                <pancake:PancakeView BackgroundColor="Black"
+                    <pancake:PancakeView BackgroundColor="Black"
                                      HorizontalOptions="Start"
                                      VerticalOptions="End"
                                      HeightRequest="50"
-                                     WidthRequest="130"
                                      Opacity=".66"
                                      Margin="20,15,15,15">
+                        <pancake:PancakeView.WidthRequest>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="iOS">145</On>
+                                <On Platform="Android">130</On>
+                            </OnPlatform>
+                        </pancake:PancakeView.WidthRequest>
                     <Label Text="Parent Quote" 
                            Margin="20,0,0,0"
                            VerticalOptions="Center"
@@ -114,10 +124,15 @@
                                      HorizontalOptions="Start"
                                      VerticalOptions="End"
                                      HeightRequest="50"
-                                     WidthRequest="155"
                                      Opacity=".66"
                                      Margin="20,15,15,15">
-                    <Label Text="Deaf / HH Quote" 
+                        <pancake:PancakeView.WidthRequest>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="iOS">170</On>
+                                <On Platform="Android">155</On>
+                            </OnPlatform>
+                        </pancake:PancakeView.WidthRequest>
+                        <Label Text="Deaf / HH Quote" 
                            Margin="20,0,0,0"
                            VerticalOptions="Center"
                            FontFamily="Ubuntu"
@@ -142,12 +157,17 @@
                                      HorizontalOptions="Start"
                                      VerticalOptions="End"
                                      HeightRequest="50"
-                                     WidthRequest="100"
                                      Opacity=".66"
                                      HasShadow="True"
                                      Elevation="1"
                                      Margin="20,15,15,15">
-                    <Label Text="Resource" 
+                        <pancake:PancakeView.WidthRequest>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="iOS">115</On>
+                                <On Platform="Android">100</On>
+                            </OnPlatform>
+                        </pancake:PancakeView.WidthRequest>
+                        <Label Text="Resource" 
                            Margin="20,0,0,0"
                            VerticalOptions="Center"
                            FontFamily="Ubuntu"
