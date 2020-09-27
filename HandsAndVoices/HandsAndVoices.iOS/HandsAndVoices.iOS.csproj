@@ -416,4 +416,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\youtube4.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\checkIcon.png" />
+  </ItemGroup>
 </Project>
