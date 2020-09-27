@@ -73,6 +73,8 @@
     <None Include="Info.plist" />
     <Compile Include="Notification\iOSNotificationManager.cs" />
     <Compile Include="Notification\iOSNotificationReceiver.cs" />
+    <Compile Include="Notification\NotificationDelegate.cs" />
+    <Compile Include="Notification\NotificationHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
