@@ -90,28 +90,28 @@ namespace HandsAndVoices.ViewModels
         {
             App.Section = "Article";
             Preferences.Set("article_key", true);
-            Navigation.PushModalAsync(new ArticleDetailPage());
+            Navigation.PushAsync(new ArticleDetailPage());
         }
 
         void PushParentQuote()
         {
             App.Section = "Parent";
             Preferences.Set("parent_key", true);
-            Navigation.PushModalAsync(new QuoteDetailPage());
+            Navigation.PushAsync(new QuoteDetailPage());
         }
 
         void PushDHHQuote()
         {
             App.Section = "DHH";
             Preferences.Set("dhh_key", true);
-            Navigation.PushModalAsync(new DHHDetailPage());
+            Navigation.PushAsync(new DHHDetailPage());
         }
 
         void PushResource()
         {
             App.Section = "Resource";
             Preferences.Set("resource_key", true);
-            Navigation.PushModalAsync(new ResourceDetailPage());
+            Navigation.PushAsync(new ResourceDetailPage());
         }
 
         double CheckIsExplored(string key)

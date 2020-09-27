@@ -1,5 +1,6 @@
 ﻿using HandsAndVoices.Util;
 using HandsAndVoices.ViewModels;
+using HandsAndVoices.Views.Nav;
 using SkiaSharp.Views.Forms;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -21,7 +22,7 @@ namespace HandsAndVoices.Views
                 || !Preferences.Get("parent_key", false)
                 || !Preferences.Get("dhh_key", false)
                 || !Preferences.Get("resource_key", false))
-                Navigation.PushModalAsync(new ExplorePage());
+                Navigation.PushModalAsync(new TransparentNavigationPage(new ExplorePage()));
 
             VM.UpdateSkiaColor += delegate { SKCanvas.InvalidateSurface(); };
         }
