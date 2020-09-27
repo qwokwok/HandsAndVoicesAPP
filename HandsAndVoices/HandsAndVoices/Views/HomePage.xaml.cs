@@ -18,7 +18,18 @@ namespace HandsAndVoices.Views
 
             VM.Navigation = Navigation;
 
-            if(!Preferences.Get("article_key", false)
+            var day = (int)App.ReseveredAdvices[0].Day;
+
+            if (day > Preferences.Get("day_key", 1))
+            {
+                Preferences.Set("article_key", false);
+                Preferences.Set("parent_key", false);
+                Preferences.Set("dhh_key", false);
+                Preferences.Set("resource_key", false);
+                Preferences.Set("day_key", day);
+            }
+
+            if (!Preferences.Get("article_key", false)
                 || !Preferences.Get("parent_key", false)
                 || !Preferences.Get("dhh_key", false)
                 || !Preferences.Get("resource_key", false))
