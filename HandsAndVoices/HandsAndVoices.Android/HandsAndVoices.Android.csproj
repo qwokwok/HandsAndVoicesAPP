@@ -75,11 +75,8 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Services\AlarmReceiver.cs" />
-    <Compile Include="Services\AndroidNotificationManager.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Services\FirebaseService.cs" />
-    <Compile Include="Services\PeriodicService.cs" />
     <Compile Include="Renderers\TransparentNavigationPageRenderer.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

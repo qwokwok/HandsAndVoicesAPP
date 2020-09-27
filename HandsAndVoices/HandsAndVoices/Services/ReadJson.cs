@@ -86,9 +86,9 @@ namespace HandsAndVoices.Services
                     Day = 0,
                     TitleTopic = "The End!",
                     ArticleImage = "coming.png",
-                    DhhName = "Coming soon!",
-                    ParentName = "Coming soon!",
-                    ResourcesToExplore = "Coming soon!",
+                    DhhName = "The End",
+                    ParentName = "The End",
+                    ResourcesToExplore = "The End",
                     ResourceImage = "coming.png",
                     DhhPhoto = "coming.png",
                     ParentPhoto = "coming.png"

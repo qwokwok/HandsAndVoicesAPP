@@ -10,10 +10,12 @@ namespace HandsAndVoices.ViewModels
 {
     public class ExploreViewModel : BasicViewModel
     {
+        #region Fields
         private double isArticleExplored;
         private double isParentExplored;
         private double isDhhExplored;
         private double isResourceExplored;
+        #endregion
 
         #region Properties
         public INavigation Navigation { get; set; }
@@ -88,30 +90,22 @@ namespace HandsAndVoices.ViewModels
         #region Methods
         public void PushArticle()
         {
-            App.Section = "Article";
-            Preferences.Set("article_key", true);
-            Navigation.PushAsync(new ArticleDetailPage());
+            PushSpecificPage("Article", "article_key");
         }
 
         void PushParentQuote()
         {
-            App.Section = "Parent";
-            Preferences.Set("parent_key", true);
-            Navigation.PushAsync(new QuoteDetailPage());
+            PushSpecificPage("Parent", "parent_key");
         }
 
         void PushDHHQuote()
         {
-            App.Section = "DHH";
-            Preferences.Set("dhh_key", true);
-            Navigation.PushAsync(new DHHDetailPage());
+            PushSpecificPage("DHH", "dhh_key");
         }
 
         void PushResource()
         {
-            App.Section = "Resource";
-            Preferences.Set("resource_key", true);
-            Navigation.PushAsync(new ResourceDetailPage());
+            PushSpecificPage("Resource", "resource_key");
         }
 
         double CheckIsExplored(string key)
@@ -121,6 +115,20 @@ namespace HandsAndVoices.ViewModels
 
             else
                 return 50;
+        }
+
+        void PushSpecificPage(string section, string key)
+        {
+            App.Section = section;
+            Preferences.Set(key, true);
+
+            switch(section)
+            {
+                case "Article": Navigation.PushAsync(new ArticleDetailPage()); break;
+                case "Parent": Navigation.PushAsync(new QuoteDetailPage()); break;
+                case "DHH": Navigation.PushAsync(new DHHDetailPage()); break;
+                case "Resource": Navigation.PushAsync(new ResourceDetailPage()); break;
+            }
         }
         #endregion
     }
