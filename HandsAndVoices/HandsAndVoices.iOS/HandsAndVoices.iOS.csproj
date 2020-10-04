@@ -512,4 +512,16 @@
   <ItemGroup>
     <BundleResource Include="Resources\tonyEzzi.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\fbIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\instaIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\twitterIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\youtubeIcon.png" />
+  </ItemGroup>
 </Project>

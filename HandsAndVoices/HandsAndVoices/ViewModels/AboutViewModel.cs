@@ -15,13 +15,15 @@ namespace HandsAndVoices.ViewModels
         public string TitleText { get; set; }
         public string SupportText { get; set; }
         public string JoinText { get; set; }
+        public string SourceText { get; set; }
         public string MobileText { get; set; }
         #endregion
 
-        public ICommand JoinCommand => new Command(async() =>
-        {
-            await OpenBrowser(new Uri("https://www.handsandvoices.org/about/join.htm"));
-        });
+        public ICommand JoinCommand => new Command(async() => await OpenBrowser(new Uri("https://www.handsandvoices.org/about/join.htm")));
+        public ICommand YoutubeCommand => new Command(async () => await OpenBrowser(new Uri("https://www.youtube.com/user/handsandvoiceshq")));
+        public ICommand FacebookCommand => new Command(async () => await OpenBrowser(new Uri("https://www.facebook.com/handsandvoices")));
+        public ICommand TwitterCommand => new Command(async () => await OpenBrowser(new Uri("https://twitter.com/handsandvoices")));
+        public ICommand InstagramCommand => new Command(async () => await OpenBrowser(new Uri("https://www.instagram.com/handsandvoices/")));
 
         #region Constructors
         public AboutViewModel()
@@ -38,7 +40,7 @@ namespace HandsAndVoices.ViewModels
                 "\n\n- We must lend our organized support to all kinds of efforts that promote our common interests--strength in numbers!";
 
             JoinText = "To become a member of Hands & Voices, you can join our efforts by subscribing here";
-
+            SourceText = "If you want to explore more, we have our channels";
             MobileText = "This app was developed in collaboration with the Mobile App class at RIT NTID in Rochester, New York, directed by Karen Putz.";
         }
         #endregion
