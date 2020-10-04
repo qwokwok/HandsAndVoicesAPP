@@ -22,13 +22,13 @@
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="120"/>
-                    <RowDefinition Height="120"/>
-                    <RowDefinition Height="120"/>
-                    <RowDefinition Height="120"/>
-                    <RowDefinition Height="120"/>
-                    <RowDefinition Height="120"/>
-                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
 
                 <Grid.Resources>
@@ -41,7 +41,7 @@
                     </Style>
 
                     <Style x:Key="user" TargetType="Label" >
-                        <Setter Property="Margin" Value="5,0,5,0"/>
+                        <Setter Property="Margin" Value="5"/>
                         <Setter Property="VerticalOptions" Value="Center"/>
                         <Setter Property="TextColor" Value="{DynamicResource Text}"/>
                     </Style>
