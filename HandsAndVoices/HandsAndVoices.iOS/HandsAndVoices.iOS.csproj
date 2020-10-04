@@ -470,4 +470,46 @@
   <ItemGroup>
     <BundleResource Include="Resources\checkIcon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AndreaMarwah.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\anitiaDowd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\benLachman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\candaceLindow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ChristineYoshinaga.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\davePutz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\JanetDesGeorges.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\JoelMartinez.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\KarenWisinski.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\katieMcCarthy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\KodiBrandt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\RachelColeman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\renPutz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tonyEzzi.png" />
+  </ItemGroup>
 </Project>
