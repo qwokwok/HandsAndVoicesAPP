@@ -29,7 +29,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:484583264243:ios:52c949789533114ac7cc86</string>
+	<string>1:484583264243:ios:c42ba8f26da139e0c7cc86</string>
 	<key>DATABASE_URL</key>
 	<string>https://handsandvoices-6605d.firebaseio.com</string>
 </dict>
