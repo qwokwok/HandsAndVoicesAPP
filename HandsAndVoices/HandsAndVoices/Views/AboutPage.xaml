@@ -71,22 +71,22 @@
                     </Image>
                     <Label Text="{Binding SourceText}" Style="{StaticResource content}"/>
                     <Grid Margin="0,0,0,40">
-                        <Image Source="fbIcon.png" Margin="5,0,5,5">
+                        <Image Source="fbIcon.png" Margin="20,5,20,5">
                             <Image.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding FacebookCommand}"/>
                             </Image.GestureRecognizers>
                         </Image>
-                        <Image Source="youtubeIcon.png" Grid.Column="1" Margin="5,0,5,5">
+                        <!--<Image Source="youtubeIcon.png" Grid.Column="1" Margin="5,0,5,5">
                             <Image.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding YoutubeCommand}"/>
                             </Image.GestureRecognizers>
-                        </Image>
-                        <Image Source="instaIcon.png" Grid.Column="2" Margin="5,0,5,5">
+                        </Image>-->
+                        <Image Source="instaIcon.png" Grid.Column="1" Margin="20,5,20,5">
                             <Image.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding InstagramCommand}"/>
                             </Image.GestureRecognizers>
                         </Image>
-                        <Image Source="twitterIcon.png" Grid.Column="3" Margin="5,0,5,5">
+                        <Image Source="twitterIcon.png" Grid.Column="2" Margin="20,5,20,5">
                             <Image.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding TwitterCommand}"/>
                             </Image.GestureRecognizers>
@@ -105,14 +105,14 @@
                     <StackLayout>
                         <Image Source="amanda"/>
                         <Label Style="{StaticResource user}"
-                            Text="Hello, my name is Amanda Bui, and I am currently a third year student studying Mobile Application Development/ Web Mobile Computing. I grew up in a mainstream life with bilateral cochlear implants. I hope you enjoyed the app created by my team!"/>
+                            Text="Amanda Bui is a fourth year student studying Mobile Application Development/ Web Mobile Computing. She grew up in a mainstream life with bilateral cochlear implants. She hopes you enjoyed the app created by her team!"/>
                     </StackLayout>
                 </Grid>
                 <Grid Grid.Row="3">
                     <StackLayout>
                         <Image Source="christine"/>
                         <Label Style="{StaticResource user}"
-                            Text="Hello, my name is Christine Maldonado. I am a third year student majoring in Mobile Application Development at RIT. I was born deaf and my parents are deaf. We communicate by using ASL. I grew up in deaf school. I hope you will learn a lot from this app!"/>
+                            Text="Christine Maldonado is a fourth year student majoring in Mobile Application Development at RIT. She was born deaf and her parents are deaf. They communicate by using ASL. She grew up in deaf school. She hopes you will learn a lot from this app!"/>
                     </StackLayout>
                 </Grid>
                 <Grid Grid.Row="4">
@@ -126,14 +126,14 @@
                     <StackLayout>
                         <Image Source="quoc"/>
                         <Label Style="{StaticResource user}"
-                            Text="Quoc Nhan is a 3rd year student majoring in Mobile Application Development at NTID. Planning to continue his education through bachelor's degree in Web and Mobile Computing. He is deaf and loving ASL :D"/>
+                            Text="Quoc Nhan is a 3rd year student majoring in Mobile Application Development at NTID. He is planning to continue his education through bachelor's degree in Web and Mobile Computing. He is deaf and loving ASL :D"/>
                     </StackLayout>
                 </Grid>
                 <Grid Grid.Row="6">
                     <StackLayout>
                         <Image Source="xy"/>
                         <Label Style="{StaticResource user}"
-                            Text="My name is Xiangyu Shi, a 3-year NTID international student and studying Mobile Application Development. I am planning to take a bachelor's degree in Web Mobile Computer."/>
+                            Text="Xiangyu Shi, a 3-year NTID international student and studying Mobile Application Development. He is planning to take a bachelor's degree in Web Mobile Computer."/>
                     </StackLayout>
                 </Grid>
                 <Grid Grid.Row="7">
