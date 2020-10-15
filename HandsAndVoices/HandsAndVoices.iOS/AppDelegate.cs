@@ -3,6 +3,7 @@ using Foundation;
 using UIKit;
 using Plugin.Segmented.Control.iOS;
 using UserNotifications;
+using Plugin.PushNotification;
 
 namespace HandsAndVoices.iOS
 {
@@ -26,6 +27,7 @@ namespace HandsAndVoices.iOS
             global::Xamarin.Forms.Forms.Init();
             Firebase.Core.App.Configure();
             LoadApplication(new App());
+            PushNotificationManager.Initialize(options, true);
 
             // Register your app for remote notifications.
             if (UIDevice.CurrentDevice.CheckSystemVersion(10, 0))
@@ -49,6 +51,17 @@ namespace HandsAndVoices.iOS
             UIApplication.SharedApplication.SetMinimumBackgroundFetchInterval(UIApplication.BackgroundFetchIntervalMinimum);
 
             return base.FinishedLaunching(app, options);
+        }
+
+        public override void RegisteredForRemoteNotifications(UIApplication application, NSData deviceToken)
+        {
+            PushNotificationManager.DidRegisterRemoteNotifications(deviceToken);
+        }
+
+        public override void FailedToRegisterForRemoteNotifications(UIApplication application, NSError error)
+        {
+            PushNotificationManager.RemoteNotificationRegistrationFailed(error);
+
         }
 
         public override void PerformFetch(UIApplication application, Action<UIBackgroundFetchResult> completionHandler)

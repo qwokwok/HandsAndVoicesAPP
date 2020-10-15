@@ -151,6 +151,9 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Plugin.PushNotification">
+      <Version>3.3.3</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Firebase.iOS.Core">
       <Version>6.6.6</Version>
     </PackageReference>
