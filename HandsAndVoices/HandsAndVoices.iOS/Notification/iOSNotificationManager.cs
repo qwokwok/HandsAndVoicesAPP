@@ -1,4 +1,5 @@
-﻿using HandsAndVoices.Services;
+﻿using Foundation;
+using HandsAndVoices.Services;
 using System;
 using UserNotifications;
 using Xamarin.Forms;
@@ -45,7 +46,11 @@ namespace HandsAndVoices.iOS.Notification
             // Create a time-based trigger, interval is in seconds and must be greater than 0
             var trigger = UNTimeIntervalNotificationTrigger.CreateTrigger(0.25, false);
 
-            var request = UNNotificationRequest.FromIdentifier(messageId.ToString(), content, trigger);
+            var d = new NSDateComponents() { Minute = 1 };
+
+            var calendar = UNCalendarNotificationTrigger.CreateTrigger(d, true);
+
+            var request = UNNotificationRequest.FromIdentifier(messageId.ToString(), content, calendar);
             UNUserNotificationCenter.Current.AddNotificationRequest(request, (err) =>
             {
                 if (err != null)
