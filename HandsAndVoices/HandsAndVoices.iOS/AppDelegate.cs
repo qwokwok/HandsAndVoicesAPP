@@ -1,6 +1,5 @@
 ﻿using System;
 using Foundation;
-using HandsAndVoices.Services;
 using UIKit;
 using Plugin.Segmented.Control.iOS;
 using UserNotifications;
@@ -60,6 +59,11 @@ namespace HandsAndVoices.iOS
 
             // Inform system of fetch results
             completionHandler(UIBackgroundFetchResult.NewData);
+        }
+
+        public override void ReceivedLocalNotification(UIApplication application, UILocalNotification notification)
+        {
+            base.ReceivedLocalNotification(application, notification);
         }
     }
 }
