@@ -64,9 +64,6 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Plugin.PushNotification">
-      <Version>3.3.3</Version>
-    </PackageReference>
     <PackageReference Include="Xamarin.Firebase.Messaging">
       <Version>71.1740.4</Version>
     </PackageReference>
