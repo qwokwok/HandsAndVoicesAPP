@@ -6,7 +6,7 @@ using Android.Support.V7.App;
 
 namespace HandsAndVoices.Droid
 {
-    [Activity(Label = "Hands and Voices", Icon = "@mipmap/icon", MainLauncher = true, NoHistory = true, Theme = "@style/SplashTheme", ScreenOrientation = ScreenOrientation.Portrait)]
+    [Activity(Label = "Hands & Voices", Icon = "@mipmap/icon", MainLauncher = true, NoHistory = true, Theme = "@style/SplashTheme", ScreenOrientation = ScreenOrientation.Portrait)]
     public class SplashActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
