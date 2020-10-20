@@ -83,58 +83,58 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\try@2x.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\try@2x1.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo1.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\try@2x10.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo10.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\try@2x11.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo11.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\try@2x12.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo12.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\try@2x13.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo13.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\try@2x14.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo14.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\try@2x15.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo15.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\try@2x16.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo16.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\try@2x2.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo17.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\try@2x3.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo2.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\try@2x4.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo3.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\try@2x5.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo4.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\try@2x6.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo5.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\try@2x7.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo6.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\try@2x8.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo7.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\try@2x9.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo8.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\try@3x.png">
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo9.png">
       <Visible>false</Visible>
     </ImageAsset>
   </ItemGroup>
@@ -522,5 +522,62 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\youtubeIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AnnMarieKillian.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AubreyMillar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BethDonofrio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BrendaSchmidt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BrianHubbard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\JustinNewton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\KaraMatchett.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\KarenHopkins.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\KarenMeyer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LengMawi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LoriannMacko.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LucasDavies.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\maryRondant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\NajwaGhattas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SaraDesGeorges.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ScottJones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\terriPatterson.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TrevaCranfieldMaitland.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\YiesellRayon.png" />
   </ItemGroup>
 </Project>
