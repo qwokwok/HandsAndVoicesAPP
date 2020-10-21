@@ -39,5 +39,12 @@ namespace HandsAndVoices.Views
                 App.Section = "DHH";
             }
         }
+        protected override void OnAppearing()
+        {
+            if (segControl.SelectedSegment == 0)
+                App.Section = "Parent";
+            else
+                App.Section = "DHH";
+        }
     }
 }
