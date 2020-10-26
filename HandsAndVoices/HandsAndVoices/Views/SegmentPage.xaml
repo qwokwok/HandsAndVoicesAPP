@@ -78,7 +78,7 @@
                                    FontSize="Small" 
                                    TextColor="White" 
                                    HorizontalOptions="Center"
-                                       HorizontalTextAlignment="Start"
+                                   HorizontalTextAlignment="Start"
                                    VerticalOptions="Center"
                                    FontAttributes="Bold"
                                    Margin="10,0,0,0"/>

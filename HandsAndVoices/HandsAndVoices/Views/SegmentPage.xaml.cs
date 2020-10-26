@@ -1,6 +1,7 @@
 ﻿using HandsAndVoices.Util;
 using HandsAndVoices.ViewModels;
 using SkiaSharp.Views.Forms;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -38,7 +39,6 @@ namespace HandsAndVoices.Views
                 App.Section = "DHH";
             }
         }
-
         protected override void OnAppearing()
         {
             if (segControl.SelectedSegment == 0)
