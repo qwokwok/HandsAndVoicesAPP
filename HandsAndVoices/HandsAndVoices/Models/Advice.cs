@@ -53,8 +53,8 @@ namespace HandsAndVoices.Models
 
         #region Properties
         public string ResourceTopic { get => TrimLength(ResourcesToExplore, 17); }
-        public string DhhTopic { get => TrimLength(DhhName, 25); }
-        public string ParentTopic { get => TrimLength(ParentName, 25); }
+        public string DhhTopic { get => TrimLength(DhhName, 24); }
+        public string ParentTopic { get => TrimLength(ParentName, 24); }
         public string Topic { get => TrimLength(TitleTopic, 17); }
         public string DayString { get => "Day " + Day.ToString(); }
         public bool IsNew { get => DetermineItemIsNew(Day); }

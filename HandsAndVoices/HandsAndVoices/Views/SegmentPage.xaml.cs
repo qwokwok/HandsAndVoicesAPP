@@ -1,7 +1,6 @@
 ﻿using HandsAndVoices.Util;
 using HandsAndVoices.ViewModels;
 using SkiaSharp.Views.Forms;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -38,6 +37,14 @@ namespace HandsAndVoices.Views
                 collection2.IsVisible = !collection1.IsVisible;
                 App.Section = "DHH";
             }
+        }
+
+        protected override void OnAppearing()
+        {
+            if (segControl.SelectedSegment == 0)
+                App.Section = "Parent";
+            else
+                App.Section = "DHH";
         }
     }
 }

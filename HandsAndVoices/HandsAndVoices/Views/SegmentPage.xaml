@@ -144,7 +144,8 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-            <segment:SegmentedControl Grid.Row="1"
+            <segment:SegmentedControl x:Name="segControl"
+                                      Grid.Row="1"
                                       Margin="15"
                                       OnSegmentSelected="SegmentedControl_OnSegmentSelected"
                                       SelectedItem="{Binding SegmentValue}"
