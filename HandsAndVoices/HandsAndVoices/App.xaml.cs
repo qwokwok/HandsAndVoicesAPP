@@ -36,11 +36,11 @@ namespace HandsAndVoices
 
         protected override void OnStart()
         {
-            var appinfo = App.Current.RequestedTheme;
-            if(OSAppTheme.Light == appinfo)
-                Application.Current.Resources.MergedDictionaries.Add(new Light());
+            //var appinfo = App.Current.RequestedTheme;
+            //if(OSAppTheme.Light == appinfo)
+            //    Application.Current.Resources.MergedDictionaries.Add(new Light());
 
-            else
+            //else
                 Application.Current.Resources.MergedDictionaries.Add(new Blue());
         }
 
