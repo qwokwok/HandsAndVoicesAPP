@@ -675,4 +675,16 @@
   <ItemGroup>
     <BundleResource Include="Resources\virginiaJohnson.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\parentLabel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\deafLabel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\resourceLabel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\articleLabel.png" />
+  </ItemGroup>
 </Project>

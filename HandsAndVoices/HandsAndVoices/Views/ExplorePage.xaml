@@ -23,11 +23,11 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="0"/>
                     <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
                     <RowDefinition Height="15"/>
-            </Grid.RowDefinitions>
+                </Grid.RowDefinitions>
                 <Grid.Resources>
                     <ResourceDictionary>
                         <Style TargetType="pancake:PancakeView">
@@ -56,25 +56,13 @@
                        HorizontalOptions="End"
                        VerticalOptions="Start"
                        Margin="10,10,20,0"/>
-                <pancake:PancakeView BackgroundColor="Black"
-                                     HorizontalOptions="Start"
-                                     VerticalOptions="End"
-                                     HeightRequest="50"
-                                     Opacity=".66"
-                                     Margin="20,15,15,15">
-                        <pancake:PancakeView.WidthRequest>
-                            <OnPlatform x:TypeArguments="x:Double">
-                                <On Platform="iOS">95</On>
-                                <On Platform="Android">85</On>
-                            </OnPlatform>
-                        </pancake:PancakeView.WidthRequest>
-                        <Label Text="Article" 
-                           Margin="20,0,0,0"
-                           VerticalOptions="Center"
-                           FontFamily="Ubuntu"
-                           TextColor="White"/>
-                </pancake:PancakeView>
-            </Grid>
+                    <Image
+                        Source="articleLabel"
+                        HorizontalOptions="Start"
+                        VerticalOptions="End"
+                        HeightRequest="30"
+                        Margin="20,15,15,15"/>
+                </Grid>
             <Grid Grid.Row="2">
                 <pancake:PancakeView>
                     <pancake:PancakeView.GestureRecognizers>
@@ -89,25 +77,13 @@
                        HorizontalOptions="End"
                        VerticalOptions="Start"
                        Margin="10,10,20,0"/>
-                    <pancake:PancakeView BackgroundColor="Black"
-                                     HorizontalOptions="Start"
-                                     VerticalOptions="End"
-                                     HeightRequest="50"
-                                     Opacity=".66"
-                                     Margin="20,15,15,15">
-                        <pancake:PancakeView.WidthRequest>
-                            <OnPlatform x:TypeArguments="x:Double">
-                                <On Platform="iOS">145</On>
-                                <On Platform="Android">130</On>
-                            </OnPlatform>
-                        </pancake:PancakeView.WidthRequest>
-                    <Label Text="Parent Quote" 
-                           Margin="20,0,0,0"
-                           VerticalOptions="Center"
-                           FontFamily="Ubuntu"
-                           TextColor="White"/>
-                </pancake:PancakeView>
-            </Grid>
+                    <Image
+                        Source="parentLabel"
+                        HorizontalOptions="Start"
+                        VerticalOptions="End"
+                        HeightRequest="30"
+                        Margin="20,15,15,15"/>
+                </Grid>
             <Grid Grid.Row="3">
                 <pancake:PancakeView>
                     <pancake:PancakeView.GestureRecognizers>
@@ -122,25 +98,13 @@
                        HorizontalOptions="End"
                        VerticalOptions="Start"
                        Margin="10,10,20,0"/>
-                <pancake:PancakeView BackgroundColor="Black"
-                                     HorizontalOptions="Start"
-                                     VerticalOptions="End"
-                                     HeightRequest="50"
-                                     Opacity=".66"
-                                     Margin="20,15,15,15">
-                        <pancake:PancakeView.WidthRequest>
-                            <OnPlatform x:TypeArguments="x:Double">
-                                <On Platform="iOS">170</On>
-                                <On Platform="Android">155</On>
-                            </OnPlatform>
-                        </pancake:PancakeView.WidthRequest>
-                        <Label Text="Deaf / HH Quote" 
-                           Margin="20,0,0,0"
-                           VerticalOptions="Center"
-                           FontFamily="Ubuntu"
-                           TextColor="White"/>
-                </pancake:PancakeView>
-            </Grid>
+                    <Image
+                        Source="deafLabel"
+                        HorizontalOptions="Start"
+                        VerticalOptions="End"
+                        HeightRequest="30"
+                        Margin="20,15,15,15"/>
+                </Grid>
             <Grid Grid.Row="4">
                 <pancake:PancakeView>
                     <pancake:PancakeView.GestureRecognizers>
@@ -155,27 +119,13 @@
                        HorizontalOptions="End"
                        VerticalOptions="Start"
                        Margin="10,10,20,0"/>
-                <pancake:PancakeView BackgroundColor="Black"
-                                     HorizontalOptions="Start"
-                                     VerticalOptions="End"
-                                     HeightRequest="50"
-                                     Opacity=".66"
-                                     HasShadow="True"
-                                     Elevation="1"
-                                     Margin="20,15,15,15">
-                        <pancake:PancakeView.WidthRequest>
-                            <OnPlatform x:TypeArguments="x:Double">
-                                <On Platform="iOS">115</On>
-                                <On Platform="Android">100</On>
-                            </OnPlatform>
-                        </pancake:PancakeView.WidthRequest>
-                        <Label Text="Resource" 
-                           Margin="20,0,0,0"
-                           VerticalOptions="Center"
-                           FontFamily="Ubuntu"
-                           TextColor="White"/>
-                </pancake:PancakeView>
-            </Grid>
+                    <Image
+                        Source="resourceLabel"
+                        HorizontalOptions="Start"
+                        VerticalOptions="End"
+                        HeightRequest="30"
+                        Margin="20,15,15,15"/>
+                </Grid>
         </Grid>
     </Grid>
     <pancake:PancakeView x:Name="bottomBar"
