@@ -579,4 +579,100 @@
   <ItemGroup>
     <BundleResource Include="Resources\YiesellRayon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AlanaBeals.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AngieKubiak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BrendaHommerding.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\CarolynStern.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ChristySmith.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\CurtisPride.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\DebbieMitre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\DylanPanerra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ElizabethShuler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\EmilyBurke.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HeidyLizNazario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HowardRosenblum.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\JenniferMeredith.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\JessalynAkerman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\JessicaFlores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\JonathanHatch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\KathyBuckley.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\KayleeLartigue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\KimberlyNguyen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LindaLartigue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MarwaFathy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MorganDavies.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PamelaFarley.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\RashaunDavis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\RhondaEernisse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\RobertBaldwin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\RobinGetz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SharonAnnDror.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SueLaFauce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tomSeaver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tonyRonco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\virginiaJohnson.png" />
+  </ItemGroup>
 </Project>
