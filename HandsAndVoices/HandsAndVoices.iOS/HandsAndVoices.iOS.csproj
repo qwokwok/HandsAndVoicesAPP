@@ -289,10 +289,10 @@
     <BundleResource Include="Resources\LeeanneSeaver.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\logo.png">
+    <BundleResource Include="Resources\logo.png">
       <Generator>MSBuild:UpdateGeneratedFiles</Generator>
       <SubType>Designer</SubType>
-    </AndroidResource>
+    </BundleResource>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\MaddieBurkholder.png" />
@@ -722,5 +722,8 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\RosabelAgbayaniFirst.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HVgrouplove.png" />
   </ItemGroup>
 </Project>
