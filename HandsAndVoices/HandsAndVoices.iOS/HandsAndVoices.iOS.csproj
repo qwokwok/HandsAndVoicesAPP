@@ -217,7 +217,7 @@
     <BundleResource Include="Resources\ChristineGriffin.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\ClaraBurkholder.png" />
+    <BundleResource Include="Resources\ClairaBurkholder.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\coming.png" />
@@ -689,5 +689,38 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\articleLabel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MarkAdams.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MelodyStein.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PeggyCryer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\RhondaBergsma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SarahJohnston.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\StacyAbrams.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TorrieBryant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\UnaCarroll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\YolandaFagundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\DarleenHutchins.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\RosabelAgbayaniFirst.png" />
   </ItemGroup>
 </Project>

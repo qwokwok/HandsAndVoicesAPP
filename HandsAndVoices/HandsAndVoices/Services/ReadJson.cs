@@ -63,7 +63,7 @@ namespace HandsAndVoices.Services
                     Preferences.Set("date_key", oneDayMore);
                 }
 
-                App.DayCount = 90; // If you want to test with any number of days have been past, enter 1-90 or comment out this line if you wish to test with actual day.
+                //App.DayCount = 90; // If you want to test with any number of days have been past, enter 1-90 or comment out this line if you wish to test with actual day.
                 // --- ---
 
                 list = list.Where(x => x.Day <= App.DayCount).ToList();
