@@ -18,8 +18,8 @@
 <p>Notification system on device outside of the app will notify a user when a new topic has been added in next one consecutive day as long as the app is running in either background or foreground state.</p>
 <p>Four categories (Articles, Parent Quotes, DHH Quotes, and Resources) seperated in each page in the app to allow user to go to a specific category quickly.</p>
 <p>The app is available to download in both Google Play and Apple Store<p>
-<a href="https://www.youtube.com/watch?v=oHg5SJYRHA0"><img alt="google" src="Images/googlePlay.png" height="125px" align="center"></a>
-<a href="https://www.youtube.com/watch?v=oHg5SJYRHA0"><img alt="apple" src="Images/appleBadge.png" height="125px" align="center"></a>
+<a href="https://play.google.com/store/apps/details?id=com.companyname.handsandvoicesv2"><img alt="google" src="Images/googlePlay.png" height="125px" align="center"></a>
+<a href="https://apps.apple.com/us/app/hands-voices/id1533568966"><img alt="apple" src="Images/appleBadge.png" height="125px" align="center"></a>
   
 <br></br>
 <p><b>Contributors</b></p>
